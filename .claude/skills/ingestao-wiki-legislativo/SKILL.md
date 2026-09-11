@@ -4,7 +4,7 @@ description: >-
   Processa uma nova fonte (arquivo em raw/ ou URL de portal legislativo: Planalto, ALESP, CMSP)
   e atualiza a wiki de arborização de ponta a ponta: leitura integral, mapeamento recursivo de
   citações, Avaliação de Impacto Legislativo ex-ante/ex-post, páginas de resumo e de conceito,
-  diagrama, bloco Cypher e índices. Use quando o usuário adicionar um documento em raw/ ou
+  diagrama e índices. Use quando o usuário adicionar um documento em raw/ ou
   pedir para ingerir uma norma ou projeto de lei.
 ---
 
@@ -51,13 +51,9 @@ Atue como especialista em legística, ciência de dados jurídica e direito ambi
 ### 6. Diagrama
 
 - Gere o bloco Mermaid com a skill `gerador-diagrama-drawio`.
-- Se a malha tiver conexões demais para o diagrama estático, gere também o grafo interativo com a skill `gerador-mapa-interativo-d3blocks`.
+- Se a malha tiver conexões demais para o diagrama estático, gere também o grafo interativo com a skill `gerador-mapa-interativo-d3blocks` — ele é o que fica navegável na página publicada. Não gere bloco de código Cypher na página: é texto inerte, não renderiza nada.
 
-### 7. Cypher
-
-- Gere os `MERGE` com a skill `formatador-cypher-neo4j`.
-
-### 8. Índices e logs (append-only)
+### 7. Índices e logs (append-only)
 
 - `wiki/index.md`: uma linha por página criada, com descrição de uma frase.
 - `wiki/log.md`: data, nome da fonte e resumo das mudanças estruturais.

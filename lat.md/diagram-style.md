@@ -46,7 +46,9 @@ Quando a malha de uma lei fica densa demais para o diagrama estático, a skill `
 
 **Estilo dos nós.** O tamanho é proporcional ao *in-degree centrality* (número de normas que citam o nó). As cores repetem a convenção de `Cores por tipo de nó`: verde para norma municipal vigente, vermelho para nó com lacuna ou alerta, azul para projeto de lei e norma futura. O slider de threshold fica habilitado para isolar as conexões fortes.
 
-**Saída e embed.** O HTML é salvo em `wiki/assets/grafos/<nome-da-lei>.html`. A página da lei em `wiki/legislacao/` embute o grafo logo após o diagrama Mermaid:
+**Saída e embed.** O HTML é salvo em `wiki/assets/grafos/<nome-da-lei>.htm` — extensão `.htm`, não `.html` (ver nota abaixo). A página da lei em `wiki/legislacao/` embute o grafo logo após o diagrama Mermaid:
 
-    <iframe src="../assets/grafos/<nome-da-lei>.html" width="100%" height="600px" frameborder="0"></iframe>
+    <iframe src="../assets/grafos/<nome-da-lei>.htm" width="100%" height="600px" frameborder="0"></iframe>
+
+**Por que `.htm` e não `.html`.** O Quartz (gerador do site publicado) remove a extensão `.html` de todo arquivo dentro de `content/` — a função `slugifyFilePath` trata `.html`, `.md` e "sem extensão" do mesmo jeito, achando que é mais uma página. O arquivo perdia a extensão no build e o navegador parava de reconhecê-lo como HTML dentro do `<iframe>`. `.htm` não está nessa lista e passa intocado. Ver `lat.md/publishing.md`.
 

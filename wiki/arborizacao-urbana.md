@@ -101,23 +101,9 @@ flowchart TD
     MAN[Manual Técnico SVMA 3a ed.]:::municipal -->|base legal revogada| GAP(Não serve mais como base jurídica):::lacuna
 ```
 
-## Bloco Cypher
+## Grafo interativo
 
-```cypher
-MERGE (n1:Norma {id: "MUN_LEI_10365_1987", tipo: "Lei", numero: "10365", ano: "1987", esfera: "Municipal", ementa: "Vegetação de porte arbóreo como bem de interesse comum"})
-MERGE (n2:Norma {id: "MUN_LEI_17794_2022", tipo: "Lei", numero: "17794", ano: "2022", esfera: "Municipal", ementa: "Código de Arborização Urbana do Município de São Paulo"})
-MERGE (n3:Norma {id: "FED_LEI_9605_1998", tipo: "Lei", numero: "9605", ano: "1998", esfera: "Federal", ementa: "Lei de Crimes Ambientais"})
-MERGE (n4:Norma {id: "FED_CF_1988", tipo: "Constituição", numero: "1988", ano: "1988", esfera: "Federal"})
-MERGE (o1:Orgao {nome: "SVMA"})
-MERGE (c1:Conceito {termo: "Manejo arbóreo"})
-MERGE (c2:Conceito {termo: "Floresta urbana"})
-MERGE (n2)-[:REVOGA]->(n1)
-MERGE (n4)-[:IMPACTA_INDIRETAMENTE]->(c1)
-MERGE (n3)-[:IMPACTA_INDIRETAMENTE]->(c1)
-MERGE (n1)-[:VINCULADO_A]->(c1)
-MERGE (o1)-[:FISCALIZA]->(c1)
-MERGE (n1)-[:IMPACTA_INDIRETAMENTE]->(c2);
-```
+<iframe src="assets/grafos/arborizacao-urbana.htm" width="100%" height="600px" frameborder="0"></iframe>
 
 ## Páginas relacionadas
 

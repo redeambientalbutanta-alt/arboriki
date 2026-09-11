@@ -33,11 +33,11 @@ Instancie o `d3graph` a partir do `D3Blocks` e aplique:
 
 ## 3. Saída e integração na wiki
 
-1. Exporte com `.d3graph()` para `wiki/assets/grafos/<nome-da-lei>.html`. Use o mesmo nome da página, em minúsculas com hífens.
-2. Na página da lei em `wiki/legislacao/`, injete o iframe logo após o bloco Mermaid:
+1. Exporte com `.d3graph()` para `wiki/assets/grafos/<nome-da-lei>.htm` — **extensão `.htm`, nunca `.html`**: o Quartz remove `.html` de todo arquivo em `content/` (trata como se fosse página), o que quebra o embed. Use o mesmo nome da página, em minúsculas com hífens.
+2. Na página da lei em `wiki/legislacao/`, injete o iframe logo após o bloco Mermaid (nunca gere bloco de código Cypher ou similar como substituto — texto de código não renderiza nada ao ser lido):
 
    ```html
-   <iframe src="../assets/grafos/<nome-da-lei>.html" width="100%" height="600px" frameborder="0"></iframe>
+   <iframe src="../assets/grafos/<nome-da-lei>.htm" width="100%" height="600px" frameborder="0"></iframe>
    ```
 
 ## Dependências

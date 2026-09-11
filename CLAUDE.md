@@ -84,9 +84,8 @@ Passos, em ordem:
 3. Crie a página de resumo. Norma vigente vai em `wiki/legislacao/`. Projeto de lei vai em `wiki/projetos/`.
 4. Aplique a AIL e a bifurcação de eixos.
 5. Crie ou atualize uma página de conceito para cada entidade importante (ex.: `[[termo-de-compromisso-ambiental-tca]]`).
-6. Gere o diagrama Mermaid ao final da análise (skill `gerador-diagrama-drawio`). Se a malha for densa, gere também o grafo interativo (skill `gerador-mapa-interativo-d3blocks`).
-7. Gere o bloco Cypher de relacionamentos (skill `formatador-cypher-neo4j`).
-8. Atualize `wiki/index.md`, `wiki/log.md`, `wiki/linha-tempo.md` e `wiki/noticias-relacionadas.md`.
+6. Gere o diagrama Mermaid ao final da análise (skill `gerador-diagrama-drawio`). Se a malha for densa, gere também o grafo interativo (skill `gerador-mapa-interativo-d3blocks`) — é ele que fica navegável na página publicada; um bloco de código Cypher não renderiza nada ao ser lido, só serve como texto.
+7. Atualize `wiki/index.md`, `wiki/log.md`, `wiki/linha-tempo.md` e `wiki/noticias-relacionadas.md`.
 
 ## Formato de página (padrão)
 
@@ -203,7 +202,6 @@ Malha inicial para a ingestão recursiva. Disponíveis em HTML estático nos por
 # Skills do projeto
 
 - **`ingestao-wiki-legislativo`** — executa o fluxo da wiki de ponta a ponta para uma nova fonte.
-- **`formatador-cypher-neo4j`** — converte os relacionamentos jurídicos em blocos Cypher `MERGE`.
 - **`gerador-diagrama-drawio`** — gera o diagrama Mermaid da análise, pronto para o Draw.io.
 - **`gerador-mapa-interativo-d3blocks`** — gera o grafo relacional interativo (HTML) da malha de leis, embutido na página via iframe.
 - **`pesquisa-legislacao`** — pesquisa e rastreia normas nos portais da Prefeitura de SP, da ALESP e do Planalto (vigência, revogação, regulamentação).

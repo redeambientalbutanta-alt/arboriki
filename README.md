@@ -2,6 +2,8 @@
 
 Base de conhecimento coletiva sobre a legislação de arborização urbana do Município de São Paulo, publicada em formato wiki. Segue o padrão *LLM Wiki* de Andrej Karpathy: páginas curtas em Markdown, interligadas por `[[wiki-links]]` e construídas a partir de fontes primárias.
 
+**Site publicado**: [redeambientalbutanta-alt.github.io/arboriki](https://redeambientalbutanta-alt.github.io/arboriki/) (link não divulgado, sem indexação — uso interno).
+
 ## Propósito
 
 Apoiar movimentos ambientalistas na contestação de cortes arbitrários de árvores e subsidiar a revisão das leis ambientais sobre poda, corte, maciços arbóreos, áreas imunes, compensação e Termo de Compromisso Ambiental (TCA).
@@ -103,7 +105,7 @@ lat check                  # depois de mexer em lat.md/ ou no código: valida li
 
 ## Publicação
 
-A wiki é publicada como site estático em `redeambientalbutanta-alt.github.io/arboriki` (Quartz 5), gerado a partir de `wiki/`. Link não divulgado, sem indexação — uso interno.
+A wiki é publicada como site estático em [redeambientalbutanta-alt.github.io/arboriki](https://redeambientalbutanta-alt.github.io/arboriki/) (Quartz 5), gerado a partir de `wiki/`. Link não divulgado, sem indexação — uso interno.
 
 ```bash
 cd site
@@ -119,6 +121,5 @@ Cada `git push` na branch `main` publica automaticamente via GitHub Actions (`.g
 |---|---|
 | `ingestao-wiki-legislativo` | executa o fluxo de ingestão de ponta a ponta |
 | `pesquisa-legislacao` | pesquisa e rastreia normas nos portais oficiais |
-| `formatador-cypher-neo4j` | converte os relacionamentos jurídicos em blocos Cypher `MERGE` |
 | `gerador-diagrama-drawio` | gera o diagrama Mermaid da análise |
-| `gerador-mapa-interativo-d3blocks` | gera o grafo relacional interativo (HTML) |
+| `gerador-mapa-interativo-d3blocks` | gera o grafo relacional interativo (HTML), embutido na página via iframe |

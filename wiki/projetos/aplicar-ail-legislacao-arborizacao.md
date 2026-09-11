@@ -70,23 +70,9 @@ flowchart TD
     G3 --> P3[Proposta: portaria de protocolo unico de poda]:::proposta
 ```
 
-## Bloco Cypher
+## Grafo interativo
 
-```cypher
-MERGE (c_leg:Conceito {termo: "Legística"})
-MERGE (c_ail:Conceito {termo: "Avaliação de Impacto Legislativo"})
-MERGE (c_chk:Conceito {termo: "Checklist legislativo"})
-MERGE (n_lc95:Norma {id: "FED_LEI_COMPLEMENTAR_95_1998", tipo: "Lei Complementar", numero: "95", ano: "1998", esfera: "Federal", ementa: "Elaboração, redação, alteração e consolidação das leis"})
-MERGE (n_dec4176:Norma {id: "FED_DECRETO_4176_2002", tipo: "Decreto", numero: "4176", ano: "2002", esfera: "Federal", ementa: "Regulamenta a LC 95/1998 no Executivo federal"})
-MERGE (n_man:AtoRegulatorio {id: "MUN_MANUAL_ARBORIZACAO_SVMA", tipo: "Manual Técnico", numero: "3", ano: "2015"})
-MERGE (n_17794:Norma {id: "MUN_LEI_17794_2022", tipo: "Lei", numero: "17794", ano: "2022", esfera: "Municipal"})
-MERGE (n_dec4176)-[:REGULAMENTA]->(n_lc95)
-MERGE (n_dec4176)-[:VINCULADO_A]->(c_chk)
-MERGE (c_ail)-[:VINCULADO_A]->(c_leg)
-MERGE (c_chk)-[:VINCULADO_A]->(c_leg)
-MERGE (c_ail)-[:IMPACTA_INDIRETAMENTE]->(n_man)
-MERGE (n_man)-[:VAGO_EM]->(c_ail);
-```
+<iframe src="../assets/grafos/aplicar-ail-legislacao-arborizacao.htm" width="100%" height="600px" frameborder="0"></iframe>
 
 ## Páginas relacionadas
 

@@ -137,38 +137,9 @@ flowchart TD
     G5 --> P4[Proposta: explicitar e avaliar o regime 1:1]:::proposta
 ```
 
-## Bloco Cypher
+## Grafo interativo
 
-```cypher
-MERGE (n1:Norma {id: "MUN_LEI_16050_2014", tipo: "Lei", numero: "16050", ano: "2014", esfera: "Municipal", ementa: "PDE; institui o TCA (arts. 154-155)"})
-MERGE (n2:Norma {id: "MUN_LEI_17794_2022", tipo: "Lei", numero: "17794", ano: "2022", esfera: "Municipal"})
-MERGE (n3:Norma {id: "MUN_DECRETO_61859_2022", tipo: "Decreto", numero: "61859", ano: "2022", esfera: "Municipal"})
-MERGE (n4:Norma {id: "MUN_PORTARIA_SVMA_105_2024", tipo: "Portaria", numero: "105", ano: "2024", esfera: "Municipal", ementa: "Critérios e procedimentos de compensação ambiental e TCA"})
-MERGE (n5:Norma {id: "MUN_PORTARIA_SVMA_130_2013", tipo: "Portaria", numero: "130", ano: "2013", esfera: "Municipal"})
-MERGE (n6:Norma {id: "MUN_LEI_10365_1987", tipo: "Lei", numero: "10365", ano: "1987", esfera: "Municipal"})
-MERGE (n7:Norma {id: "MUN_DECRETO_53889_2013", tipo: "Decreto", numero: "53889", ano: "2013", esfera: "Municipal", ementa: "Regulamenta o TCA; fórmula CF e tabela do Fator Multiplicador"})
-MERGE (n8:Norma {id: "MUN_PORTARIA_SVMA_51_2024", tipo: "Portaria", numero: "51", ano: "2024", esfera: "Municipal", ementa: "Define poda drástica e critérios de urgência (risco de queda)"})
-MERGE (c1:Conceito {termo: "Termo de Compromisso Ambiental"})
-MERGE (c2:Conceito {termo: "Compensação ambiental"})
-MERGE (c3:Conceito {termo: "Valor ecológico"})
-MERGE (c4:Conceito {termo: "Risco de queda"})
-MERGE (c5:Conceito {termo: "Fator multiplicador"})
-MERGE (n1)-[:VINCULADO_A]->(c1)
-MERGE (n2)-[:REGULAMENTA]->(c2)
-MERGE (n3)-[:REGULAMENTA]->(n2)
-MERGE (n7)-[:REGULAMENTA]->(n1)
-MERGE (n4)-[:REGULAMENTA]->(n7)
-MERGE (n4)-[:REVOGA]->(n5)
-MERGE (n7)-[:VAGO_EM]->(c3)
-MERGE (n7)-[:VAGO_EM]->(c5)
-MERGE (n4)-[:VAGO_EM]->(c3)
-MERGE (n4)-[:VAGO_EM]->(c5)
-MERGE (n2)-[:VAGO_EM]->(c4)
-MERGE (n7)-[:IMPACTA_INDIRETAMENTE]->(n6)
-MERGE (n4)-[:IMPACTA_INDIRETAMENTE]->(n6)
-MERGE (n8)-[:REGULAMENTA]->(n2)
-MERGE (n8)-[:VAGO_EM]->(c4);
-```
+<iframe src="../assets/grafos/questionar-criterios-tca.htm" width="100%" height="600px" frameborder="0"></iframe>
 
 ## Páginas relacionadas
 
