@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "4c1fe0aa26eee611",
+    "type": "split",
+    "children": [
+      {
+        "id": "87960536ef8d8260",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "680bd486145a2572",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projetos/questionar-criterios-tca.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "questionar-criterios-tca"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7f40e9cfe802079c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6223fb798fac80af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92cc3dbfc637c3cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "8a27bed9750a7285",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "57ebe4cecc19b1fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3afe1bda0ce29d02",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec82b4be41c01423",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8478b04a394f7b6e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "calcada-verde.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "2fbda7a5d852a319",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "calcada-verde.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "4476aad561cd1a9f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "4401ebd79d50925d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "42edfdc626bc59e0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "calcada-verde.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "680bd486145a2572",
+  "lastOpenFiles": [
+    "projetos/consolidacao-leis-ambientais-alesp.md",
+    "projetos/aplicar-ail-legislacao-arborizacao.md",
+    "legislacao/lei-17794-2022.md",
+    "legistica.md",
+    "verificacoes-pendentes.md.tmp.8612.4f808384c3e1",
+    "projetos/questionar-criterios-tca.md.tmp.8612.9cdb3111f7b4",
+    "index.md",
+    "compensacao-ambiental.md",
+    "checklist-legislativo.md",
+    "calcada-verde.md",
+    "linha-tempo.md",
+    "verificacoes-pendentes.md",
+    "legislacao/lei-10365-1987.md.tmp.8612.7906ff542917",
+    "noticias-relacionadas.md",
+    "poda.md",
+    "manejo-arboreo.md",
+    "arborizacao-urbana.md",
+    "legislacao/lei-10365-1987.md",
+    "avaliacao-de-impacto-legislativo.md"
+  ]
+}

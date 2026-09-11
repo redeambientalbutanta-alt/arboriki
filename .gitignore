@@ -1,0 +1,17 @@
+# Ambiente Python (uv)
+.venv/
+__pycache__/
+*.py[cod]
+
+# Cache do lat.md
+lat.md/.cache/
+
+# Texto extraído de raw/ pela CLI arboriki (o manifest.json fica versionado)
+.arboriki/extracted/
+
+# Variáveis locais de ambiente (.env.example fica versionado)
+.env
+
+# SO / editor
+.DS_Store
+Thumbs.db

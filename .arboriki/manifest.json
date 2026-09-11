@@ -1,0 +1,67 @@
+{
+  "raw/arborização/Arborização Manual Técnico de SVMA.pdf": {
+    "chars": 126646,
+    "extracted": ".arboriki/extracted/arborização/Arborização Manual Técnico de SVMA.txt",
+    "sha256": "7e1e9a168ee9e05abaafb255119626e48fafe5486225ade6cf3cc387a89a6c9c"
+  },
+  "raw/legislacao/Decreto Municipail 53.889-2013.pdf": {
+    "chars": 19548,
+    "extracted": ".arboriki/extracted/legislacao/Decreto Municipail 53.889-2013.txt",
+    "sha256": "7785bd56cfeb894a6baed01864d1f428fc91abbc9082973473745e7293fa4ab3"
+  },
+  "raw/legislacao/Portaria SVMA 105-2024_anexos completos.pdf": {
+    "chars": 109803,
+    "extracted": ".arboriki/extracted/legislacao/Portaria SVMA 105-2024_anexos completos.txt",
+    "sha256": "b6c05a075889276b0abda10ec3ae62b15d36dd00d33bac80313ed654c64934e2"
+  },
+  "raw/legislacao/Portaria SVMA 116-2024.pdf": {
+    "chars": 3250,
+    "extracted": ".arboriki/extracted/legislacao/Portaria SVMA 116-2024.txt",
+    "sha256": "de6d2f6a6aca8cde6d6e3f2b936bfa874a891421a5f27222ff69ef7eef385ea8"
+  },
+  "raw/legislacao/Portaria SVMA 116-2024_consolidado.pdf": {
+    "chars": 3273,
+    "extracted": ".arboriki/extracted/legislacao/Portaria SVMA 116-2024_consolidado.txt",
+    "sha256": "490810366baf0f1ce16b20ad329af43ca80be4d149c244e124acf5e2f9507cf3"
+  },
+  "raw/legistica/A Legística como estratégia para a melhoria normativa_Edição_final.pdf": {
+    "chars": 46388,
+    "extracted": ".arboriki/extracted/legistica/A Legística como estratégia para a melhoria normativa_Edição_final.txt",
+    "sha256": "8c94e0914c75a7e73bfdc47f9060245c14bce00cdaa8141ef0b7d22cdc9ac1f5"
+  },
+  "raw/legistica/AVALIAÇÃO DE IMPACTO LEGISLATIVO NO BRASIL_ALESP_2010.pdf": {
+    "chars": 39721,
+    "extracted": ".arboriki/extracted/legistica/AVALIAÇÃO DE IMPACTO LEGISLATIVO NO BRASIL_ALESP_2010.txt",
+    "sha256": "4778b6944419ce9a7b421dcf9095cb81b44763ec772e175e09f693cc637f98ba"
+  },
+  "raw/legistica/Camara Deputados Diretrizes para elaboracao de AIL na CD_REVISADA_03_2014 -2.pdf": {
+    "chars": 77671,
+    "extracted": ".arboriki/extracted/legistica/Camara Deputados Diretrizes para elaboracao de AIL na CD_REVISADA_03_2014 -2.txt",
+    "sha256": "e8305534d8768812707ee230d0fdae4811b7347c13c4d44840effdf986990642"
+  },
+  "raw/legistica/Legistica-Breve reflexões sobre.pdf": {
+    "chars": 38295,
+    "extracted": ".arboriki/extracted/legistica/Legistica-Breve reflexões sobre.txt",
+    "sha256": "e4d5ba0abc502c2b5951dcf74e79e09036b4aeb5f1d35231d689601efc6899bf"
+  },
+  "raw/legistica/Legística-Inventário semântico e teste de estresse do conceito.pdf": {
+    "chars": 62767,
+    "extracted": ".arboriki/extracted/legistica/Legística-Inventário semântico e teste de estresse do conceito.txt",
+    "sha256": "fabaf040f4b8ef088cffa4b248b3f9f7457f20419bc53883a519929057c9540d"
+  },
+  "raw/legistica/NOCOES_ELEMENTARES_DE_LEGISTICA.pdf": {
+    "chars": 158010,
+    "extracted": ".arboriki/extracted/legistica/NOCOES_ELEMENTARES_DE_LEGISTICA.txt",
+    "sha256": "39c854898f96ec40cf95e78904888f76c77de2fda85a9ea438c6b6e6e2c0ba8c"
+  },
+  "raw/legistica/Senado td-70-avaliacao-de-impacto-legislativo-no-brasil.pdf": {
+    "chars": 41333,
+    "extracted": ".arboriki/extracted/legistica/Senado td-70-avaliacao-de-impacto-legislativo-no-brasil.txt",
+    "sha256": "f0890018343ad0b315ee571909d15b0ac2c85f66fbd7580fb234be07c44500f9"
+  },
+  "raw/legistica/artigo02.pdf": {
+    "chars": 54780,
+    "extracted": ".arboriki/extracted/legistica/artigo02.txt",
+    "sha256": "7d676bbd2238420da5ef1ba9498208b4b6f816de70ec90aee2280607e112543c"
+  }
+}
