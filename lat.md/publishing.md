@@ -44,7 +44,9 @@ Duas camadas, nenhuma delas é controle de acesso real (decidido assim porque o 
 
 Fica na raiz do repositório porque GitHub só lê workflows em `.github/workflows/` na raiz, nunca dentro de `site/`. Passos: `npm ci` → `quartz plugin install` → `npm run sync` (copia `wiki/` para `content/`) → `quartz build` → upload do artefato → `actions/deploy-pages`.
 
-O repositório GitHub precisa ter "Settings → Pages → Source: GitHub Actions" configurado manualmente uma vez — não é possível pela CLI sem autenticação.
+O GitHub configura "Settings → Pages → Source: GitHub Actions" sozinho no primeiro deploy bem-sucedido do `actions/deploy-pages` — não precisou de passo manual. URL ativa: `https://redeambientalbutanta-alt.github.io/arboriki/`.
+
+O token do `gh auth login` precisa do escopo `workflow` além do `repo` padrão — sem ele, o push a `.github/workflows/` é recusado. Adicione com `gh auth refresh -h github.com -s workflow` se faltar.
 
 ## Comandos locais
 
