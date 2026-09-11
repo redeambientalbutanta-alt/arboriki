@@ -40,6 +40,11 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
+      - name: Garantir permissão de execução do CLI do Quartz
+        # checkouts feitos no Windows (core.filemode=false) podem commitar este
+        # arquivo sem +x; sem isso, "npx quartz" falha com "Permission denied".
+        run: chmod +x quartz/bootstrap-cli.mjs
+
       - name: Instalar plugins do Quartz
         run: npx quartz plugin install --from-config
 

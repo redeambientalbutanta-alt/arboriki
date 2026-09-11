@@ -31,6 +31,12 @@ Quatro plugins do template `obsidian` foram desligados em `quartz.config.yaml` p
 - **`@quartz-themes/core`** — tentava baixar um pacote de tema adicional em tempo de build (`npm install` dinâmico), que falha em ambientes com `--allow-scripts` restrito. A paleta de cores já é definida diretamente em `configuration.theme.colors`.
 - **`@quartz-community/obsidian-plugin-excalidraw`** — a wiki não usa desenhos Excalidraw; o plugin emitia um aviso de carregamento sem função.
 
+## Armadilha: bit de execução do CLI do Quartz
+
+`site/quartz/bootstrap-cli.mjs` (o alvo do bin `quartz` do `package.json`) precisa do bit `+x` para `npx quartz ...` funcionar no runner Linux do CI.
+
+Commits feitos no Windows perdem esse bit silenciosamente (`core.filemode=false` faz o git ignorar mudanças de permissão). O segundo deploy desta wiki falhou assim: passou no primeiro push por acaso, e travou com `quartz: Permission denied` no segundo. Corrigido de duas formas — `git update-index --chmod=+x` no arquivo, e um `chmod +x` redundante no workflow, caso o bit se perca de novo em um commit futuro feito no Windows.
+
 ## Discrição (link não divulgado, sem indexação)
 
 Duas camadas, nenhuma delas é controle de acesso real (decidido assim porque o público é interno e pequeno):
