@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Legisprudência
 
 **Resumo**: Teoria de Luc Wintgens que trata a produção da lei como objeto de controle racional, como a jurisprudência trata a decisão judicial. Propõe quatro princípios — coerência, alternatividade, temporalidade e densidade normativa necessária — úteis para auditar a malha de normas de arborização.

@@ -1,3 +1,15 @@
+---
+tags:
+  - tipo/analise
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - eixo/2-aperfeicoamento
+  - conceito/manejo
+  - conceito/poda
+  - conceito/compensacao-ambiental
+  - conceito/tca
+---
+
 # Aplicar a AIL à legislação de arborização de São Paulo
 
 **Resumo**: Página-ponte entre os dois eixos do projeto. Usa a [[legistica]] e a [[avaliacao-de-impacto-legislativo]] como método para auditar a legislação atual de arborização (Eixo 1) e desenhar propostas de aperfeiçoamento (Eixo 2).
@@ -34,7 +46,7 @@ Para cada norma ou dispositivo de arborização de São Paulo, aplicar o [[check
 |---|---|---|
 | Manual Técnico da SVMA (3ª ed.) apoia-se em normas revogadas (Lei 10.365/1987, arts. 1º-16 e 20-25; Decretos de calçada 45.904/2005 e 52.903/2012) | Manual + Lei 17.794/2022, art. 49 | [[arborizacao-urbana]], [[lei-10365-1987]], [[calcada-verde]] |
 | "Risco de queda" (art. 14, IV e art. 20 da Lei 17.794) sem regulamento, embora a lei mande o Executivo defini-lo | lei-17794-...-2022/consolidado + decreto-61859-...-2022/consolidado | [[lei-17794-2022]], [[manejo-arboreo]] |
-| "Poda drástica" (art. 29) sem regulamento; multa de R$ 1.700 a R$ 17.000 | lei-17794-...-2022/consolidado | [[poda]] |
+| "Poda drástica" (art. 29) sem regulamento; multa de R\$ 1.700 a R\$ 17.000 | lei-17794-...-2022/consolidado | [[poda]] |
 | Dispositivos da Lei 17.794/2022 com eficácia suspensa desde 2023 pela ADIN nº 2085569-32.2023.8.26.0000 | lei-17794-...-2022/consolidado | [[lei-17794-2022]] |
 | Critérios de compensação/TCA fixados por portaria (105/2024), alterável pelo Secretário; remissão a artigo revogado da Lei 10.365/87 no Anexo VIII | portaria-...-105-...-2024/consolidado | [[questionar-criterios-tca]], [[portaria-svma-105-2024]] |
 | Multiplicadores de compensação (Tabelas V, VI; fator 5,35) sem memória de cálculo pública | portaria-...-105-...-2024/consolidado | [[questionar-criterios-tca]] |

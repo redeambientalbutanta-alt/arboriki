@@ -26,10 +26,19 @@ A solução foi registrar `site/content/` em `.git/info/exclude` (arquivo local,
 
 Quatro plugins do template `obsidian` foram desligados em `quartz.config.yaml` por conflitarem com o conteúdo ou o ambiente deste projeto.
 
-- **`@quartz-community/latex`** — a wiki usa `R$` para valores em reais; o parser de LaTeX confundia o cifrão com abertura de modo matemático. Sem necessidade real de fórmulas matemáticas no projeto.
+- **`@quartz-community/latex`** — a wiki usa `R$` para valores em reais; o parser de LaTeX confundia o cifrão com abertura de modo matemático. Sem necessidade real de fórmulas matemáticas no projeto. Desligar o plugin não bastou: o trecho entre dois cifrões continuou saindo como `<code class="math-inline">`. A correção está no texto — as páginas escrevem `R\$` ([[ingestion-flow#Ingestion Pipeline Specification#Constraints]]).
 - **`@quartz-community/cname`** — gera um arquivo `CNAME` para domínio próprio. Não se aplica: o site fica no subcaminho padrão `redeambientalbutanta-alt.github.io/arboriki`, sem domínio customizado.
 - **`@quartz-themes/core`** — tentava baixar um pacote de tema adicional em tempo de build (`npm install` dinâmico), que falha em ambientes com `--allow-scripts` restrito. A paleta de cores já é definida diretamente em `configuration.theme.colors`.
 - **`@quartz-community/obsidian-plugin-excalidraw`** — a wiki não usa desenhos Excalidraw; o plugin emitia um aviso de carregamento sem função.
+
+## Etiquetas e logo no site
+
+O site mostra as etiquetas de cada página logo abaixo do título e o logo da Rede Ambiental Butantã como marca d'água em todas as páginas. As regras das etiquetas estão em [[ingestion-flow#Ingestion Pipeline Specification#Etiquetas]].
+
+- **`@quartz-community/tag-list`** ligado: exibe as etiquetas como links para as páginas `tags/<categoria>/<valor>`. A página `tags/<categoria>` reúne todos os valores da categoria.
+- **`note-properties`** com `hidePropertiesView: true`: o painel de propriedades repetia as etiquetas e quebrava o layout em páginas com mais de dez.
+- **`site/quartz/styles/custom.scss`** — esconde as etiquetas dentro das listas de páginas e desenha a marca d'água (`body::after`, canto inferior direito, menor em tela estreita).
+- **Logo na página inicial:** `![[assets/imagens/LogoRAB2026.png|180]]`. Um `<img>` em HTML não aparece no Obsidian, e o Quartz transforma embed de `.svg` em `<object>` sem resolver o caminho. Por isso a página usa uma cópia PNG; a marca d'água usa o SVG.
 
 ## Armadilha: bit de execução do CLI do Quartz
 

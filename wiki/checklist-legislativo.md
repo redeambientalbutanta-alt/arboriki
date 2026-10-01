@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Checklist legislativo
 
 **Resumo**: Questionário com perguntas pré-formuladas, respondidas durante a elaboração da norma, para verificar problema, alternativas, necessidade, custo-benefício e inteligibilidade. Instrumento da [[legistica]] material.

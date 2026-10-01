@@ -37,6 +37,9 @@ Atue como especialista em legística, ciência de dados jurídica e direito ambi
 - Crie a página em `wiki/` com o nome da fonte, em minúsculas com hífens.
 - Norma vigente: `wiki/legislacao/`. Projeto de lei ou proposta: `wiki/projetos/`.
 - Use o "Formato de página (padrão)" e o "Formato de análise legislativa" do `CLAUDE.md`.
+- Preencha o campo **Texto oficial** da Identificação com o link da norma no portal oficial da esfera: Prefeitura de SP (municipal), ALESP (estadual), Planalto (federal). Faça isso mesmo quando a fonte for um PDF de `raw/`.
+- Ache o link com a skill `pesquisa-legislacao`. Abra o link e confira o corpo: o portal da Prefeitura devolve HTTP 200 para página inexistente.
+- Sem link confirmado: escreva `[verificar]` no campo.
 
 ### 4. Avaliação de Impacto e bifurcação de eixos
 
@@ -48,12 +51,24 @@ Atue como especialista em legística, ciência de dados jurídica e direito ambi
 
 - Crie ou atualize uma página por entidade importante: `[[termo-de-compromisso-ambiental-tca]]`, `[[zoneamento-urbano]]`, etc.
 
-### 6. Diagrama
+### 6. Etiquetas
+
+- Leia `wiki/etiquetas.md`. Use só as etiquetas dessa página.
+- Abra cada página criada com o bloco `tags:`, nesta ordem: `tipo/`, `esfera/`, `situacao/`, `eixo/`, `conceito/`.
+- `tipo/`: exatamente uma por página.
+- `esfera/`: a esfera da norma (`municipal`, `estadual`, `federal`). Em página de conceito ou de análise, a esfera de cada norma analisada.
+- `situacao/`: só em norma ou proposta. Copie do campo "Status".
+- `eixo/`: `1-legislacao-atual`, `2-aperfeicoamento` ou os dois.
+- `conceito/`: uma por conceito que a página trata. Em página de norma, confirme que o termo está no texto da norma.
+- Conceito novo: acrescente a etiqueta em `wiki/etiquetas.md` antes de usar.
+- Revise as etiquetas de cada página alterada: mudança de "Status" muda `situacao/`.
+
+### 7. Diagrama
 
 - Gere o bloco Mermaid com a skill `gerador-diagrama-drawio`.
 - Se a malha tiver conexões demais para o diagrama estático, gere também o grafo interativo com a skill `gerador-mapa-interativo-d3blocks` — ele é o que fica navegável na página publicada. Não gere bloco de código Cypher na página: é texto inerte, não renderiza nada.
 
-### 7. Índices e logs (append-only)
+### 8. Índices e logs (append-only)
 
 - `wiki/index.md`: uma linha por página criada, com descrição de uma frase.
 - `wiki/log.md`: data, nome da fonte e resumo das mudanças estruturais.
@@ -66,6 +81,13 @@ Atue como especialista em legística, ciência de dados jurídica e direito ambi
 - Fonte de site legislativo: link direto para o Artigo, Parágrafo ou Inciso.
 - Divergência entre fontes: registre a contradição explicitamente na página.
 - Afirmação sem amparo documental em `raw/`: marque `[verificar]`.
+
+## Valores em reais
+
+- Escreva `R\$ 500`, com barra invertida antes do cifrão.
+- Sem a barra, o Obsidian e o site leem o trecho entre dois cifrões como fórmula e desfiguram o texto.
+- Dentro de bloco de código (Mermaid incluso) ou de crases, escreva `R$` sem barra.
+- Ao terminar, procure cifrão sem barra nas páginas que você criou ou alterou.
 
 ## Ao terminar
 

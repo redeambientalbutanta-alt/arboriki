@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/apoio
+---
+
 # Log de operações
 
 **Resumo**: Registro append-only de toda operação estrutural na wiki. Nunca reescreva entradas anteriores; só acrescente ao final.
@@ -60,7 +65,7 @@
 - Fontes extraídas com `arboriki extract` (OCR onde necessário): `raw/legislacao/Decreto Estadual 30.443-1989.pdf`, `Lei 16402-2016.pdf`, `Quadro 1 – Conceitos e definições.pdf`, `doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.pdf` e `raw/legistica/ESTUDOS_EM_LEGISTICA.pdf`.
 - Rastreio complementar nos portais: Decreto Estadual 39.743/1994 (ALESP), Decreto 64.877/2025, Resolução CADES 284/2024 e Portaria SVMA 129/2024 (Prefeitura).
 - **Páginas novas**: `decreto-estadual-30443-1989` (lista de árvores imunes de corte; origem do termo "vegetação significativa"), `lei-16402-2016` (LPUOS: Quota Ambiental, TCA com redutor 0,50, proposta de Quadro 1 com "maciço arbóreo"), `decreto-64877-2025` (preços públicos 2026), `legisprudencia` (conceito, a partir de *Estudos em Legística*, 2019).
-- **Correção**: o registro de 2026-09-10 que descartou o Decreto 64.877/2025 estava errado — a leitura cobriu só o corpo do decreto; o **Anexo** traz muda com plantio R$ 337,00 e tutor R$ 229,00. Corrigidos `compensacao-ambiental`, `portaria-svma-105-2024`, `questionar-criterios-tca`, `linha-tempo`, `verificacoes-pendentes`.
+- **Correção**: o registro de 2026-09-10 que descartou o Decreto 64.877/2025 estava errado — a leitura cobriu só o corpo do decreto; o **Anexo** traz muda com plantio R\$ 337,00 e tutor R\$ 229,00. Corrigidos `compensacao-ambiental`, `portaria-svma-105-2024`, `questionar-criterios-tca`, `linha-tempo`, `verificacoes-pendentes`.
 - **Correção**: `arborizacao-urbana` dizia que a Lei 17.794/2022 "substituiu" a categoria de árvore imune ao corte; lei municipal não revoga decreto estadual — o Decreto 30.443/1989 segue vigente e suas árvores se enquadram no art. 5º, III da lei municipal.
 - **Correção**: a pendência #3 associava o "art. 143" da Lei 16.402/2016 à ZEPAM; o art. 143 trata de interdição.
 - `questionar-criterios-tca`: novos achados 4-A (valor da muda sem fonte pública) e 4-B (TCA vale metade na Quota Ambiental); 6-A atualizado (Resolução CADES 284/2024 exige mitigação, mas sem TCA); propostas 10 (publicar Vm e Vt) e 11 (uniformizar o nome do TCA); diagrama e grafo interativo regerados.
@@ -79,3 +84,16 @@
 - **Pendências**: item 7 (texto da Lei 10.365/1987) quase resolvido; itens 28 a 34 novos.
 - Logo da Rede Ambiental Butantã na página inicial (`assets/imagens/LogoRAB2026.svg`, cópia de `raw/imagens/`).
 - Scripts de análise versionados em `scripts/analise/`; lentes documentadas em `lat.md/analysis-lenses.md`.
+
+## 2026-10-01 — etiquetas nas páginas e logo em todas as páginas
+
+- **Etiquetas**: as 35 páginas ganharam o bloco `tags:` no topo, em cinco categorias — `tipo/`, `esfera/`, `situacao/`, `eixo/` e `conceito/`. Vocabulário e regras na página nova `etiquetas`.
+- **Regra de ingestão**: toda página nova recebe as etiquetas (`CLAUDE.md`, skill `ingestao-wiki-legislativo`, `lat.md/ingestion-flow.md`).
+- **Logo**: a página inicial troca a marcação `<img>` em HTML pelo embed `![[assets/imagens/LogoRAB2026.png|180]]`, com uma cópia PNG do logo. O `<img>` aparecia no site; a troca é para o logo aparecer também no Obsidian `[verificar]` no aplicativo. O site mostra o logo como marca d'água em todas as páginas.
+- **Lacuna registrada**: não há página de norma federal na wiki; `esfera/federal` só está em `mapa-de-conceitos`.
+
+## 2026-10-01 — cifrão escapado e link do texto oficial
+
+- **Cifrão**: 66 ocorrências de valor em reais passaram a ser escritas com barra invertida antes do cifrão, em 14 páginas. Sem a barra, o trecho entre dois cifrões saía como fórmula no site e no Obsidian (exemplo: multas da `lei-17794-2022`). O cifrão dentro do diagrama Mermaid de `questionar-criterios-tca` ficou sem barra, por estar em bloco de código.
+- **Texto oficial**: as 10 páginas de norma ganharam, na Identificação, o campo "Texto oficial" com o link do portal da esfera (Prefeitura de SP ou ALESP). Links conferidos pelo corpo da página em 2026-10-01. `lei-10365-1987` não tinha link para o próprio texto.
+- **Regra de ingestão**: as duas regras entraram em `CLAUDE.md`, na skill `ingestao-wiki-legislativo` e em `lat.md/ingestion-flow.md`.

@@ -1,6 +1,11 @@
+---
+tags:
+  - tipo/apoio
+---
+
 # Índice — Wiki Arborização
 
-<img src="assets/imagens/LogoRAB2026.svg" alt="Logo da Rede Ambiental Butantã" width="180">
+![[assets/imagens/LogoRAB2026.png|180]]
 
 **Resumo**: Índice geral de todas as páginas da wiki de arborização urbana do Município de São Paulo, mantida pela Rede Ambiental Butantã.
 
@@ -16,7 +21,7 @@
 - [[decreto-53889-2013]] — regulamento original do TCA; origem da fórmula de compensação e da tabela do Fator Multiplicador
 - [[portaria-svma-105-2024]] — critérios e fórmulas de compensação ambiental e do TCA (norma que determina "quanto se compensa")
 - [[lei-16402-2016]] — LPUOS (zoneamento): Quota Ambiental, TCA com fator redutor 0,50, 1 árvore a cada 50 m² permeáveis; proposta de novo Quadro 1 com definição de "maciço arbóreo"
-- [[decreto-64877-2025]] — preços públicos de 2026: muda com plantio R$ 337, tutor R$ 229, taxas de análise de manejo
+- [[decreto-64877-2025]] — preços públicos de 2026: muda com plantio R\$ 337, tutor R\$ 229, taxas de análise de manejo
 - [[decreto-estadual-30443-1989]] — **estadual**: árvores imunes de corte em São Paulo (lista de 1989); origem do termo "vegetação significativa"
 
 ## Legislação histórica / revogada
@@ -55,6 +60,7 @@
 
 ## Páginas de apoio
 
+- [[etiquetas]] — vocabulário das etiquetas: tipo, esfera, situação, eixo e conceito
 - [[verificacoes-pendentes]] — fontes faltantes e itens a confirmar, com o procedimento de atualização
 - [[log]] — registro append-only de operações
 - [[linha-tempo]] — cronologia de eventos

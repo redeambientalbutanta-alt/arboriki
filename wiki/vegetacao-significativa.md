@@ -1,3 +1,18 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - esfera/estadual
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-significativa
+  - conceito/vegetacao-de-porte-arboreo
+  - conceito/imune-de-corte
+  - conceito/patrimonio-ambiental
+  - conceito/area-de-preservacao-permanente
+  - conceito/macico-arboreo
+  - conceito/supressao
+---
+
 # Vegetação significativa
 
 **Resumo**: Categoria da Lei 17.794/2022 que reúne a vegetação de porte arbóreo com proteção reforçada — a que está em APP e a que tem valor paisagístico, científico, histórico ou ecológico. Substitui, na prática, a antiga ideia de "árvore imune ao corte".

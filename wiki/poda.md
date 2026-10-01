@@ -1,3 +1,11 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/poda
+---
+
 # Poda
 
 **Resumo**: Eliminação oportuna de ramos de uma árvore urbana para compatibilizá-la com o espaço físico do entorno, preservando ao máximo sua forma natural e suas condições vitais. É uma das técnicas de [[manejo-arboreo]].
@@ -16,7 +24,7 @@ A poda deixou de exigir autorização prévia:
 
 - **Área não municipal** (art. 18) — o proprietário ou possuidor **comunica** previamente ao órgão municipal, com laudo técnico (art. 9º) e ART. Não é mais autorização.
 - **Área pública municipal** (art. 19) — **independe de autorização prévia**; executada pelos sujeitos do art. 16, §2º (servidores, empresas contratadas, Bombeiros/Defesa Civil em urgência).
-- **Poda inadequada** — multa de R$ 500 a R$ 5.000 por espécime (art. 28); **poda drástica** — R$ 1.700 a R$ 17.000 (art. 29, "definida em regulamento" ainda não editado).
+- **Poda inadequada** — multa de R\$ 500 a R\$ 5.000 por espécime (art. 28); **poda drástica** — R\$ 1.700 a R\$ 17.000 (art. 29, "definida em regulamento" ainda não editado).
 
 Ver [[lei-17794-2022]] e [[decreto-61859-2022]].
 

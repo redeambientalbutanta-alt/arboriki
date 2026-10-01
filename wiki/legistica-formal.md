@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Legística formal
 
 **Resumo**: Dimensão da [[legistica]] que cuida da técnica de redação normativa — clareza, segurança jurídica, sistematização e comunicação da lei aos seus destinatários.

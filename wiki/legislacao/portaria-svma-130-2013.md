@@ -1,3 +1,14 @@
+---
+tags:
+  - tipo/portaria
+  - esfera/municipal
+  - situacao/revogada
+  - eixo/1-legislacao-atual
+  - conceito/supressao
+  - conceito/compensacao-ambiental
+  - conceito/tca
+---
+
 # Portaria SVMA 130/2013 — Compensação ambiental (revogada)
 
 **Resumo**: Portaria que disciplinou, de 2013 a 2024, os critérios e procedimentos de compensação ambiental por corte, transplante ou intervenção. Revogada e substituída pela Portaria SVMA 105/2024. Documentada aqui como elo de evolução histórica do TCA.
@@ -13,6 +24,7 @@
 ## Identificação
 
 - **Número**: Portaria SVMA 130, de 26 de agosto de 2013 (o portal também a data como 12 de outubro de 2013) `[verificar]` a data exata
+- **Texto oficial**: [Catálogo de Legislação Municipal — Prefeitura de São Paulo](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-130-de-12-de-outubro-de-2013) · [texto consolidado](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-130-de-12-de-outubro-de-2013/consolidado)
 - **Autoria**: Ricardo Teixeira, Secretário Municipal do Verde e do Meio Ambiente
 - **Status**: **revogada**
 - **Instância**: SVMA

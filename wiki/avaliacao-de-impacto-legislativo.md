@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Avaliação de Impacto Legislativo (AIL)
 
 **Resumo**: Metodologia da [[legistica]] material que apoia a escolha fundamentada de políticas legislativas, avaliando os efeitos potenciais (*ex ante*) ou reais (*ex post*) de uma norma na sociedade.

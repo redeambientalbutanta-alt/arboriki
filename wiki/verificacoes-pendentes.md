@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/apoio
+---
+
 # Verificações pendentes
 
 **Resumo**: Lista do que falta confirmar na wiki — fontes ausentes, textos não ingeridos e dados a checar. Cada item tem um número estável; use esse número para indicar a fonte.
@@ -53,7 +58,7 @@ Formato: `<número>: <url ou arquivo>`. Vazio no momento — acrescente uma linh
 | # | Item | O que falta e por quê | Páginas afetadas |
 |---|---|---|---|
 | 1 | **Base de dados aberta de TCAs emitidos** | O CLAUDE.md pede o cruzamento com dados de emissão de TCA; nenhum dataset público foi localizado. Buscar no Portal de Dados Abertos da PMSP e no GeoSampa | [[termo-de-compromisso-ambiental-tca]], [[questionar-criterios-tca]] |
-| 2 | **Qual valor a SVMA usa como Vm (muda) e Vt (tutor)** | *Parcialmente resolvida.* O Anexo do Decreto 64.877/2025 fixa para 2026 muda com plantio R$ 337,00 e tutor com colocação R$ 229,00. Falta confirmar se a SVMA usa esses itens ou outro cálculo ("Vm calculado pela SVMA", Portaria 105/2024). Fonte ideal: memória de cálculo de um TCA real ou resposta da SVMA/CTCA | [[decreto-64877-2025]], [[compensacao-ambiental]], [[questionar-criterios-tca]] |
+| 2 | **Qual valor a SVMA usa como Vm (muda) e Vt (tutor)** | *Parcialmente resolvida.* O Anexo do Decreto 64.877/2025 fixa para 2026 muda com plantio R\$ 337,00 e tutor com colocação R\$ 229,00. Falta confirmar se a SVMA usa esses itens ou outro cálculo ("Vm calculado pela SVMA", Portaria 105/2024). Fonte ideal: memória de cálculo de um TCA real ou resposta da SVMA/CTCA | [[decreto-64877-2025]], [[compensacao-ambiental]], [[questionar-criterios-tca]] |
 | 3 | **Lei 16.402/2016 — Quadros 3A e 3B vigentes (anexos)** | *Texto da lei ingerido.* Faltam os anexos em PDF com os valores de FV para árvore plantada/existente e a pontuação mínima de QA por perímetro. Obs.: o "art. 143" vem da Portaria 105/2024, art. 1º, IX, que cita por engano o art. 143 do PDE (CEPAC); a hipótese de TCA em ZEPAM é o art. 154, IV do PDE | [[lei-16402-2016]], [[portaria-svma-105-2024]] |
 | 4 | **Lei 13.430/2002, art. 251 — texto integral** | Instituía o TCA no Plano Diretor de 2002; conteúdo hoje conhecido só indiretamente, via citação de outras normas | [[termo-de-compromisso-ambiental-tca]], [[portaria-svma-130-2013]] |
 | 5 | **Portaria SVMA 130/2013 — data exata** | *Quase resolvida.* A Portaria 105/2024, art. 96, a identifica como "de 26 de agosto de 2013"; o endereço no portal usa 12/10/2013 (provável data de republicação). Falta confirmar no Diário Oficial | [[portaria-svma-130-2013]], [[linha-tempo]] |
@@ -135,7 +140,7 @@ Itens fechados nesta sessão, para referência — não exigem mais ação.
 | ADIN nº 2085569-32.2023.8.26.0000 | Comunicado oficial da Procuradoria da Câmara: julgamento procedente por maioria, declara trechos da Lei 17.794/2022 inconstitucionais e **restaura parte dos arts. 4º-5º da Lei 10.365/1987**; decisão ainda não transitada em julgado | `saopaulo.sp.leg.br/assessoria_juridica/adin-no-2085569-32-2023-8-26-0000` |
 | Decretos Estaduais 30.443/1989 e 39.743/1994 (item 19) | Lista de árvores imunes de corte; documento-anexo chamado "Vegetação Significativa do Município de São Paulo"; desde 1994 o Município decide o corte, salvo reservas e maciços ≥ 1.000 m²; sem registro de revogação | `raw/legislacao/Decreto Estadual 30.443-1989.pdf`; `al.sp.gov.br/repositorio/.../decreto-39743-23.12.1994.html` |
 | Lei 16.402/2016 — texto (item 3) | Quota Ambiental; TCA com fator redutor 0,50 (art. 77); TAC não conta (art. 78); 1 árvore/50 m² permeáveis (art. 81, §4º); "Termo de Compensação Ambiental" no art. 29-A | `raw/legislacao/Lei 16402-2016.pdf` |
-| Preço público da muda (item 2, parcial) | Anexo do Decreto 64.877/2025: muda com plantio R$ 337,00, tutor R$ 229,00 (2026). **Corrige** a afirmação anterior de que esse decreto não tratava de arborização | `raw/legislacao/doc. 151724539_Anexo_...pdf` |
+| Preço público da muda (item 2, parcial) | Anexo do Decreto 64.877/2025: muda com plantio R\$ 337,00, tutor R\$ 229,00 (2026). **Corrige** a afirmação anterior de que esse decreto não tratava de arborização | `raw/legislacao/doc. 151724539_Anexo_...pdf` |
 | Regulamentação de GEE no licenciamento (item 6, parcial) | Resolução CADES 284/2024 e Portaria SVMA 129/2024 — inventário e mitigação, sem TCA | `legislacao.prefeitura.sp.gov.br/leis/...` |
 
 ---

@@ -1,3 +1,17 @@
+---
+tags:
+  - tipo/portaria
+  - esfera/municipal
+  - situacao/vigente
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-significativa
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/poda
+  - conceito/compensacao-ambiental
+  - conceito/tca
+---
+
 # Portaria SVMA 51/2024 — Critérios e procedimentos de manejo arbóreo
 
 **Resumo**: Portaria que operacionaliza a Lei 17.794/2022 na área de competência da SVMA: define poda drástica, os critérios de urgência (risco de queda) e os procedimentos de plantio, supressão, transplante e poda. É a peça que faltava para checar se "risco de queda" e "poda drástica" têm critério objetivo.
@@ -12,6 +26,7 @@
 ## Identificação
 
 - **Número**: Portaria SVMA 51, de 21 de junho de 2024
+- **Texto oficial**: [Catálogo de Legislação Municipal — Prefeitura de São Paulo](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-51-de-21-de-junho-de-2024) · [texto consolidado](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-51-de-21-de-junho-de-2024/consolidado)
 - **Autoria**: Rodrigo Pimentel Pinto Ravena, Secretário Municipal do Verde e do Meio Ambiente
 - **Status**: em vigor
 - **Instância**: SVMA (ato do Secretário)
@@ -54,7 +69,7 @@
 
 ## Pontos de atenção ou lacunas
 
-- **"Poda drástica" e "risco de queda" TÊM critério objetivo — mas em portaria, não em decreto.** A Lei 17.794/2022 delega a definição de poda drástica (art. 29, § único) e dos critérios de urgência (art. 20, §2º) ao "**regulamento**" editado "pelo Poder Executivo Municipal" — expressão que, na tradição do direito administrativo brasileiro, aponta para **decreto do Prefeito**, não para portaria de Secretário. A SVMA supriu a lacuna por portaria própria. É uma solução prática, mas mantém a fragilidade de hierarquia: o critério de uma multa de até R$ 17 mil por espécime está em ato infralegal editado pelo próprio órgão que aplica a multa. Ver [[questionar-criterios-tca]] (esta análise foi corrigida após a leitura desta portaria).
+- **"Poda drástica" e "risco de queda" TÊM critério objetivo — mas em portaria, não em decreto.** A Lei 17.794/2022 delega a definição de poda drástica (art. 29, § único) e dos critérios de urgência (art. 20, §2º) ao "**regulamento**" editado "pelo Poder Executivo Municipal" — expressão que, na tradição do direito administrativo brasileiro, aponta para **decreto do Prefeito**, não para portaria de Secretário. A SVMA supriu a lacuna por portaria própria. É uma solução prática, mas mantém a fragilidade de hierarquia: o critério de uma multa de até R\$ 17 mil por espécime está em ato infralegal editado pelo próprio órgão que aplica a multa. Ver [[questionar-criterios-tca]] (esta análise foi corrigida após a leitura desta portaria).
 - **Remissão a norma técnica paga (ABNT).** O critério de "risco iminente de queda" depende dos itens 4.4.2 a 4.4.5 da NBR 16.246-3:2019, uma norma da ABNT de acesso oneroso — tensiona o princípio da acessibilidade e da transparência para o cidadão comum.
 - **Poda em área privada** (art. 37) remete a "regulamento próprio" das Subprefeituras — `[verificar]` se cada uma das 32 subprefeituras editou o seu, o que recriaria o risco de critério não uniforme já apontado em [[decreto-61859-2022]].
 

@@ -1,3 +1,14 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/poda
+  - conceito/tca
+---
+
 # Manejo arbóreo
 
 **Resumo**: Conjunto de técnicas de intervenção na árvore urbana ao longo do seu ciclo de vida — avaliação, irrigação, poda, transplante, readequação de canteiro, remoção de vegetação parasita e interferente e supressão. Depende de autorização prévia do poder público.

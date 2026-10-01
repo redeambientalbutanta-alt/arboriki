@@ -1,3 +1,16 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/tca
+  - conceito/compensacao-ambiental
+  - conceito/area-de-preservacao-permanente
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/quota-ambiental
+---
+
 # Termo de Compromisso Ambiental (TCA)
 
 **Resumo**: Contrato firmado entre a SVMA e o interessado, resultante de um Projeto de Compensação Ambiental, exigido quando obras ou intervenções demandam manejo arbóreo (corte ou transplante) ou intervenção em Área de Preservação Permanente.
@@ -66,7 +79,7 @@ Resumo:
 - **Transplante:** de 2 a 20 mudas por árvore (Tabela V).
 - **Fator multiplicador:** de 1 (vegetação comum) a 10 (vegetação significativa em APP) (Anexo VIII).
 - **Cumprimento:** plantio no imóvel ou entorno; mudas ao viveiro municipal (excedente × fator 5,35); depósito no FEMA-SP; ou conversão em obras e serviços.
-- **Valor em dinheiro:** `V = Vm + Vt`, com Vm "calculado pela SVMA". Referência pública de 2026: muda com plantio R$ 337,00 e tutor com colocação R$ 229,00 (Anexo do Decreto 64.877/2025). `[verificar]` se são esses os valores usados. Ver [[decreto-64877-2025]].
+- **Valor em dinheiro:** `V = Vm + Vt`, com Vm "calculado pela SVMA". Referência pública de 2026: muda com plantio R\$ 337,00 e tutor com colocação R\$ 229,00 (Anexo do Decreto 64.877/2025). `[verificar]` se são esses os valores usados. Ver [[decreto-64877-2025]].
 
 ## Bases de dados abertas
 

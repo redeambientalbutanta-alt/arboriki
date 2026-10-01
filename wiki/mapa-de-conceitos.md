@@ -1,3 +1,26 @@
+---
+tags:
+  - tipo/analise
+  - esfera/municipal
+  - esfera/estadual
+  - esfera/federal
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-de-porte-arboreo
+  - conceito/vegetacao-significativa
+  - conceito/imune-de-corte
+  - conceito/patrimonio-ambiental
+  - conceito/vegetacao-de-preservacao-permanente
+  - conceito/area-de-preservacao-permanente
+  - conceito/area-verde
+  - conceito/macico-arboreo
+  - conceito/mata-atlantica
+  - conceito/cerrado
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/compensacao-ambiental
+  - conceito/tca
+---
+
 # Mapa de conceitos da legislação
 
 **Resumo**: Quarta lente de análise da malha: em vez de ligar normas entre si, liga cada conceito às normas em que ele nasce, é redefinido, é usado sem definição ou entra em conflito. Cobre 19 normas das três esferas e 48 conceitos de arborização, com a contagem de ocorrências por norma.

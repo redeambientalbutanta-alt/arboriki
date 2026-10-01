@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/apoio
+---
+
 # Notícias relacionadas
 
 **Resumo**: Registro de notícias de imprensa de interesse para o projeto, com data, link original e classificação temática do fato.

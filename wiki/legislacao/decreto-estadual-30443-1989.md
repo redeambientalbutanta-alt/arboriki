@@ -1,3 +1,17 @@
+---
+tags:
+  - tipo/decreto
+  - esfera/estadual
+  - situacao/vigente
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-significativa
+  - conceito/imune-de-corte
+  - conceito/patrimonio-ambiental
+  - conceito/macico-arboreo
+  - conceito/manejo
+  - conceito/supressao
+---
+
 # Decreto Estadual 30.443/1989 — Árvores imunes de corte em São Paulo
 
 **Resumo**: Decreto do Governo do Estado que declara "patrimônio ambiental" os exemplares arbóreos do documento *Vegetação Significativa do Município de São Paulo* e torna imunes de corte as árvores de centenas de parques, praças, bairros, lotes e exemplares isolados da capital. Alterado pelo Decreto Estadual 39.743/1994, que passou ao Município a decisão sobre o corte excepcional.
@@ -14,6 +28,7 @@
 ## Identificação
 
 - **Número**: Decreto Estadual 30.443, de 20/09/1989 (retificado no D.O. de 21/09/1989)
+- **Texto oficial**: [Repositório de legislação da ALESP](https://www.al.sp.gov.br/repositorio/legislacao/decreto/1989/decreto-30443-20.09.1989.html) · [Decreto Estadual 39.743/1994, que o altera](https://www.al.sp.gov.br/repositorio/legislacao/decreto/1994/decreto-39743-23.12.1994.html)
 - **Autoria**: Governador Orestes Quércia (Poder Executivo do Estado de São Paulo)
 - **Status**: vigente — alterado no art. 18 pelo Decreto Estadual 39.743/1994. Nenhuma revogação registrada no repositório da ALESP (fonte: al.sp.gov.br/repositorio/.../decreto-30443-20.09.1989.html). `[verificar]` a ficha completa da norma (`al.sp.gov.br/norma/{id}`) para confirmar que não há revogação posterior.
 - **Instância**: Governo do Estado de São Paulo

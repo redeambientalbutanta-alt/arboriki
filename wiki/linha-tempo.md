@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/apoio
+---
+
 # Linha do tempo
 
 **Resumo**: Cronologia de eventos legislativos e ambientais relevantes — votações, sanções, revogações, decisões judiciais e prazos de cumprimento.
@@ -51,6 +56,6 @@ Datas confirmadas nos portais oficiais salvo indicação `[verificar]`.
 | 10/12/2024 | **Portaria SVMA 116/2024** — altera a Portaria 105/2024; inclui o art. 96, que revoga expressamente as Portarias SVMA 130/2013, 26/2004 e 36/2008, e a Publicação SVMA 5/2018 | fonte: raw/legislacao/Portaria SVMA 116-2024.pdf |
 | 13/12/2024 | Portaria SVMA 122/2024 — regularização de empreendimentos em APP descaracterizada pela ocupação | fonte: portaria-...-122-...-2024/consolidado |
 | 27/12/2024 | Portaria SVMA 127/2024 (correlata à Lei 17.794/2022) | fonte: lei-17794-...-2022/consolidado `[verificar]` objeto |
-| 26/12/2025 | Decreto Municipal 64.877 — preços públicos de 2026 (vigência 01/01/2026); o Anexo fixa muda com plantio R$ 337,00 e tutor R$ 229,00; revoga o Decreto 63.990/2024 | fonte: decreto-64877-...-2025 + raw/legislacao/doc. 151724539_Anexo_...pdf |
+| 26/12/2025 | Decreto Municipal 64.877 — preços públicos de 2026 (vigência 01/01/2026); o Anexo fixa muda com plantio R\$ 337,00 e tutor R\$ 229,00; revoga o Decreto 63.990/2024 | fonte: decreto-64877-...-2025 + raw/legislacao/doc. 151724539_Anexo_...pdf |
 | 2025 | Decreto Municipal 64.883 — inclui o art. 2º-A no Decreto 61.859/2022 | fonte: decreto-61859-...-2022/consolidado |
 | 2026 | Decreto Municipal 64.986 — altera o art. 2º-B do Decreto 61.859/2022 | fonte: decreto-61859-...-2022/consolidado |

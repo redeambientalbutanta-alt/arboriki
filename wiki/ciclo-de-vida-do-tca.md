@@ -1,3 +1,15 @@
+---
+tags:
+  - tipo/analise
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - eixo/2-aperfeicoamento
+  - conceito/tca
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/compensacao-ambiental
+---
+
 # Ciclo de vida do TCA
 
 **Resumo**: Etapas do Termo de Compromisso Ambiental, do pedido ao recebimento definitivo, com quem age em cada uma e quando a SVMA é obrigada a vistoriar. Mostra o intervalo sem vistoria entre a publicação do TCA e o informe de plantio, a ambiguidade do "recebimento parcial" e um dicionário de eventos para análise quantitativa de bases de TCA.

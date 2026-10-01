@@ -1,3 +1,14 @@
+---
+tags:
+  - tipo/analise
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/compensacao-ambiental
+  - conceito/tca
+  - conceito/area-de-preservacao-permanente
+  - conceito/supressao
+---
+
 # Cálculo da compensação ambiental
 
 **Resumo**: Passo a passo do cálculo da compensação pela Portaria SVMA 105/2024 — do inventário das árvores ao número de mudas e ao modo de cumprir — com as exceções, um roteiro para recalcular a conta a partir de dados e a lista dos pontos em que o texto não permite um resultado único.

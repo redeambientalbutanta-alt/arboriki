@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Legística
 
 **Resumo**: Área do conhecimento, transdisciplinar, que estuda como conceber, redigir, editar, aplicar e avaliar normas jurídicas para melhorar a qualidade da legislação. É o método de análise adotado por este wiki.

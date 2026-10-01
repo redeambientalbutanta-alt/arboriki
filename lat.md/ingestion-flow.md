@@ -39,6 +39,8 @@ Invariantes que toda ingestão respeita, qualquer que seja a fonte.
 - **Limpeza de HTML:** descartar `<script>`, `<style>`, `<nav>` e `<footer>` antes de extrair o texto.
 - **Rastreabilidade:** todo fato escrito em `wiki/` carrega `(fonte: nome-do-arquivo.ext)` ou um link direto para o Artigo/Parágrafo/Inciso; sem amparo documental, recebe a tag `[verificar]`.
 - **Divergência:** contradição entre duas fontes é registrada explicitamente na página.
+- **Texto oficial:** toda página de norma traz, na Identificação, o link da norma no portal oficial da esfera (Prefeitura de SP, ALESP ou Planalto), mesmo quando a fonte ingerida foi um PDF de `raw/`. O link é validado pelo corpo da página; sem confirmação, o campo recebe `[verificar]`.
+- **Cifrão:** valor em reais é escrito `R\$`, com barra invertida. O Obsidian e o Quartz leem o trecho entre dois cifrões como fórmula e desfiguram o texto. Dentro de bloco de código ou de crases o cifrão fica sem barra.
 
 ## Saídas
 
@@ -46,6 +48,23 @@ Cada fonte gera artefatos nas duas camadas, mantidas em sincronia.
 
 - **Wiki:** página de resumo (em `wiki/legislacao/` ou `wiki/projetos/` quando for norma ou PL), páginas de conceito, diagrama Mermaid — e grafo interativo em `wiki/assets/grafos/` quando a malha for densa ([[diagram-style]]) — e bloco Cypher ([[cypher-model]]).
 - **Índices append-only:** `wiki/index.md`, `wiki/log.md`, `wiki/linha-tempo.md` e `wiki/noticias-relacionadas.md`.
+- **Etiquetas:** toda página criada ou alterada sai com o bloco `tags:` conforme [[ingestion-flow#Ingestion Pipeline Specification#Etiquetas]].
+
+## Etiquetas
+
+Toda página de `wiki/` abre com um bloco YAML `tags:` em cinco categorias. As etiquetas permitem filtrar por conceito e por esfera federativa no Obsidian e no site, sem depender dos links entre páginas.
+
+- **`tipo/`** — o que a página é: `lei`, `decreto`, `portaria`, `proposta`, `conceito`, `analise`, `metodo`, `apoio`. Exatamente uma por página.
+- **`esfera/`** — `municipal`, `estadual`, `federal`. Em página de norma, a esfera da norma; em página de conceito ou de análise, a esfera de cada norma analisada. Mesmo valor do atributo `esfera` de [[cypher-model#Modelo de Grafo Neo4j#Labels]].
+- **`situacao/`** — `vigente`, `parcialmente-revogada`, `revogada`, `sub-judice`, `em-tramitacao`, `arquivada`. Só em norma ou proposta; espelha o campo "Status".
+- **`eixo/`** — `1-legislacao-atual`, `2-aperfeicoamento`. Uma página pode ter os dois.
+- **`conceito/`** — uma etiqueta por conceito de arborização que a página trata.
+
+O vocabulário é fechado e mora em `wiki/etiquetas.md`: uma etiqueta nova entra primeiro lá. Etiquetas vão em minúsculas, sem acento, com hífens, na ordem tipo, esfera, situação, eixo, conceito.
+
+Em página de norma, a etiqueta de conceito exige duas condições: a página trata do conceito e o termo está no texto da norma (conferir em `wiki/assets/dados/conceitos-por-norma.csv`). A etiqueta não diz o papel da norma — define, redefine, usa ou conflita fica na lente 4 de [[analysis-lenses#Lentes de análise#As quatro lentes]].
+
+Categorias avaliadas e não adotadas: `orgao/` (quem edita ou decide), `achado/` (tipo de falha da norma), papel no conceito como terceiro nível, e `tema/` (descartada por repetir `conceito/`).
 
 ## Ferramenta de extração — CLI arboriki
 

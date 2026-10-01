@@ -1,3 +1,17 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - esfera/estadual
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-de-porte-arboreo
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/poda
+  - conceito/compensacao-ambiental
+  - conceito/tca
+---
+
 # Arborização urbana
 
 **Resumo**: Conjunto da vegetação de porte arbóreo das vias e áreas verdes da cidade, tratada como floresta urbana e como bem de interesse comum. Toda intervenção depende de autorização prévia do poder público.

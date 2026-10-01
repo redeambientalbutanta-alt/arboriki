@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Legística material
 
 **Resumo**: Dimensão da [[legistica]], também chamada metódica legislativa, que desenvolve o método de elaboração do conteúdo da norma: identificar o problema, definir objetivos, levantar alternativas e avaliar resultados.

@@ -30,6 +30,7 @@ wiki/         páginas markdown mantidas pelo Claude
   log.md                    registro append-only de operações
   linha-tempo.md            cronologia de eventos
   noticias-relacionadas.md  registro de notícias de imprensa
+  etiquetas.md              vocabulário das etiquetas (tags) das páginas
   legislacao/               análises de normas vigentes e projetos de lei
   projetos/                 propostas de leis e normas (Eixo 2)
   assets/grafos/            grafos interativos (HTML) embutidos nas páginas via iframe
@@ -44,6 +45,7 @@ Regras fixas:
 - Escreva em português claro e direto (pt-BR).
 - Se não conseguir ler um arquivo de `raw/`, mova-o para `raw/descarte/`.
 - Quando não souber categorizar algo, pergunte ao usuário.
+- Escreva valor em reais como `R\$ 500`, com barra invertida antes do cifrão. Sem a barra, o Obsidian e o site leem o trecho entre dois cifrões como fórmula. Dentro de bloco de código ou de crases, escreva `R$` sem barra.
 
 # Comandos
 
@@ -85,12 +87,22 @@ Passos, em ordem:
 3. Crie a página de resumo. Norma vigente vai em `wiki/legislacao/`. Projeto de lei vai em `wiki/projetos/`.
 4. Aplique a AIL e a bifurcação de eixos.
 5. Crie ou atualize uma página de conceito para cada entidade importante (ex.: `[[termo-de-compromisso-ambiental-tca]]`).
-6. Gere o diagrama Mermaid ao final da análise (skill `gerador-diagrama-drawio`). Se a malha for densa, gere também o grafo interativo (skill `gerador-mapa-interativo-d3blocks`) — é ele que fica navegável na página publicada; um bloco de código Cypher não renderiza nada ao ser lido, só serve como texto.
-7. Atualize `wiki/index.md`, `wiki/log.md`, `wiki/linha-tempo.md` e `wiki/noticias-relacionadas.md`.
+6. Aplique as etiquetas em cada página criada ou alterada (veja "Etiquetas").
+7. Gere o diagrama Mermaid ao final da análise (skill `gerador-diagrama-drawio`). Se a malha for densa, gere também o grafo interativo (skill `gerador-mapa-interativo-d3blocks`) — é ele que fica navegável na página publicada; um bloco de código Cypher não renderiza nada ao ser lido, só serve como texto.
+8. Atualize `wiki/index.md`, `wiki/log.md`, `wiki/linha-tempo.md` e `wiki/noticias-relacionadas.md`.
 
 ## Formato de página (padrão)
 
 ```markdown
+---
+tags:
+  - tipo/lei
+  - esfera/municipal
+  - situacao/vigente
+  - eixo/1-legislacao-atual
+  - conceito/manejo
+---
+
 # Título da Página
 
 **Resumo**: Uma ou duas frases descrevendo esta página.
@@ -108,6 +120,18 @@ Conteúdo. Títulos claros, parágrafos curtos. Vincule conceitos com [[wiki-lin
 - [[conceito-relacionado-1]]
 ```
 
+## Etiquetas
+
+Toda página abre com o bloco `tags:`. O vocabulário fechado está em `wiki/etiquetas.md`; a regra completa, em `lat.md/ingestion-flow.md`.
+
+- Use cinco categorias, nesta ordem: `tipo/`, `esfera/`, `situacao/`, `eixo/`, `conceito/`.
+- `tipo/`: exatamente uma por página.
+- `esfera/`: `municipal`, `estadual` ou `federal`. Em página de conceito ou de análise, a esfera de cada norma analisada.
+- `situacao/`: só em norma ou proposta. Copie do campo "Status".
+- `conceito/`: uma por conceito que a página trata. Em página de norma, o termo também precisa estar no texto da norma.
+- Páginas de método e de apoio levam só `tipo/`.
+- Etiqueta nova: acrescente primeiro em `wiki/etiquetas.md`.
+
 ## Formato de análise legislativa
 
 Para projetos de lei e normas, acrescente à página:
@@ -118,6 +142,7 @@ Para projetos de lei e normas, acrescente à página:
 - **Número**: XXX/AAAA
 - **Autoria**: Nome do autor
 - **Status**: em tramitação / aprovado / arquivado
+- **Texto oficial**: [nome do portal](link da norma no portal oficial da esfera)
 - **Instância**: Câmara Municipal de SP / ALESP / outro
 
 ## O que propõe
@@ -140,6 +165,7 @@ Autores, relatores, entidades que apoiam ou se opõem ao PL.
 - Fonte de site legislativo: aponte o link direto para o Artigo, Parágrafo ou Inciso no HTML consultado.
 - Se duas fontes divergirem, registre a contradição explicitamente na página.
 - Afirmação sem amparo documental em `raw/`: marque `[verificar]`.
+- Toda página de norma traz o campo **Texto oficial**, mesmo quando a fonte foi um PDF de `raw/`. Use o portal da esfera: Prefeitura de SP (municipal), ALESP (estadual), Planalto (federal). Abra o link e confira o corpo da página antes de gravar. Sem link confirmado: marque `[verificar]`.
 
 # Resposta a perguntas
 
@@ -158,6 +184,9 @@ Quando o usuário pedir auditoria do wiki, reporte uma lista numerada com a corr
 - Conceitos citados em páginas que não têm página própria.
 - Afirmações possivelmente desatualizadas por uma fonte mais recente.
 - Páginas fora do formato padrão.
+- Páginas sem etiquetas ou com etiqueta fora de `wiki/etiquetas.md`.
+- Cifrão sem barra invertida fora de código.
+- Páginas de norma sem o campo **Texto oficial**.
 
 # Princípios de engenharia
 

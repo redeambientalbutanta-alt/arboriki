@@ -1,3 +1,8 @@
+---
+tags:
+  - tipo/metodo
+---
+
 # Princípios da Legística
 
 **Resumo**: Sete princípios comuns para a melhoria da qualidade legislativa, fixados pelo Relatório do Grupo Mandelkern (2001) e pelo Livro Branco da Governação da União Europeia.

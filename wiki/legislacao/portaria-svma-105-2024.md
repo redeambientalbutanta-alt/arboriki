@@ -1,3 +1,25 @@
+---
+tags:
+  - tipo/portaria
+  - esfera/municipal
+  - situacao/vigente
+  - eixo/1-legislacao-atual
+  - conceito/vegetacao-de-porte-arboreo
+  - conceito/vegetacao-significativa
+  - conceito/imune-de-corte
+  - conceito/patrimonio-ambiental
+  - conceito/vegetacao-de-preservacao-permanente
+  - conceito/area-de-preservacao-permanente
+  - conceito/macico-arboreo
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/compensacao-ambiental
+  - conceito/tca
+  - conceito/densidade-arborea
+  - conceito/area-permeavel
+  - conceito/quota-ambiental
+---
+
 # Portaria SVMA 105/2024 — Compensação ambiental e TCA
 
 **Resumo**: Portaria da SVMA que fixa os critérios e procedimentos para autorizar o manejo arbóreo e a intervenção em APP e para calcular a compensação ambiental correspondente, formalizada no Termo de Compromisso Ambiental (TCA). É a norma que hoje determina "quanto" se compensa por árvore cortada em São Paulo.
@@ -14,6 +36,7 @@
 ## Identificação
 
 - **Número**: Portaria SVMA 105, de 14 de novembro de 2024
+- **Texto oficial**: [Catálogo de Legislação Municipal — Prefeitura de São Paulo](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-105-de-14-de-novembro-de-2024) · [texto consolidado](https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-105-de-14-de-novembro-de-2024/consolidado)
 - **Autoria**: Rodrigo Pimentel Pinto Ravena, Secretário Municipal do Verde e do Meio Ambiente
 - **Status**: em vigor; **alterada pela Portaria SVMA 116/2024**, de 10 de dezembro de 2024 (nova redação do art. 2º, §1º, I; art. 8º, IV, e; art. 54, §3º; art. 95; e inclusão do art. 96)
 - **Instância**: SVMA (ato do Secretário)
@@ -28,7 +51,7 @@
 - **Lei Complementar Federal 140/2011**, **Deliberação Normativa CONSEMA 01/2024**, **Resolução CONAMA 01/1994** — repartição de competência com CETESB.
 - **Portaria SVMA 51/2024** — padrão de muda (DAP 3 cm / 5 cm); **Portaria SVMA 39/2024** — entrega de mudas ao viveiro.
 
-`[verificar]`: não confirmamos qual valor a SVMA usa hoje como Vm (muda) e Vt (tutor). Esta Portaria diz que Vm é "calculado pela SVMA" e manda orçar serviços pela "Tabela Oficial de Referência de Preços Públicos Municipal" (art. 46). O **Anexo do Decreto 64.877/2025** fixa para 2026: muda de até 2,50 m com plantio **R$ 337,00** e tutor com colocação **R$ 229,00** (itens 27.3.3-27.3.4) — a wiki havia afirmado, por engano, que esse decreto não tratava de arborização; o engano foi ler só o corpo do decreto, sem o Anexo. Ver [[decreto-64877-2025]].
+`[verificar]`: não confirmamos qual valor a SVMA usa hoje como Vm (muda) e Vt (tutor). Esta Portaria diz que Vm é "calculado pela SVMA" e manda orçar serviços pela "Tabela Oficial de Referência de Preços Públicos Municipal" (art. 46). O **Anexo do Decreto 64.877/2025** fixa para 2026: muda de até 2,50 m com plantio **R\$ 337,00** e tutor com colocação **R\$ 229,00** (itens 27.3.3-27.3.4) — a wiki havia afirmado, por engano, que esse decreto não tratava de arborização; o engano foi ler só o corpo do decreto, sem o Anexo. Ver [[decreto-64877-2025]].
 
 ## O que propõe — o cálculo da compensação
 

@@ -1,3 +1,11 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/calcada-verde
+---
+
 # Calçada verde
 
 **Resumo**: Faixa permeável dentro do passeio público, que pode ser ajardinada e/ou arborizada. Conecta a arborização de vias (Eixo 1 — manejo) às regras de calçada e acessibilidade (Eixo 1 — passeios públicos).

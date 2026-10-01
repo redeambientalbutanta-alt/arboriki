@@ -1,3 +1,10 @@
+---
+tags:
+  - tipo/proposta
+  - esfera/estadual
+  - eixo/2-aperfeicoamento
+---
+
 # Consolidação das leis ambientais (ALESP)
 
 **Resumo**: Anteprojeto de consolidação da legislação ambiental estadual paulista, dentro do Projeto de Consolidação das Leis Paulistas da Assembleia Legislativa de São Paulo. Precedente de Eixo 2 para a legislação de arborização.

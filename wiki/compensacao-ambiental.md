@@ -1,3 +1,14 @@
+---
+tags:
+  - tipo/conceito
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - conceito/compensacao-ambiental
+  - conceito/tca
+  - conceito/manejo
+  - conceito/supressao
+---
+
 # Compensação ambiental
 
 **Resumo**: Obrigação de compensar o impacto do manejo (corte, transplante, supressão) de exemplares arbóreos e da interferência em Área de Preservação Permanente. Hoje é calculada pela Portaria SVMA 105/2024 e formalizada no Termo de Compromisso Ambiental.
@@ -20,7 +31,7 @@ A compensação ambiental mitiga o impacto negativo não evitável do manejo arb
 - **Base do instrumento (TCA):** arts. 154-155 da Lei 16.050/2014 (Plano Diretor Estratégico). Ver [[termo-de-compromisso-ambiental-tca]].
 - **Regulamento original, ainda em vigor:** **Decreto 53.889/2013** — traz a fórmula `CF=(A+B+C+D+E+P+M)×Fr`, a tabela do Fator Multiplicador e o regime especial 1:1 para obra pública/HIS/HMP, desde 2013. Ver [[decreto-53889-2013]].
 - **Critérios operacionais e tabelas atuais:** **Portaria SVMA 105/2024** (alterada pela **Portaria SVMA 116/2024**, de 10/12/2024, que também revogou formalmente a Portaria 130/2013, a Portaria SVMA 26/2004, a Portaria SVMA 36/2008 e a Publicação SVMA 5/2018). Ver [[portaria-svma-105-2024]].
-- **Base de cálculo da muda e conversão em obras:** Decreto 53.889/2013, art. 4º (valores-base de 2013: muda R$ 234,46, tutor R$ 8,58, reajustados pelo Índice de Edificações em Geral). A Portaria SVMA 105/2024 diz que o valor da muda (Vm) é "calculado pela SVMA", sem publicar o método. A referência pública mais próxima é o **Anexo do Decreto 64.877/2025** (preços de 2026): muda de até 2,50 m **com plantio R$ 337,00**; tutor **com colocação R$ 229,00** (itens 27.3.3-27.3.4). `[verificar]` se a SVMA usa esses valores como Vm e Vt. Ver [[decreto-64877-2025]].
+- **Base de cálculo da muda e conversão em obras:** Decreto 53.889/2013, art. 4º (valores-base de 2013: muda R\$ 234,46, tutor R\$ 8,58, reajustados pelo Índice de Edificações em Geral). A Portaria SVMA 105/2024 diz que o valor da muda (Vm) é "calculado pela SVMA", sem publicar o método. A referência pública mais próxima é o **Anexo do Decreto 64.877/2025** (preços de 2026): muda de até 2,50 m **com plantio R\$ 337,00**; tutor **com colocação R\$ 229,00** (itens 27.3.3-27.3.4). `[verificar]` se a SVMA usa esses valores como Vm e Vt. Ver [[decreto-64877-2025]].
 - **Quota Ambiental:** árvores plantadas por TCA contam com **fator redutor 0,50** na Quota Ambiental do lote; as plantadas por TAC não contam (Lei 16.402/2016, arts. 77-78). Ver [[lei-16402-2016]].
 - **Norma anterior:** Portaria SVMA 130/2013, revogada em 2024. Ver [[portaria-svma-130-2013]].
 

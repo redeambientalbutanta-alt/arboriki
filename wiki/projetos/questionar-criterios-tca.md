@@ -1,3 +1,17 @@
+---
+tags:
+  - tipo/analise
+  - esfera/municipal
+  - eixo/1-legislacao-atual
+  - eixo/2-aperfeicoamento
+  - conceito/manejo
+  - conceito/supressao
+  - conceito/poda
+  - conceito/compensacao-ambiental
+  - conceito/tca
+  - conceito/quota-ambiental
+---
+
 # Questionar os critérios de determinação do TCA
 
 **Resumo**: Análise legística (AIL ex-post) dos critérios que hoje determinam a compensação ambiental e o Termo de Compromisso Ambiental em São Paulo, a partir da lei-semente 17.794/2022 e da Portaria SVMA 105/2024. Identifica fragilidades e propõe aperfeiçoamentos (Eixo 2).
@@ -34,7 +48,7 @@ O "critério de determinação do TCA" não está numa norma só. Ele resulta de
 | Decreto de competências (2022) | **Decreto 61.859/2022** | regulamenta só arts. 23-27; art. 11: "os demais dispositivos serão objeto de regulamentação própria" |
 | Decreto de base (2013, nunca substituído) | **Decreto 53.889/2013** | regulamenta o TCA da lei de 2002; contém, desde 2013, a fórmula `CF=(A+B+C+D+E+P+M)×Fr`, a tabela do Fator Multiplicador e o regime especial 1:1 (art. 7º) |
 | Portaria de critérios (2024) | **Portaria SVMA 105/2024** (alt. 116/2024) | tabelas de proporção por DAP, procedimentos, documentos, prazos — reaproveita a fórmula e a tabela de 2013 |
-| Tabela de preços | Decreto 53.889/2013, art. 4º, §3º-4º (valores de 2013, reajustados pelo Índice de Edificações em Geral); **Anexo do Decreto 64.877/2025** (preços de 2026) | valor monetário da muda e do tutor. O Anexo de 2026 fixa muda com plantio R$ 337,00 e tutor com colocação R$ 229,00; a Portaria 105/2024 diz que Vm é "calculado pela SVMA". `[verificar]` qual valor é usado — ver achado 4-A e [[decreto-64877-2025]] |
+| Tabela de preços | Decreto 53.889/2013, art. 4º, §3º-4º (valores de 2013, reajustados pelo Índice de Edificações em Geral); **Anexo do Decreto 64.877/2025** (preços de 2026) | valor monetário da muda e do tutor. O Anexo de 2026 fixa muda com plantio R\$ 337,00 e tutor com colocação R\$ 229,00; a Portaria 105/2024 diz que Vm é "calculado pela SVMA". `[verificar]` qual valor é usado — ver achado 4-A e [[decreto-64877-2025]] |
 
 Cruzam ainda a **Lei 16.402/2016** (Quota Ambiental), a **Portaria SVMA 51/2024** (padrão de muda) e a competência estadual (**CETESB**, Deliberação CONSEMA 01/2024). Ver [[lei-17794-2022]], [[decreto-61859-2022]], [[decreto-53889-2013]], [[portaria-svma-105-2024]], [[termo-de-compromisso-ambiental-tca]].
 
@@ -70,7 +84,7 @@ As Tabelas V e VI da Portaria 105/2024 saltam de 3:1 (DAP 5–10 cm) para 45:1 (
 
 ### 4-A. Valor monetário da muda sem fonte pública declarada (princípio da acessibilidade)
 
-A conversão da compensação em dinheiro (FEMA) ou em obras usa `V = Vm + Vt`, com **Vm "calculado pela SVMA"** (Portaria 105/2024, Anexo IX). Nenhuma norma publica esse cálculo. Os valores-base de 2013 eram **Vm = R$ 234,46** e **Vt = R$ 8,58** (Decreto 53.889/2013, art. 4º). O Anexo do **Decreto 64.877/2025** fixa, para 2026, **R$ 337,00** para muda de até 2,50 m **com plantio** e **R$ 229,00** para tutor **com colocação** (itens 27.3.3-27.3.4) (fonte: doc. 151724539_Anexo_...pdf). A diferença no tutor é de 27 vezes. Sem saber qual dos dois é usado, o cidadão não consegue conferir a conta de um TCA nem o valor depositado no FEMA. Ver [[decreto-64877-2025]].
+A conversão da compensação em dinheiro (FEMA) ou em obras usa `V = Vm + Vt`, com **Vm "calculado pela SVMA"** (Portaria 105/2024, Anexo IX). Nenhuma norma publica esse cálculo. Os valores-base de 2013 eram **Vm = R\$ 234,46** e **Vt = R\$ 8,58** (Decreto 53.889/2013, art. 4º). O Anexo do **Decreto 64.877/2025** fixa, para 2026, **R\$ 337,00** para muda de até 2,50 m **com plantio** e **R\$ 229,00** para tutor **com colocação** (itens 27.3.3-27.3.4) (fonte: doc. 151724539_Anexo_...pdf). A diferença no tutor é de 27 vezes. Sem saber qual dos dois é usado, o cidadão não consegue conferir a conta de um TCA nem o valor depositado no FEMA. Ver [[decreto-64877-2025]].
 
 ### 4-B. A compensação por TCA vale metade na Quota Ambiental
 
@@ -88,7 +102,7 @@ Para obra de infraestrutura, utilidade/interesse público ou social, HIS, HMP, P
 
 A Lei 16.050/2014, art. 154, III, institui o TCA para licenciamento ambiental com significativa emissão de gases de efeito estufa, condicionado a um plano de mitigação "com critérios estabelecidos por Ato do Executivo" (§2º). Nem o Decreto 53.889/2013 nem a Portaria SVMA 105/2024 tratam dessa hipótese.
 
-**Atualização (2026-09-23).** Existe regulamentação de **inventário e mitigação** de emissões no licenciamento: a **Resolução CADES nº 284/2024** exige estimativa ou inventário de GEE com estratégia de mitigação para os empreendimentos do seu Anexo Único sujeitos a EIA-RIMA e EVA, e a **Portaria SVMA nº 129/2024** fixa a metodologia (GHG Protocol ou ABNT ISO 14064) (fontes: legislacao.prefeitura.sp.gov.br/leis/resolucao-...-svma-cades-284-de-20-de-dezembro-de-2024 e .../portaria-...-svma-129-de-30-de-dezembro-de-2024). O preço público da análise é R$ 5.955,00 (Decreto 64.877/2025, Anexo, item 29.1.16.1). **Mas nenhuma das duas cita a Lei 16.050/2014, o art. 154 nem o TCA**: a mitigação é exigida como condição de licença, sem o instrumento de compensação que o PDE criou. A lacuna, portanto, se refina: há plano de mitigação por **resolução de conselho e portaria** (não por "Ato do Executivo" do Prefeito), e **não há TCA de emissões** regulamentado. `[verificar]` se algum TCA já foi firmado com base no art. 154, III.
+**Atualização (2026-09-23).** Existe regulamentação de **inventário e mitigação** de emissões no licenciamento: a **Resolução CADES nº 284/2024** exige estimativa ou inventário de GEE com estratégia de mitigação para os empreendimentos do seu Anexo Único sujeitos a EIA-RIMA e EVA, e a **Portaria SVMA nº 129/2024** fixa a metodologia (GHG Protocol ou ABNT ISO 14064) (fontes: legislacao.prefeitura.sp.gov.br/leis/resolucao-...-svma-cades-284-de-20-de-dezembro-de-2024 e .../portaria-...-svma-129-de-30-de-dezembro-de-2024). O preço público da análise é R\$ 5.955,00 (Decreto 64.877/2025, Anexo, item 29.1.16.1). **Mas nenhuma das duas cita a Lei 16.050/2014, o art. 154 nem o TCA**: a mitigação é exigida como condição de licença, sem o instrumento de compensação que o PDE criou. A lacuna, portanto, se refina: há plano de mitigação por **resolução de conselho e portaria** (não por "Ato do Executivo" do Prefeito), e **não há TCA de emissões** regulamentado. `[verificar]` se algum TCA já foi firmado com base no art. 154, III.
 
 ### 7. Decisão discricionária sem critério nem participação externa
 

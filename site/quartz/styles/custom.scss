@@ -1,3 +1,33 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Listas de páginas (páginas de etiqueta e de pasta): esconde as etiquetas de
+// cada item. Páginas com muitas etiquetas deixavam cada linha da lista alta demais.
+li.section-li > .section > .tags {
+  display: none;
+}
+
+// Marca d'água: logo da Rede Ambiental Butantã, fixo no canto inferior direito
+// de todas as páginas. O arquivo vem de wiki/assets/imagens/ (o Quartz publica
+// o nome em minúsculas).
+body::after {
+  content: "";
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 8rem;
+  height: 8rem;
+  background: url("./assets/imagens/logorab2026.svg") no-repeat center / contain;
+  opacity: 0.22;
+  pointer-events: none;
+
+  // Em tela estreita o logo ficaria sobre o texto: menor e mais discreto.
+  @media all and ($mobile) {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.15;
+  }
+}
