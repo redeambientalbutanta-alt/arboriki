@@ -7,7 +7,7 @@
 - raw/legislacao/Portaria SVMA 105-2024_anexos completos.pdf
 - raw/legislacao/Portaria SVMA 116-2024.pdf
 
-**Última atualização**: 2026-09-10
+**Última atualização**: 2026-10-01
 
 ---
 
@@ -28,7 +28,7 @@
 - **Lei Complementar Federal 140/2011**, **Deliberação Normativa CONSEMA 01/2024**, **Resolução CONAMA 01/1994** — repartição de competência com CETESB.
 - **Portaria SVMA 51/2024** — padrão de muda (DAP 3 cm / 5 cm); **Portaria SVMA 39/2024** — entrega de mudas ao viveiro.
 
-`[verificar]`: não confirmamos qual norma fixa hoje o valor monetário atualizado da muda e do tutor (Decreto 53.889/2013, art. 4º, previa reajuste pelo Índice de Edificações em Geral). **O Decreto 64.877/2025 não é essa norma** — trata de preços de serviços genéricos da Prefeitura e não cita SVMA, muda, tutor ou arborização.
+`[verificar]`: não confirmamos qual valor a SVMA usa hoje como Vm (muda) e Vt (tutor). Esta Portaria diz que Vm é "calculado pela SVMA" e manda orçar serviços pela "Tabela Oficial de Referência de Preços Públicos Municipal" (art. 46). O **Anexo do Decreto 64.877/2025** fixa para 2026: muda de até 2,50 m com plantio **R$ 337,00** e tutor com colocação **R$ 229,00** (itens 27.3.3-27.3.4) — a wiki havia afirmado, por engano, que esse decreto não tratava de arborização; o engano foi ler só o corpo do decreto, sem o Anexo. Ver [[decreto-64877-2025]].
 
 ## O que propõe — o cálculo da compensação
 
@@ -106,6 +106,31 @@ Lei 16.050/2014 (arts. 154-155); Lei 16.402/2016; Lei 17.794/2022; Lei Federal 1
 
 Correlatas de objeto distinto (não centrais ao cálculo da compensação): **Portaria SVMA 57/2024** — alvará ambiental para intervenção em Área de Proteção e Recuperação dos Mananciais (APRM); **Portaria SVMA 122/2024** — regularização de empreendimentos em APP descaracterizada.
 
+## Erros e incoerências do próprio texto
+
+Achados da leitura integral de 2026-10-01 (fonte: Portaria SVMA 105-2024_anexos completos.pdf):
+
+- **Remissão errada ao PDE.** O art. 1º, IX remete ao "Artigo 143 da Lei nº 16.050/14" para a transferência de potencial construtivo. O art. 143 do PDE trata de CEPAC em operação urbana consorciada; a transferência está nos arts. 122 a 133 e a hipótese de TCA no art. 154, IV.
+- **Data errada.** O art. 2º cita duas vezes a "Resolução CONAMA nº 237, de 19 de dezembro de 1987"; a resolução é de 1997.
+- **Número errado.** O art. 2º, §1º, I cita "CONAMA nº 01/1991, Art. 2º §4º" ao lado da Resolução CONAMA 01/1994.
+- **Remissão interna errada.** O Anexo VI manda buscar o Fator Multiplicador no "ANEXO VII"; a tabela está no Anexo VIII.
+- **Definição de árvore diferente da lei.** O art. 3º, III define exemplar arbóreo com DAP "igual ou superior" a 5 cm, "conforme" a Lei 17.794/2022, que diz "superior".
+- **Definição de manejo diferente da lei.** O art. 3º, V define manejo como "corte, transplante ou remoção"; a Lei 17.794/2022, art. 7º, e a Portaria SVMA 51/2024 o definem como o cuidado "desde o plantio e durante todo o ciclo vital".
+- **Dois nomes para o órgão estadual.** "SEMIL" no art. 2º e "Secretaria de Infraestrutura e Meio Ambiente" no art. 15.
+- **Dois nomes para o mesmo documento.** "Termo de Recebimento" (art. 59, §2º) e "Certificado de Recebimento" (arts. 60 e 65).
+- **Hipótese do decreto omitida.** O art. 60 lista 3 hipóteses de recebimento parcial; o Decreto 53.889/2013, art. 8º, §8º, lista 4.
+
+Ver [[mapa-de-conceitos]] e [[ciclo-de-vida-do-tca]].
+
+## Lista completa de normas citadas no texto
+
+Levantamento sobre o texto integral, com Anexos (substitui a lista resumida acima):
+
+- **Federais**: LC 140/2011; Leis 12.651/2012, 9.605/1998, 9.985/2000, 6.496/1977 e 13.726/2018; Decreto 6.514/2008; Resoluções CONAMA 01/1994, 237/1997 e 428/2010; Resolução CFBio 699/2024; Instruções Normativas IBAMA 1/2014 e 03/2020 (SINAFLOR).
+- **Estaduais**: Leis 13.579/2009, 15.790/2015, 12.233/2006, 1.172/1976 e 898/1975 (mananciais, art. 94); Decreto 30.443/1989; Deliberação Normativa CONSEMA 01/2024; Resolução SMA 36/2018; Decisão de Diretoria CETESB 167/2015/C.
+- **Municipais**: Lei Orgânica, art. 183, §3º; Leis 16.050/2014, 16.402/2016, 16.642/2017, 17.794/2022, 14.141/2006 e 10.365/1987; Decretos 53.889/2013, 57.565/2016, 51.714/2010, 60.621/2021 e 59.671/2020; Portarias SVMA 116/2024, 51/2024, 39/2024, 57/2024 e 154/2009.
+- **Revogadas pelo art. 96**: Portarias SVMA 26/2004, 36/2008 e 130/2013; Publicação SVMA 05/2018.
+
 ## Páginas relacionadas
 
 - [[decreto-53889-2013]]
@@ -115,3 +140,9 @@ Correlatas de objeto distinto (não centrais ao cálculo da compensação): **Po
 - [[portaria-svma-130-2013]]
 - [[compensacao-ambiental]]
 - [[vegetacao-significativa]]
+- [[decreto-64877-2025]]
+- [[lei-16402-2016]]
+- [[decreto-estadual-30443-1989]]
+- [[ciclo-de-vida-do-tca]]
+- [[calculo-da-compensacao]]
+- [[mapa-de-conceitos]]

@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1422" width="1500" height="1422" font-family="'IBM Plex Sans','Segoe UI',Arial,Helvetica,sans-serif" role="img" aria-label="Cálculo da compensação ambiental pela Portaria SVMA 105/2024: do inventário das árvores ao número de mudas, com as exceções">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#55635c"/></marker><marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#fbe6e3"/><line x1="0" y1="0" x2="0" y2="10" stroke="#eab3ab" stroke-width="3"/></pattern></defs>
+<rect width="1500" height="1422" fill="#f6f8f5"/>
+<text x="30" y="44" font-size="26" fill="#18211d" font-weight="700" text-anchor="start">Como se calcula a compensação ambiental</text>
+<text x="30" y="68" font-size="13" fill="#55635c" font-weight="400" text-anchor="start">Portaria SVMA 105/2024, arts. 28 a 47 e Anexos VI a VIII. Do inventário das árvores ao número de mudas e ao modo de cumprir. À direita, as exceções.</text>
+<rect x="30" y="92" width="960" height="87" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.4"/>
+<text x="40" y="114" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">0. Dados de entrada: uma linha por árvore a manejar</text>
+<text x="40" y="133" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Espécie · DAP (cm) · nativa, exótica, ameaçada de extinção, invasora (ou eucalipto e pínus) ou morta · corte ou transplante · situação da área: APP, vegetação</text>
+<text x="40" y="149" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">significativa, patrimônio ambiental, fragmento florestal.</text>
+<text x="40" y="170" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Planta de Situação Atual e Planta de Situação Pretendida (Anexos II e III)</text>
+<line x1="510.0" y1="179" x2="510.0" y2="201" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="510.0,201.0 506.0,192.0 514.0,192.0" fill="#55635c"/>
+<text x="30" y="217" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">1. QUAL REGIME?</text>
+<rect x="30" y="225" width="470" height="150" rx="6" fill="#fdf0da" stroke="#a15c07" stroke-width="1.4"/>
+<text x="40" y="247" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Regime 1:1</text>
+<text x="40" y="266" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Obra de infraestrutura; utilidade pública, interesse público ou social; HIS;</text>
+<text x="40" y="282" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">HMP; recuperação de área degradada; remediação.</text>
+<text x="40" y="298" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">CF = F × Fm</text>
+<text x="40" y="314" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">F = nº de árvores cortadas ou transplantadas.</text>
+<text x="40" y="366" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 38 e Anexo VI, item 1</text>
+<rect x="520" y="225" width="470" height="150" rx="6" fill="#e3f2e8" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="530" y="247" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Regime geral</text>
+<text x="530" y="266" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Todas as demais obras e atividades.</text>
+<text x="530" y="282" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">CF = (A + B + C + D + E + P + M) × Fr</text>
+<text x="530" y="298" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Cada parcela é uma categoria de vegetação (passo 2).</text>
+<text x="530" y="366" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Anexo VI, item 2</text>
+<line x1="755" y1="375" x2="755" y2="397" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="755.0,397.0 751.0,388.0 759.0,388.0" fill="#55635c"/>
+<text x="30" y="413" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">2. PARCELAS DO REGIME GERAL</text>
+<rect x="30.0" y="421" width="232" height="158" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="40.0" y="443" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">A, B, D e P</text>
+<text x="40.0" y="462" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">A: significativa em APP. B:</text>
+<text x="40.0" y="478" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">preservação permanente ou</text>
+<text x="40.0" y="494" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">significativa fora de APP. D:</text>
+<text x="40.0" y="510" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">restante do imóvel. P: patrimônio</text>
+<text x="40.0" y="526" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">ambiental ou imune de corte.</text>
+<text x="40.0" y="542" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">[(It·T + Ic·C) exóticas × 50% +</text>
+<text x="40.0" y="558" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">(It·T + Ic·C) nativas] × Fm</text>
+<rect x="272.5" y="421" width="232" height="158" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="282.5" y="443" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">C · ameaçadas de extinção</text>
+<text x="282.5" y="462" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">(It·T + Ic·C) × Fm, sem desconto.</text>
+<text x="282.5" y="478" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Mais 2 mudas da mesma espécie para</text>
+<text x="282.5" y="494" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">cada exemplar cortado (art. 76,</text>
+<text x="282.5" y="510" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">§1º).</text>
+<rect x="515.0" y="421" width="232" height="158" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="525.0" y="443" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">E · eucalipto, pínus e</text>
+<text x="525.0" y="460" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">invasoras</text>
+<text x="525.0" y="479" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">1 muda por árvore.</text>
+<text x="525.0" y="495" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Vezes Fm se estiver em APP ou for</text>
+<text x="525.0" y="511" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">patrimônio ambiental ou imune de</text>
+<text x="525.0" y="527" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">corte.</text>
+<rect x="757.5" y="421" width="232" height="158" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="767.5" y="443" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">M · árvores mortas</text>
+<text x="767.5" y="462" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">1 muda por árvore morta removida.</text>
+<text x="767.5" y="478" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Tabela VII.</text>
+<line x1="510.0" y1="579" x2="510.0" y2="601" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="510.0,601.0 506.0,592.0 514.0,592.0" fill="#55635c"/>
+<text x="30" y="617" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">3. FATORES</text>
+<rect x="30" y="625" width="310" height="222" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.2"/>
+<text x="40" y="647" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Ic (corte) e It (transplante)</text>
+<text x="40" y="665" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Pela média dos 10% maiores DAP do grupo, e não</text>
+<text x="40" y="681" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">árvore por árvore.</text>
+<text x="44" y="703" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">DAP (cm)</text>
+<text x="200" y="703" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="end">corte</text>
+<text x="280" y="703" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="end">transpl.</text>
+<text x="44" y="718" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">5 a 10</text>
+<text x="200" y="718" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">3</text>
+<text x="280" y="718" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">2</text>
+<text x="44" y="733" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">11 a 30</text>
+<text x="200" y="733" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">6</text>
+<text x="280" y="733" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">3</text>
+<text x="44" y="748" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">31 a 60</text>
+<text x="200" y="748" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">9</text>
+<text x="280" y="748" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">6</text>
+<text x="44" y="763" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">61 a 90</text>
+<text x="200" y="763" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">15</text>
+<text x="280" y="763" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">10</text>
+<text x="44" y="778" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">91 a 120</text>
+<text x="200" y="778" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">21</text>
+<text x="280" y="778" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">14</text>
+<text x="44" y="793" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">121 a 150</text>
+<text x="200" y="793" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">30</text>
+<text x="280" y="793" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">18</text>
+<text x="44" y="808" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">acima de 150</text>
+<text x="200" y="808" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">45</text>
+<text x="280" y="808" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="end">20</text>
+<text x="330" y="647" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="end">Tabelas V e VI</text>
+<rect x="355" y="625" width="395" height="222" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.2"/>
+<text x="365" y="647" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Fm · Fator Multiplicador (valor ecológico)</text>
+<text x="388" y="669" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">10</text>
+<text x="398" y="669" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">vegetação significativa em APP</text>
+<text x="388" y="690" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">5</text>
+<text x="398" y="690" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">espécie ameaçada de extinção</text>
+<text x="388" y="711" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">4</text>
+<text x="398" y="711" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">fragmento florestal, copa a suprimir acima de 1.000 m²</text>
+<text x="388" y="732" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">3</text>
+<text x="398" y="732" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">fragmento até 1.000 m²; ou preservação permanente, DAP 31 a</text>
+<text x="398" y="748" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">60</text>
+<text x="388" y="769" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">2</text>
+<text x="398" y="769" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">preservação permanente, DAP 10 a 30; patrimônio ambiental</text>
+<text x="388" y="790" font-size="13" fill="#2e8a4d" font-weight="700" text-anchor="end">1</text>
+<text x="398" y="790" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">todas as demais situações</text>
+<text x="740" y="839" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="end">Anexo VIII · vale o maior fator aplicável</text>
+<rect x="765" y="625" width="225" height="222" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.2"/>
+<text x="775" y="647" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Fr · fator redutor</text>
+<text x="775" y="667" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Desconto por plantar muda maior que</text>
+<text x="775" y="683" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">o padrão de DAP 3 cm.</text>
+<text x="775" y="707" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Muda DAP 5 cm</text>
+<text x="980" y="707" font-size="11.5" fill="#18211d" font-weight="700" text-anchor="end">30%</text>
+<text x="775" y="725" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Muda DAP 7 cm</text>
+<text x="980" y="725" font-size="11.5" fill="#18211d" font-weight="700" text-anchor="end">50%</text>
+<text x="775" y="749" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Só vale para as mudas efetivamente</text>
+<text x="775" y="765" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">plantadas.</text>
+<text x="980" y="839" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="end">Tabela IX</text>
+<line x1="510.0" y1="847" x2="510.0" y2="869" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="510.0,869.0 506.0,860.0 514.0,860.0" fill="#55635c"/>
+<rect x="30" y="871" width="960" height="103" rx="6" fill="#e4edf8" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="40" y="893" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">4. Compensação Final (CF), em número de mudas</text>
+<text x="40" y="912" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Toda fração arredonda para o inteiro de cima (art. 39, parágrafo único).</text>
+<text x="40" y="928" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Compara-se com o cálculo pela legislação estadual e vale o mais restritivo, caso a caso: árvores isoladas, fragmento florestal, intervenção em APP (Anexo VI, item</text>
+<text x="40" y="944" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">3).</text>
+<text x="40" y="965" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Unidade: 1 muda de espécie nativa, DAP 3 cm, com tutor (art. 40)</text>
+<line x1="510.0" y1="974" x2="510.0" y2="996" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="510.0,996.0 506.0,987.0 514.0,987.0" fill="#55635c"/>
+<rect x="30" y="998" width="960" height="103" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.4"/>
+<text x="40" y="1020" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">5. Piso: densidade arbórea</text>
+<text x="40" y="1039" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Densidade final (preservadas + transplantadas + plantadas no imóvel e no passeio) igual ou maior que a inicial. No mínimo, uma muda plantada para cada árvore</text>
+<text x="40" y="1055" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">cortada ou removida.</text>
+<text x="40" y="1071" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Supressões não autorizadas entram na densidade inicial. Plantio de TAC não conta.</text>
+<text x="40" y="1092" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 34, §§1º a 6º</text>
+<line x1="510.0" y1="1101" x2="510.0" y2="1123" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="510.0,1123.0 506.0,1114.0 514.0,1114.0" fill="#55635c"/>
+<text x="30" y="1139" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">6. ONDE E COMO CUMPRIR, NESTA ORDEM</text>
+<rect x="30.0" y="1147" width="182" height="132" rx="6" fill="#e3f2e8" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="40.0" y="1169" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">No imóvel</text>
+<text x="40.0" y="1188" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Prioridade. Até atingir a</text>
+<text x="40.0" y="1204" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">densidade final.</text>
+<text x="40.0" y="1270" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 16, I</text>
+<rect x="224.5" y="1147" width="182" height="132" rx="6" fill="#e3f2e8" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="234.5" y="1169" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Passeio e entorno</text>
+<text x="234.5" y="1188" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Se não couber no lote, com</text>
+<text x="234.5" y="1204" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">anuência do órgão gestor.</text>
+<text x="234.5" y="1270" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 16, I e 71</text>
+<line x1="212.0" y1="1213" x2="224.5" y2="1213" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="224.5,1213.0 215.5,1217.0 215.5,1209.0" fill="#55635c"/>
+<rect x="419.0" y="1147" width="182" height="132" rx="6" fill="#ffffff" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="429.0" y="1169" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Plantio externo</text>
+<text x="429.0" y="1188" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Excedente vai à CTCA.</text>
+<text x="429.0" y="1204" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Preferência pela área de</text>
+<text x="429.0" y="1220" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">influência indireta.</text>
+<text x="429.0" y="1270" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 33, §1º e 40</text>
+<line x1="406.5" y1="1213" x2="419.0" y2="1213" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="419.0,1213.0 410.0,1217.0 410.0,1209.0" fill="#55635c"/>
+<rect x="613.5" y="1147" width="182" height="132" rx="6" fill="#fdf0da" stroke="#a15c07" stroke-width="1.4"/>
+<text x="623.5" y="1169" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Viveiro municipal</text>
+<text x="623.5" y="1188" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Mudas excedentes × 5,35. Ao</text>
+<text x="623.5" y="1204" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">menos 10% em DAP 5 cm.</text>
+<text x="623.5" y="1270" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 41</text>
+<line x1="601.0" y1="1213" x2="613.5" y2="1213" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="613.5,1213.0 604.5,1217.0 604.5,1209.0" fill="#55635c"/>
+<rect x="808.0" y="1147" width="182" height="132" rx="6" fill="#fdf0da" stroke="#a15c07" stroke-width="1.4"/>
+<text x="818.0" y="1169" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Depósito no FEMA</text>
+<text x="818.0" y="1188" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">VCF = CF × (Vm + Vt). Vm é</text>
+<text x="818.0" y="1204" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">“calculado pela SVMA”.</text>
+<text x="818.0" y="1270" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 42 e Anexo VII</text>
+<line x1="795.5" y1="1213" x2="808.0" y2="1213" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="808.0,1213.0 799.0,1217.0 799.0,1209.0" fill="#55635c"/>
+<rect x="30" y="1291" width="960" height="87" rx="6" fill="#fdf0da" stroke="#a15c07" stroke-width="1.4"/>
+<text x="40" y="1313" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Ou conversão em obras e serviços</text>
+<text x="40" y="1332" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Excepcional. Praças, parques, arborização, recuperação de área degradada, compra de área verde. Custo = nº de mudas × custo da muda divulgado pela CLA. Formalizada</text>
+<text x="40" y="1348" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">por Carta de Obrigação.</text>
+<text x="40" y="1369" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 33, §2º, 43 a 47 · Decreto 53.889/2013</text>
+<text x="30" y="1408" font-size="10.5" fill="#55635c" font-weight="400" text-anchor="start">Fonte: Portaria SVMA 105/2024 (texto integral com Anexos). Valores do Fator Multiplicador conforme Anexo VIII. Leitura do projeto Arboriki, outubro de 2026.</text>
+<rect x="1010" y="92" width="460" height="1286" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="1026" y="118" font-size="12" fill="#c0392b" font-weight="700" text-anchor="start">EXCEÇÕES E CASOS ESPECIAIS</text>
+<text x="1026" y="140" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Isenção total</text>
+<text x="1026" y="157" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Intervenção em APP sem manejo de árvores, para melhoria ambiental: limpeza</text>
+<text x="1026" y="173" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">e desassoreamento de córrego, implantação de área verde, canalização de</text>
+<text x="1026" y="189" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">esgoto. Depende de parecer favorável.</text>
+<text x="1026" y="206" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 29</text>
+<line x1="1026" y1="219" x2="1454" y2="219" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="235" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Retificação de curso d'água</text>
+<text x="1026" y="252" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">A APP reduzida é compensada com plantio em área igual ao dobro da área</text>
+<text x="1026" y="268" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">perdida, dentro do terreno.</text>
+<text x="1026" y="285" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 30</text>
+<line x1="1026" y1="298" x2="1454" y2="298" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="314" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">HIS e HMP</text>
+<text x="1026" y="331" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">O regime 1:1 só vale para projeto exclusivamente dessas categorias. O</text>
+<text x="1026" y="347" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">plantio pode ir para outra unidade da mesma instituição.</text>
+<text x="1026" y="364" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 38, III e parágrafo único</text>
+<line x1="1026" y1="377" x2="1454" y2="377" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="393" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Dispensa da densidade arbórea</text>
+<text x="1026" y="410" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Com utilidade pública ou interesse social; ou se o projeto preservar “a</text>
+<text x="1026" y="426" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">porção mais significativa da vegetação” e mantiver área permeável</text>
+<text x="1026" y="442" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">arborizada acima de 50% do mínimo legal e de 30% do terreno.</text>
+<text x="1026" y="459" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 35</text>
+<line x1="1026" y1="472" x2="1454" y2="472" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="488" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Exóticas valem metade</text>
+<text x="1026" y="505" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Nas parcelas A, B, D e P, as árvores exóticas entram com 50% do peso das</text>
+<text x="1026" y="521" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">nativas.</text>
+<text x="1026" y="538" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Anexo VI</text>
+<line x1="1026" y1="551" x2="1454" y2="551" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="567" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Transplante que morre</text>
+<text x="1026" y="584" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">1 muda DAP 7 cm no local, mais 2 a 10 mudas ao viveiro conforme o DAP</text>
+<text x="1026" y="600" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">perdido. Com culpa técnica, soma multa.</text>
+<text x="1026" y="617" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 67 e 69</text>
+<line x1="1026" y1="630" x2="1454" y2="630" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="646" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Árvore a preservar que morre</text>
+<text x="1026" y="663" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">1 muda nativa DAP 7 cm no mesmo local.</text>
+<text x="1026" y="680" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 64</text>
+<line x1="1026" y1="693" x2="1454" y2="693" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="709" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Plantio externo que morre ou some</text>
+<text x="1026" y="726" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Converte em FEMA ou viveiro: 2 por 1 se há relatório de execução no prazo;</text>
+<text x="1026" y="742" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">6 por 1 se não há.</text>
+<text x="1026" y="759" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 77</text>
+<line x1="1026" y1="772" x2="1454" y2="772" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="788" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">TCA rescindido depois do corte</text>
+<text x="1026" y="805" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Repor cada árvore com muda DAP 7 cm, no mesmo local, em 6 meses. Não livra</text>
+<text x="1026" y="821" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">das demais obrigações.</text>
+<text x="1026" y="838" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 54</text>
+<line x1="1026" y1="851" x2="1454" y2="851" stroke="#cfd8d2" stroke-width="1"/>
+<text x="1026" y="867" font-size="13" fill="#18211d" font-weight="700" text-anchor="start">Competência do Estado</text>
+<text x="1026" y="884" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Vegetação nativa em estágio médio ou avançado e casos da CETESB: a SVMA só</text>
+<text x="1026" y="900" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">lavra TCA complementar se a regra municipal for mais restritiva.</text>
+<text x="1026" y="917" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 2º, §§1º a 3º</text>
+<line x1="1026" y1="930" x2="1454" y2="930" stroke="#cfd8d2" stroke-width="1"/>
+</svg>

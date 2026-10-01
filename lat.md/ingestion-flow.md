@@ -25,8 +25,8 @@ A ingestão varre o texto capturado atrás de outras normas e as segue até um l
 
 Toda norma citada é seguida no portal oficial para saber se está vigente, foi alterada ou revogada. A skill `pesquisa-legislacao` executa a navegação; esta seção fixa o que rastrear.
 
-- **Prefeitura de SP** (`legislacao.prefeitura.sp.gov.br`, UTF-8): usar sempre `/{slug}/consolidado`; seguir `/{slug}/revogado-por`, `/{slug}/regulamentacoes` e as âncoras `#historico` e `#correlacionadas`. Marcadores no corpo: `(Redação dada pela ...)`, `(Incluído pela ...)`, `(Revogado pela ...)`, `(eficácia suspensa pela ADIN ...)`. Conhecendo número e data, o slug é construível diretamente (`{tipo}-{numero}-de-{dia}-de-{mês}-de-{ano}`) — ver `pesquisa-legislacao`.
-- **ALESP** (`al.sp.gov.br`, ISO-8859-1): ficha da norma em `/norma/{id}`; navegação de revogações ainda não mapeada — marcar `[verificar]`.
+- **Prefeitura de SP** (`legislacao.prefeitura.sp.gov.br`, UTF-8): usar sempre `/{slug}/consolidado`; seguir `/{slug}/revogado-por`, `/{slug}/regulamentacoes` e as âncoras `#historico` e `#correlacionadas`. Marcadores no corpo: `(Redação dada pela ...)`, `(Incluído pela ...)`, `(Revogado pela ...)`, `(eficácia suspensa pela ADIN ...)`. Conhecendo número e data, o slug é construível diretamente (`{tipo}-{numero}-de-{dia}-de-{mês}-de-{ano}`) — ver `pesquisa-legislacao`. O portal responde HTTP 200 mesmo para slug inexistente (corpo "404 - Página não encontrada"): valide pelo corpo. Leia sempre o Anexo quando o corpo remeter a ele.
+- **ALESP** (`al.sp.gov.br`, ISO-8859-1): texto em `/repositorio/legislacao/{tipo}/{ano}/{tipo}-{numero}-{dd.mm.aaaa}.html` (sem alterações posteriores); ficha da norma em `/norma/{id}`; navegação de revogações ainda não mapeada — marcar `[verificar]`.
 - **Federal** (`planalto.gov.br/ccivil_03`, ISO-8859-1): texto revogado aparece riscado (`<strike>`) com nota "(Revogado pela ...)"; conferir a linha "Texto compilado" / "Vide" no topo.
 - Uma norma citada como vigente por uma fonte antiga (ex.: manual técnico) mas revogada no portal gera registro explícito de divergência na página da wiki.
 

@@ -47,8 +47,17 @@ O portal mais estruturado. Codificação UTF-8. URLs por slug.
   `portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma`; número sem pontuação; mês
   por extenso em minúsculas). O dia nem sempre é zero-padded (`decreto-59671-de-7-de-agosto-de-2020`
   vs. `lei-15442-de-09-de-setembro-de-2011`) — teste sem zero primeiro; teste `/leis/{slug}` se
-  `/{slug}` falhar. Confirme com um `curl -o /dev/null -w "%{http_code}"` antes de assumir a URL
-  certa; 9 URLs construídas desta forma resolveram de primeira nesta sessão.
+  `/{slug}` falhar.
+- **O código HTTP não confirma nada.** O portal devolve **HTTP 200 com o corpo "404 - Página não
+  encontrada"** para slug inexistente. Confirme sempre pelo corpo: a página certa contém o número da
+  norma; a errada contém "Página não encontrada".
+- **Resoluções do CADES** usam o tipo `resolucao-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-cades`
+  e a data de **publicação**, não a de assinatura (ex.: Resolução CADES 284, assinada em 11/12/2024:
+  `/leis/resolucao-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-cades-284-de-20-de-dezembro-de-2024`).
+  Se o slug construído falhar, use `WebSearch` com `allowed_domains: ["legislacao.prefeitura.sp.gov.br"]`.
+- **Leia o Anexo.** Decretos de preços, tabelas e parâmetros costumam ter o corpo curto ("ficam aprovados
+  os preços constantes do Anexo") e todo o conteúdo no Anexo. Ler só o corpo leva a conclusões erradas
+  (ex.: o Decreto 64.877/2025 parece não tratar de arborização; o Anexo tem o preço da muda).
 
 ## 2. ALESP (estadual) — `al.sp.gov.br`
 
@@ -56,7 +65,12 @@ Codificação ISO-8859-1 — **decodifique de ISO-8859-1 para UTF-8**. Página c
 
 - **Pesquisa:** `https://www.al.sp.gov.br/norma/pesquisa` (formulário). A busca real é por
   parâmetros; a ficha de cada norma fica em `https://www.al.sp.gov.br/norma/{id}`.
-- **Repositório histórico:** `https://www.al.sp.gov.br/repositorio/legislacao/...`.
+- **Repositório histórico (texto da norma, HTML estático):**
+  `https://www.al.sp.gov.br/repositorio/legislacao/{tipo}/{ano}/{tipo}-{numero}-{dd.mm.aaaa}.html`,
+  com número sem ponto (ex.: `/repositorio/legislacao/decreto/1989/decreto-30443-20.09.1989.html`;
+  `/repositorio/legislacao/decreto/1994/decreto-39743-23.12.1994.html`). A página traz o texto original
+  com retificações, mas **não** mostra alterações posteriores — procure a norma alteradora pelo título
+  ("Dá nova redação ao artigo X do Decreto n.º Y").
 - Se a página não renderizar por `curl`, tente `WebFetch`; se ainda faltar conteúdo, registre
   `[verificar]` e peça a URL direta da norma ao usuário.
 - `[verificar]` — a navegação de "revogações/correlações" da ALESP ainda não foi mapeada neste projeto.

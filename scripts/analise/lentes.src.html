@@ -1,0 +1,762 @@
+<title>Lentes da malha de arborização</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,650&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna larga de leitura; cada lente é uma figura com o diagrama, o que ela revela e o que esconde; comparação e infográficos no fim. */
+:root{
+  --paper:#f5f7f5; --panel:#ffffff; --ink:#18211d; --muted:#5a6862; --rule:#d3dbd6;
+  --mun:#2e8a4d; --mun-bg:#e3f2e8; --est:#c96f16; --est-bg:#fbeedd; --fed:#4a5a74; --fed-bg:#e6eaf1;
+  --bad:#c0392b; --bad-bg:#fbe5e2; --warn:#a15c07; --warn-bg:#fdf0da; --ok:#2e8a4d;
+  --ghost:#8a958f;
+  --f-display:"Newsreader", Georgia, "Times New Roman", serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#101513; --panel:#171e1b; --ink:#e4ebe7; --muted:#9aa8a1; --rule:#2c3632;
+  --mun:#5cc27e; --mun-bg:#16301f; --est:#f0a35a; --est-bg:#35240f; --fed:#9fb0cc; --fed-bg:#1e2533;
+  --bad:#f07565; --bad-bg:#3a1a16; --warn:#f2b04a; --warn-bg:#35270e; --ok:#5cc27e; --ghost:#6f7b75; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#101513; --panel:#171e1b; --ink:#e4ebe7; --muted:#9aa8a1; --rule:#2c3632;
+  --mun:#5cc27e; --mun-bg:#16301f; --est:#f0a35a; --est-bg:#35240f; --fed:#9fb0cc; --fed-bg:#1e2533;
+  --bad:#f07565; --bad-bg:#3a1a16; --warn:#f2b04a; --warn-bg:#35270e; --ok:#5cc27e; --ghost:#6f7b75; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:20px;padding-block:32px 64px;display:grid;gap:60px}
+h1,h2,h3{font-family:var(--f-display);font-weight:650;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(28px,4vw,40px)}
+h2{font-size:clamp(22px,2.6vw,28px)}
+h3{font-size:17px;font-family:var(--f-body);font-weight:600}
+p{margin:0;max-width:70ch}
+a{color:var(--mun)}
+.lede{display:grid;gap:14px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.seed{font-family:var(--f-mono);font-size:13px;background:var(--mun-bg);color:var(--mun);padding:2px 7px;border-radius:4px;white-space:nowrap}
+code,.mono{font-family:var(--f-mono);font-size:.92em}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:4px}
+.fact{display:grid}
+.fact b{font-family:var(--f-display);font-size:28px;font-variant-numeric:tabular-nums;font-weight:650;line-height:1}
+.fact span{font-size:12.5px;color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--rule);background:var(--panel);padding:5px 10px;border-radius:999px}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--mun);outline:none}
+section.hyp{display:grid;gap:18px;scroll-margin-top:16px}
+.hyp-head{display:grid;gap:8px}
+.hyp-head .q{color:var(--muted)}
+.scroll{overflow-x:auto;background:var(--panel);border:1px solid var(--rule);border-radius:8px}
+figure{margin:0;display:grid;gap:12px}
+figcaption{font-size:13.5px;color:var(--muted);max-width:95ch}
+svg.dg{display:block;width:100%;min-width:900px;height:auto;font-family:var(--f-mono)}
+svg.dg.tr{min-width:1120px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--muted);align-items:center}
+.sw{display:inline-block;width:14px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:6px;border:1.5px solid}
+.sw.mun{background:var(--mun-bg);border-color:var(--mun)} .sw.est{background:var(--est-bg);border-color:var(--est)}
+.sw.fed{background:var(--fed-bg);border-color:var(--fed)} .sw.ghost{background:transparent;border-color:var(--ghost);border-style:dashed}
+.sw.rev{background:transparent;border-color:var(--ghost)} .sw.gap{background:var(--bad-bg);border-color:var(--bad);border-style:dashed}
+.detail{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:12px 16px;font-size:13.5px;display:grid;gap:6px;min-height:64px}
+.detail .t{font-weight:600}
+.detail ul{margin:0;padding-left:18px;columns:2 320px;column-gap:28px}
+.detail li{break-inside:avoid;margin-bottom:2px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px 32px}
+.two > div{min-width:0;display:grid;gap:6px;align-content:start}
+.two ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.reveals h3{color:var(--ok)} .hides h3{color:var(--bad)}
+.note{font-size:13px;color:var(--muted);max-width:95ch}
+.fix{border-left:3px solid var(--warn);background:var(--warn-bg);padding:8px 12px;font-size:13.5px;border-radius:0 6px 6px 0;max-width:95ch}
+g.node{cursor:pointer}
+g.node:focus{outline:none}
+g.node:focus rect{stroke-width:3}
+
+/* H3 — trilhas */
+table.score{border-collapse:collapse;width:100%;min-width:900px;font-size:13px}
+table.score th,table.score td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:center;vertical-align:middle}
+table.score th:first-child,table.score td:first-child{text-align:left}
+table.score thead th{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--panel)}
+table.score thead th small{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:11px}
+table.score tbody td:first-child a{color:var(--ink);text-decoration:none;font-weight:600}
+table.score tbody td:first-child a:hover{text-decoration:underline}
+.dot{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;font-size:12px;font-weight:700;font-family:var(--f-mono)}
+.dot.ok{background:var(--mun-bg);color:var(--ok)} .dot.warn{background:var(--warn-bg);color:var(--warn)}
+.dot.bad{background:var(--bad-bg);color:var(--bad)} .dot.na{background:transparent;color:var(--ghost);border:1px dashed var(--ghost)}
+.trail{display:grid;gap:10px;padding-top:18px;border-top:1px solid var(--rule);scroll-margin-top:16px}
+.trail h3 small{font-family:var(--f-mono);font-weight:400;color:var(--muted);font-size:12px;margin-left:8px}
+.trail ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:6px 22px;font-size:13px}
+.trail li{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;min-width:0}
+.trail li b{font-weight:600}
+.trails{display:grid;gap:26px}
+
+/* H4 — matriz de conceitos */
+table.cx{border-collapse:separate;border-spacing:2px;font-size:11.5px;font-family:var(--f-mono);min-width:1040px;width:100%}
+table.cx th{font-weight:500;color:var(--muted);padding:4px 0;text-align:center;font-size:10px;border-top:3px solid transparent}
+table.cx th.F{border-top-color:var(--fed)} table.cx th.E{border-top-color:var(--est)} table.cx th.M{border-top-color:var(--mun)}
+table.cx th.rowh{text-align:left;font-family:var(--f-body);font-size:12.5px;color:var(--ink);padding:0;white-space:nowrap;border:0}
+table.cx th.rowh button{font:inherit;color:inherit;background:none;border:0;padding:5px 8px;cursor:pointer;border-radius:4px;text-align:left;width:100%}
+table.cx th.rowh button:hover,table.cx th.rowh button:focus-visible{background:var(--mun-bg);outline:none}
+table.cx tr.sel th.rowh button{background:var(--mun-bg);font-weight:600}
+table.cx td{text-align:center;padding:5px 1px;border-radius:3px;min-width:34px;color:var(--ink);font-variant-numeric:tabular-nums;border:2px solid transparent}
+table.cx td.z{color:var(--ghost)}
+table.cx td.D{border-color:var(--ink)} table.cx td.R{border-color:var(--ink);border-style:dashed}
+table.cx td.O{border-color:var(--ink);border-style:dotted}
+table.cx td.C{border-color:var(--bad);color:var(--bad);font-weight:600}
+.key{display:inline-block;min-width:18px;padding:0 5px;border:2px solid var(--ink);border-radius:3px;font-family:var(--f-mono);font-size:11.5px;text-align:center;margin-right:5px}
+.key.R{border-style:dashed} .key.O{border-style:dotted} .key.C{border-color:var(--bad);color:var(--bad)}
+
+table.cmp{border-collapse:collapse;width:100%;min-width:980px;font-size:13.5px}
+table.cmp th,table.cmp td{padding:10px 12px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+table.cmp thead th{font-family:var(--f-display);font-size:16px;font-weight:650;background:var(--panel)}
+table.cmp tbody th{font-weight:600;color:var(--muted);width:150px;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
+.info svg{display:block;min-width:1100px;width:100%;height:auto}
+@media (prefers-reduced-motion:no-preference){ .edge,g.node rect{transition:opacity .15s ease} }
+</style>
+
+<div class="wrap">
+
+<header class="lede">
+  <div class="eyebrow">Experimento de representação · malha regulatória de São Paulo · versão 2</div>
+  <h1>Lentes de análise da malha de arborização</h1>
+  <p>A mesma legislação, desenhada de jeitos diferentes. Cada desenho responde a uma pergunta. As lentes 1, 1a, 2 e 3 partem de <span class="seed">Portaria SVMA 105/2024</span>, que fixa hoje quanto se compensa por árvore cortada em São Paulo. A lente 4 olha os conceitos em 19 normas das três esferas. No fim, dois infográficos sobre o TCA.</p>
+  <div class="facts" id="facts"></div>
+  <nav class="toc" aria-label="Seções">
+    <a href="#h1">1 · Pirâmide</a><a href="#h1a">1a · Pirâmide transposta</a><a href="#h2">2 · Quem cita quem</a><a href="#h3">3 · Rastreabilidade</a><a href="#h4">4 · Conceitos</a><a href="#cmp">Comparação</a><a href="#info">Infográficos do TCA</a>
+  </nav>
+</header>
+
+<!-- ============ H1 ============ -->
+<section class="hyp" id="h1">
+  <div class="hyp-head">
+    <div class="eyebrow">Lente 1 · pirâmide por esfera</div>
+    <h2>Onde a Portaria se apoia na hierarquia</h2>
+    <p class="q">Pergunta: de que lei ou decreto cada norma citada tira sua validade, e em que esfera ela está?</p>
+  </div>
+  <p class="fix"><b>Correção em relação à versão 1.</b> Eu havia escrito que a Portaria não cita nenhuma lei estadual. Cita cinco, todas sobre mananciais (art. 94). A busca automática não reconheceu o formato "leis estaduais nº..., nº...". O desenho e o texto abaixo já estão corrigidos; entraram também seis atos que faltavam.</p>
+  <figure>
+    <div class="legend">
+      <span><i class="sw fed"></i>Federal</span><span><i class="sw est"></i>Estadual</span><span><i class="sw mun"></i>Municipal</span>
+      <span><i class="sw ghost"></i>Base implícita, não citada</span><span><i class="sw rev"></i>Revogada</span>
+      <span>Seta: da norma superior para a que dela depende (lei → decreto → portaria)</span>
+    </div>
+    <div class="scroll"><svg class="dg" id="svg1" role="img" aria-label="Pirâmide em três faixas horizontais (lei, decreto, infralegal) e três colunas (federal, estadual, municipal). A Portaria 105 está na base municipal e recebe setas de leis e decretos das três esferas."></svg></div>
+    <figcaption>Faixas: lei (inclui lei complementar e Lei Orgânica) no topo, decreto no meio, atos infralegais (portaria, resolução, deliberação, instrução normativa) na base. Toque ou passe o mouse sobre uma norma para destacar suas ligações.</figcaption>
+    <div class="detail" id="d1" aria-live="polite"></div>
+  </figure>
+  <div class="two">
+    <div class="reveals"><h3>O que revela</h3><ul>
+      <li><b>Salto de nível.</b> A Lei 17.794/2022 (art. 42, § único) pede "regulamento" e chega direto à Portaria, sem decreto no meio. O mesmo ocorre com a Portaria 51/2024 (arts. 20 e 29).</li>
+      <li><b>O Estado só entra pelos mananciais e por um decreto de 1989.</b> As cinco leis estaduais citadas tratam de áreas de mananciais. Nenhuma lei estadual sobre vegetação ou arborização é citada.</li>
+      <li><b>Bases que ninguém cita.</b> As três Resoluções CONAMA dependem da Lei 6.938/1981, que a Portaria não menciona.</li>
+      <li><b>Portaria-folha muito carregada.</b> Quase todas as setas terminam na Portaria 105. Ela concentra conteúdo que, pela pirâmide, caberia a uma lei ou a um decreto.</li>
+    </ul></div>
+    <div class="hides"><h3>O que esconde</h3><ul>
+      <li>Por que cada norma é citada: fundamento, parâmetro de cálculo ou procedimento aparecem com o mesmo peso.</li>
+      <li>O tempo: uma lista estadual de 1989 e um decreto de 2021 ficam lado a lado.</li>
+      <li>A decisão judicial (ADIN) que restaurou parte da Lei 10.365/1987.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ H1a ============ -->
+<section class="hyp" id="h1a">
+  <div class="hyp-head">
+    <div class="eyebrow">Lente 1a · pirâmide transposta</div>
+    <h2>A mesma hierarquia, com as esferas nas linhas</h2>
+    <p class="q">Mesmos dados da lente 1, eixos trocados: cada esfera é uma linha e o tipo de norma avança da esquerda para a direita.</p>
+  </div>
+  <figure>
+    <div class="scroll"><svg class="dg" id="svg1a" role="img" aria-label="Três linhas (federal, estadual, municipal) e três colunas (lei, decreto, infralegal). Dentro de cada linha a cadeia corre da esquerda para a direita; as setas que descem entre linhas são passagens de uma esfera para outra."></svg></div>
+    <figcaption>Leitura: dentro de uma linha, a cadeia lei → decreto → ato infralegal corre da esquerda para a direita. Toda seta que muda de linha é uma passagem entre esferas.</figcaption>
+    <div class="detail" id="d1a" aria-live="polite"></div>
+  </figure>
+  <div class="two">
+    <div class="reveals"><h3>O que muda em relação à lente 1</h3><ul>
+      <li><b>As cadeias internas de cada esfera ficam legíveis.</b> Na linha federal vê-se Lei 9.605 → Decreto 6.514 e Lei 9.985 → CONAMA 428; na municipal, Lei 16.050 → Decreto 53.889 → Portaria 105.</li>
+      <li><b>As passagens entre esferas viram setas inclinadas.</b> Dá para contar quantas normas federais e estaduais descem até a Portaria municipal, e por qual tipo de ato.</li>
+      <li><b>A coluna de decretos fica visivelmente rala</b> nas linhas federal e estadual: a Portaria busca as leis e os atos infralegais dessas esferas, quase nunca os decretos.</li>
+    </ul></div>
+    <div class="hides"><h3>O que perde</h3><ul>
+      <li>A ideia de "topo e base": a hierarquia vira esquerda e direita, menos intuitiva para quem pensa na pirâmide de Kelsen.</li>
+      <li>Continua sem mostrar a função de cada citação e o tempo.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ H2 ============ -->
+<section class="hyp" id="h2">
+  <div class="hyp-head">
+    <div class="eyebrow">Lente 2 · quem cita quem, a partir da folha</div>
+    <h2>Para que a Portaria usa cada norma</h2>
+    <p class="q">Pergunta: das normas que a Portaria 105 cita, quais lhe dão fundamento e quais só entram como parâmetro ou procedimento?</p>
+  </div>
+  <figure>
+    <div class="legend">
+      <span><i class="sw fed"></i>Federal</span><span><i class="sw est"></i>Estadual</span><span><i class="sw mun"></i>Municipal</span><span><i class="sw rev"></i>Revogada pela Portaria</span>
+      <span>Grupo = função da citação no texto · arco tracejado por fora = relação entre duas normas citadas</span>
+    </div>
+    <div class="scroll"><svg class="dg" id="svg2" role="img" aria-label="A Portaria 105 no centro e as normas citadas em seis grupos por função, três de cada lado: fundamento, competência, parâmetro de cálculo, procedimento, proteção posterior e ciclo de vida."></svg></div>
+    <figcaption>Cada citação foi classificada pelo trecho em que aparece. Exemplo: o art. 56 do Decreto 51.714/2010 entra só para regular o "Comunique-se", logo cai em "procedimento".</figcaption>
+    <div class="detail" id="d2" aria-live="polite"></div>
+  </figure>
+  <div class="two">
+    <div class="reveals"><h3>O que revela</h3><ul>
+      <li><b>Pouco fundamento, muito procedimento.</b> <span id="h2count"></span></li>
+      <li><b>Critério de cálculo importado de outras esferas.</b> O Fator Multiplicador busca critérios num decreto estadual de 1989, numa resolução federal de 1994 e numa lei municipal de 1987 que a ADIN restaurou em parte.</li>
+      <li><b>Erros de citação.</b> A Portaria data a Resolução CONAMA 237 de 1987 (é de 1997), cita uma "CONAMA 01/1991" ao lado da 01/1994 e remete ao art. 143 do PDE para um assunto que está nos arts. 122 a 133.</li>
+      <li><b>Ciclo de vida.</b> Mostra o que a Portaria revogou (130/2013 e mais três atos) e quem já a alterou (116/2024).</li>
+    </ul></div>
+    <div class="hides"><h3>O que esconde</h3><ul>
+      <li>A hierarquia: uma lei complementar federal e uma portaria de 2009 aparecem na mesma distância do centro.</li>
+      <li>O que falta. O grafo mostra o que a Portaria cita, não o que ela deveria citar.</li>
+      <li>Cresce rápido. Na profundidade 2 ele fica ilegível sem filtro.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ H3 ============ -->
+<section class="hyp" id="h3">
+  <div class="hyp-head">
+    <div class="eyebrow">Lente 3 · revista · rastreabilidade da coerência</div>
+    <h2>Cada obrigação, da Constituição até o cidadão</h2>
+    <p class="q">Pergunta: para cada coisa que a Portaria obriga a fazer ou pagar, dá para seguir a cadeia de normas sem tropeçar? Em que elo ela falha, e em qual esfera?</p>
+  </div>
+  <p>Na versão 1 esta lente era uma tabela lida da direita para a esquerda, e as esferas não apareciam. Agora cada obrigação é uma <b>trilha</b> lida da esquerda para a direita, da Constituição até a obrigação, em três raias: federal, estadual e municipal. Uma seta que muda de raia é uma passagem entre esferas. Uma raia vazia mostra que aquela esfera não participa.</p>
+  <p>Cada trilha passa por seis testes de rastreabilidade. Os dois primeiros vêm do princípio da legalidade; os demais, dos princípios da Legisprudência (coerência e temporalidade) e do princípio da acessibilidade.</p>
+  <figure>
+    <div class="scroll"><table class="score" id="score" aria-label="Quadro de testes de rastreabilidade por obrigação"></table></div>
+    <figcaption>
+      <span class="dot ok">✓</span> passa &nbsp; <span class="dot warn">!</span> passa com ressalva &nbsp; <span class="dot bad">✕</span> falha &nbsp; <span class="dot na">–</span> não avaliado. Clique no nome da obrigação para ir à trilha.
+    </figcaption>
+  </figure>
+  <div class="legend">
+    <span><i class="sw fed"></i>Federal</span><span><i class="sw est"></i>Estadual</span><span><i class="sw mun"></i>Municipal</span>
+    <span><i class="sw gap"></i>Elo que falta</span><span><i class="sw ghost"></i>Vínculo usado mas não declarado</span><span><i class="sw rev"></i>Norma revogada</span>
+  </div>
+  <div class="trails" id="trails"></div>
+  <div class="two">
+    <div class="reveals"><h3>O que revela</h3><ul>
+      <li><b>Onde a cadeia rompe, e em que esfera.</b> O fator 5,35 não tem norma acima da portaria. O valor da muda e as decisões da CTCA têm decreto, mas nenhuma lei com critério.</li>
+      <li><b>Passagens entre esferas sem amarração.</b> O Fator Multiplicador recebe critérios federais e estaduais; a comparação com o cálculo do Estado é exigida sem que a norma estadual seja nomeada.</li>
+      <li><b>Falha para baixo.</b> O TCA por emissão de gases tem lei, mas a trilha para antes de chegar a uma obrigação.</li>
+      <li><b>Cada falha tem nome e vira proposta.</b> O teste que falhou diz o que a emenda precisa consertar.</li>
+    </ul></div>
+    <div class="hides"><h3>O que esconde</h3><ul>
+      <li>As normas só de procedimento, que não criam obrigação econômica nova.</li>
+      <li>A visão de conjunto da malha: é uma lente de auditoria, não um mapa.</li>
+      <li>Exige leitura jurídica artigo a artigo; a classificação dos testes é interpretação e deve ser revisada por um jurista.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ H4 ============ -->
+<section class="hyp" id="h4">
+  <div class="hyp-head">
+    <div class="eyebrow">Lente 4 · mapa de conceitos</div>
+    <h2>Onde cada conceito nasce, muda e entra em conflito</h2>
+    <p class="q">Pergunta: quando duas normas usam a mesma palavra, estão falando da mesma coisa?</p>
+  </div>
+  <p>O nó deixa de ser a norma e passa a ser o <b>conceito</b>. Cada linha é um conceito; cada coluna, uma das 19 normas do corpus, agrupadas por esfera. O número é quantas vezes o termo aparece. A moldura da célula diz o papel da norma: define, redefine ou conflita. Clique num conceito para ver a história dele.</p>
+  <figure>
+    <div class="legend">
+      <span><i class="sw fed"></i>Federal</span><span><i class="sw est"></i>Estadual</span><span><i class="sw mun"></i>Municipal</span>
+      <span><span class="key O">n</span>origem do termo</span><span><span class="key">n</span>define</span><span><span class="key R">n</span>redefine</span><span><span class="key C">n</span>conflita</span><span>sem moldura: só usa</span>
+    </div>
+    <div class="scroll"><table class="cx" id="cx" aria-label="Matriz de conceitos por norma"></table></div>
+    <div class="detail" id="d4" aria-live="polite"></div>
+    <figcaption>Contagem por expressão regular sobre o texto vigente de cada norma. Os papéis foram atribuídos por leitura. A matriz completa, com 48 conceitos, está na wiki em <code>assets/dados/conceitos-por-norma.csv</code>.</figcaption>
+  </figure>
+  <div class="two">
+    <div class="reveals"><h3>O que revela</h3><ul>
+      <li><b>Vocabulário instável.</b> Sete conceitos centrais têm definição conflitante ou redefinida: árvore, vegetação significativa, imune de corte, preservação permanente, maciço, manejo e TCA.</li>
+      <li><b>Portaria redefinindo lei.</b> A Portaria 51 acrescenta uma hipótese à "vegetação significativa" da lei. A Portaria 105 define "manejo" ao contrário da lei e muda o limiar de DAP de "superior" para "igual ou superior" a 5 cm.</li>
+      <li><b>Conceitos que mandam no cálculo e são definidos fora.</b> Mata Atlântica e estágio de regeneração dependem de lei e resolução federais que nenhuma norma municipal reproduz.</li>
+      <li><b>Cerrado ausente.</b> O bioma não aparece em nenhuma norma estadual ou municipal do corpus.</li>
+    </ul></div>
+    <div class="hides"><h3>O que esconde</h3><ul>
+      <li>A hierarquia e a vigência: uma definição em portaria revogada pesa igual a uma em lei.</li>
+      <li>Contar palavra não é medir importância. O termo "área verde" aparece 124 vezes no PDE sem uma definição geral.</li>
+      <li>Depende de uma lista de conceitos escolhida por quem analisa.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ Comparação ============ -->
+<section class="hyp" id="cmp">
+  <div class="hyp-head">
+    <div class="eyebrow">Comparação</div>
+    <h2>Qual lente para qual uso</h2>
+  </div>
+  <div class="scroll">
+    <table class="cmp">
+      <thead><tr><th></th><th>1 e 1a · Pirâmide</th><th>2 · Quem cita quem</th><th>3 · Rastreabilidade</th><th>4 · Conceitos</th></tr></thead>
+      <tbody>
+        <tr><th>Nó</th><td>Norma</td><td>Norma</td><td>Obrigação</td><td>Conceito</td></tr>
+        <tr><th>Ligação</th><td>Fundamento de validade</td><td>Citação, com função</td><td>Delegação e importação de critério</td><td>Define, redefine, usa, conflita</td></tr>
+        <tr><th>Posição</th><td>Tipo de norma × esfera</td><td>Função da citação</td><td>Degrau da hierarquia × esfera</td><td>Conceito × norma</td></tr>
+        <tr><th>Melhor para</th><td>Ver saltos de nível e o peso de cada esfera</td><td>Inventário e rastreio de vigência na ingestão</td><td>Auditoria legística e redação de emendas</td><td>Achar termos vagos e contradições; preparar análise de dados</td></tr>
+        <tr><th>Achado-chave</th><td>Lei pede regulamento e cai numa portaria</td><td>Poucos fundamentos, muitos procedimentos; três erros de citação</td><td>Fator 5,35 sem norma; valor da muda e CTCA sem critério em lei</td><td>"Manejo" e o limiar de DAP da Portaria 105 contrariam a lei</td></tr>
+        <tr><th>Automatizável</th><td>Sim: tipo e esfera saem do nome da norma</td><td>Sim: expressão regular + classificação do trecho</td><td>Em parte: exige leitura por artigo</td><td>Contagem sim; papel exige leitura</td></tr>
+        <tr><th>Escala</th><td>Boa</td><td>Ruim acima de ~40 nós</td><td>Boa (uma trilha por obrigação)</td><td>Boa (uma linha por conceito)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Uso combinado sugerido: a lente 2 serve à ingestão; a 1 ou 1a vira o mapa navegável; a 3 fica nas páginas de propostas (Eixo 2); a 4 alimenta o glossário e o trabalho com a base de TCAs. As quatro leem a mesma base: normas (tipo, esfera, ano), citações (função), obrigações (cadeia) e conceitos (papel).</p>
+  <p class="note">Ressalvas: classificações e cadeias foram montadas a partir do texto integral das normas e da wiki do projeto. Dois vínculos seguem como <code>[verificar]</code>: se o Decreto 51.714/2010 regulamenta a Lei 14.141/2006, e se o regime 1:1 tem previsão em lei.</p>
+</section>
+
+<!-- ============ Infográficos ============ -->
+<section class="hyp" id="info">
+  <div class="hyp-head">
+    <div class="eyebrow">Infográficos do TCA</div>
+    <h2>O ciclo de vida do TCA e o cálculo da compensação</h2>
+    <p class="q">Os dois também estão na wiki, nas páginas "ciclo-de-vida-do-tca" e "calculo-da-compensacao", com as tabelas de eventos e os indicadores para análise de bases de dados.</p>
+  </div>
+  <figure>
+    <div class="scroll info"><!--SVG_CICLO--></div>
+    <figcaption><b>Ciclo de vida.</b> A SVMA só é obrigada a ir ao local três vezes: antes do TCA e, depois, quando o próprio interessado informa o plantio e o fim da manutenção. O corte e a obra ficam cobertos apenas por documentos. "Recebimento parcial" tem quatro sentidos no decreto e três na portaria.</figcaption>
+  </figure>
+  <figure>
+    <div class="scroll info"><!--SVG_CALCULO--></div>
+    <figcaption><b>Cálculo.</b> Dois regimes, sete parcelas, três fatores, um piso de densidade e seis destinos possíveis para as mudas. A coluna da direita reúne as exceções.</figcaption>
+  </figure>
+</section>
+
+</div>
+
+<script>
+(() => {
+const NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs = {}, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; };
+const COL = { F: "fed", E: "est", M: "mun" };
+const NAME = { F: "Federal", E: "Estadual", M: "Municipal" };
+const CORE = /*CORE*/null;
+
+// ---------- Normas citadas pela Portaria 105 (texto integral) ----------
+const N = {
+  P105:{l:"Portaria SVMA 105/2024",e:"M",t:"infra",seed:1,d:"Critérios e procedimentos de compensação ambiental e TCA."},
+  P116:{l:"Portaria SVMA 116/2024",e:"M",t:"infra",d:"Altera a 105/2024 e inclui o art. 96 (revogações)."},
+  P51:{l:"Portaria SVMA 51/2024",e:"M",t:"infra",d:"Padrão de muda; define poda drástica e risco de queda."},
+  P39:{l:"Portaria SVMA 39/2024",e:"M",t:"infra",d:"Entrega de mudas ao viveiro municipal (art. 41, §1º)."},
+  P154:{l:"Portaria SVMA 154/2009",e:"M",t:"infra",d:"Anexo I: espécies exóticas invasoras (art. 75)."},
+  P57:{l:"Portaria SVMA 57/2024",e:"M",t:"infra",d:"Alvará ambiental em área de mananciais (art. 94)."},
+  P130:{l:"Portaria SVMA 130/2013",e:"M",t:"infra",rev:1,d:"Compensação de 2013 a 2024. Revogada pelo art. 96."},
+  P26:{l:"Portaria SVMA 26/2004",e:"M",t:"infra",rev:1,d:"Revogada pelo art. 96."},
+  P36:{l:"Portaria SVMA 36/2008",e:"M",t:"infra",rev:1,d:"Revogada pelo art. 96."},
+  PUB5:{l:"Publicação SVMA 5/2018",e:"M",t:"infra",rev:1,d:"Revogada pelo art. 96."},
+  D53889:{l:"Decreto 53.889/2013",e:"M",t:"dec",d:"Regulamento original do TCA: fórmula, Fator Multiplicador, regime 1:1, certificados."},
+  D57565:{l:"Decreto 57.565/2016",e:"M",t:"dec",d:"Regulamenta a Lei 16.402/2016 (permeabilidade, Quota Ambiental) — arts. 24 e 72."},
+  D51714:{l:"Decreto 51.714/2010",e:"M",t:"dec",d:"Art. 56: forma dos \"Comunique-se\" (art. 5º). Vínculo com a Lei 14.141/2006 [verificar]."},
+  D60621:{l:"Decreto 60.621/2021",e:"M",t:"dec",d:"Orçamento das Cartas de Obrigação (art. 45, §1º)."},
+  D59671:{l:"Decreto 59.671/2020",e:"M",t:"dec",d:"Calçada verde (art. 91)."},
+  L16050:{l:"Lei 16.050/2014 (PDE)",e:"M",t:"lei",d:"Arts. 154-155 instituem o TCA. A Portaria remete, por engano, ao art. 143."},
+  L17794:{l:"Lei 17.794/2022",e:"M",t:"lei",d:"Art. 42, § único: medidas compensatórias por \"regulamento\"."},
+  L16402:{l:"Lei 16.402/2016 (LPUOS)",e:"M",t:"lei",d:"Quota Ambiental; permeabilidade mínima."},
+  L16642:{l:"Lei 16.642/2017 (COE)",e:"M",t:"lei",d:"Art. 71, §1º: prazo do alvará não alcança a autorização de manejo."},
+  L14141:{l:"Lei 14.141/2006",e:"M",t:"lei",d:"Processo administrativo municipal; art. 36: recurso."},
+  L10365:{l:"Lei 10.365/1987",e:"M",t:"lei",d:"Art. 4º citado no Fator Multiplicador; revogado em 2022, restaurado em parte pela ADIN."},
+  LOM:{l:"Lei Orgânica, art. 183",e:"M",t:"lei",d:"§3º: suspensão da obra se as medidas mitigadoras não forem implantadas (art. 90)."},
+  LEMAN:{l:"5 leis de mananciais",e:"E",t:"lei",d:"Leis 898/1975, 1.172/1976, 12.233/2006, 13.579/2009 e 15.790/2015 (art. 94)."},
+  DE30443:{l:"Decreto Est. 30.443/1989",e:"E",t:"dec",d:"Patrimônio ambiental / imunes de corte: Fator Multiplicador 2."},
+  CONSEMA:{l:"Delib. CONSEMA 01/2024",e:"E",t:"infra",d:"Tipologia de licenciamento de impacto local; repartição SVMA x CETESB."},
+  SMA36:{l:"Resolução SMA 36/2018",e:"E",t:"infra",d:"Autorização de manejo de fauna in situ (art. 15)."},
+  CET167:{l:"Decisão CETESB 167/2015",e:"E",t:"infra",d:"Laudo de fauna silvestre (art. 8º, IV, g)."},
+  LC140:{l:"LC 140/2011",e:"F",t:"lei",d:"Cooperação federativa em matéria ambiental (considerando; art. 1º, VII)."},
+  L12651:{l:"Lei 12.651/2012",e:"F",t:"lei",d:"Código Florestal: conceito de APP; art. 36 (origem florestal)."},
+  L9605:{l:"Lei 9.605/1998",e:"F",t:"lei",d:"Crimes ambientais: proteção dos plantios após o TCA."},
+  L9985:{l:"Lei 9.985/2000",e:"F",t:"lei",d:"SNUC: manejo em Unidade de Conservação (art. 93)."},
+  L6496:{l:"Lei 6.496/1977",e:"F",t:"lei",d:"Anotação de Responsabilidade Técnica (ART)."},
+  L13726:{l:"Lei 13.726/2018",e:"F",t:"lei",d:"Desburocratização (considerando)."},
+  L6938:{l:"Lei 6.938/1981",e:"F",t:"lei",ghost:1,d:"Política Nacional do Meio Ambiente; base do CONAMA. Não citada pela Portaria."},
+  D6514:{l:"Decreto 6.514/2008",e:"F",t:"dec",d:"Regulamenta as infrações da Lei 9.605/1998."},
+  C01:{l:"CONAMA 01/1994",e:"F",t:"infra",d:"Estágios sucessionais da Mata Atlântica em SP. A Portaria também escreve \"01/1991\"."},
+  C237:{l:"CONAMA 237/1997",e:"F",t:"infra",d:"Licenciamento. A Portaria a data de \"19/12/1987\": a resolução é de 1997."},
+  C428:{l:"CONAMA 428/2010",e:"F",t:"infra",d:"Ciência ao conselho gestor de UC (art. 93)."},
+  CFB:{l:"Res. CFBio 699/2024",e:"F",t:"infra",d:"ART de biólogo (conselho profissional)."},
+  IBAMA:{l:"IN IBAMA 1/2014, 3/2020",e:"F",t:"infra",d:"SINAFLOR e Documento de Origem Florestal (art. 92)."}
+};
+
+const cited = Object.entries(N).filter(([k,n]) => !n.seed && !n.ghost);
+const byE = e => cited.filter(([,n]) => n.e===e).length;
+document.getElementById("facts").innerHTML = [
+  [cited.length, "atos citados pela Portaria 105"], [byE("F"), "federais"], [byE("E"), "estaduais"], [byE("M"), "municipais"],
+  [cited.filter(([,n])=>n.rev).length, "revogados por ela"], [CORE ? CORE.normas.length : 19, "normas na lente de conceitos"]
+].map(([b,s]) => `<div class="fact"><b>${b}</b><span>${s}</span></div>`).join("");
+
+// ---------- comuns ----------
+function drawNode(svg, id, x, y, w, h) {
+  const n = N[id];
+  const g = el("g", { class: "node", tabindex: 0, "data-id": id, transform: `translate(${x},${y})` }, svg);
+  const c = COL[n.e];
+  const stroke = (n.ghost || n.rev) ? "var(--ghost)" : `var(--${c})`;
+  const fill = (n.ghost || n.rev) ? "var(--panel)" : `var(--${c}-bg)`;
+  el("rect", { width: w, height: h, rx: 5, fill, stroke, "stroke-width": n.seed ? 3 : 1.5, "stroke-dasharray": n.ghost ? "5 4" : "none" }, g);
+  const t = el("text", { x: w/2, y: h/2 + 4, "text-anchor": "middle", "font-size": n.seed ? 12.5 : 11.5, "font-weight": n.seed ? 600 : 400, fill: (n.ghost||n.rev) ? "var(--muted)" : "var(--ink)", "text-decoration": n.rev ? "line-through" : "none" }, g);
+  t.textContent = n.l;
+  return { x: x + w/2, y: y + h/2, top: y, bot: y + h, left: x, right: x + w };
+}
+function wire(svg, edges, detailEl, labelFor) {
+  const show = id => {
+    const n = N[id];
+    svg.querySelectorAll(".edge").forEach(p => { p.style.opacity = (p.dataset.s === id || p.dataset.t === id) ? 1 : 0.1; });
+    svg.querySelectorAll("g.node").forEach(g => {
+      const nid = g.dataset.id;
+      g.style.opacity = (nid === id || edges.some(e => (e.s===id && e.t===nid) || (e.t===id && e.s===nid))) ? 1 : 0.35;
+    });
+    const rel = edges.filter(e => e.s===id || e.t===id).map(e => {
+      const other = e.s===id ? e.t : e.s, dir = e.s===id ? "→" : "←";
+      return `<li><span class="mono">${dir} ${N[other].l}</span>: ${labelFor(e)}</li>`;
+    });
+    detailEl.innerHTML = `<div class="t">${n.l} · ${NAME[n.e]}${n.rev ? " · revogada" : ""}${n.ghost ? " · não citada" : ""}</div><div>${n.d}</div>${rel.length ? `<ul>${rel.join("")}</ul>` : ""}`;
+  };
+  svg.querySelectorAll("g.node").forEach(g => {
+    g.addEventListener("mouseenter", () => show(g.dataset.id));
+    g.addEventListener("focus", () => show(g.dataset.id));
+    g.addEventListener("click", () => show(g.dataset.id));
+  });
+  svg.addEventListener("mouseleave", () => {
+    svg.querySelectorAll(".edge").forEach(p => p.style.opacity = ""); svg.querySelectorAll("g.node").forEach(g => g.style.opacity = "");
+    show("P105");
+  });
+  show("P105");
+  svg.querySelectorAll(".edge").forEach(p => p.style.opacity = ""); svg.querySelectorAll("g.node").forEach(g => g.style.opacity = "");
+}
+function arrowDefs(svg, id, color) {
+  const defs = svg.querySelector("defs") || el("defs", {}, svg);
+  const m = el("marker", { id, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse" }, defs);
+  el("path", { d: "M0,0 L10,5 L0,10 z", fill: color }, m);
+}
+
+// ============ Lentes 1 e 1a: grade tipo × esfera ============
+const CELLS = {
+  F: { lei: ["LC140","L6938","L12651","L9605","L9985","L6496","L13726"], dec: ["D6514"], infra: ["C01","C237","C428","CFB","IBAMA"] },
+  E: { lei: ["LEMAN"], dec: ["DE30443"], infra: ["CONSEMA","SMA36","CET167"] },
+  M: { lei: ["L16050","L17794","L16402","L10365","L16642","L14141","LOM"], dec: ["D53889","D57565","D51714","D60621","D59671"], infra: ["P105","P51","P116","P39","P154","P57","P130"] }
+};
+const TYPES = [["lei","Lei · LC · Lei Orgânica"],["dec","Decreto"],["infra","Portaria · resolução · deliberação · IN"]];
+const ENTES = ["F","E","M"];
+const E1 = [
+  {s:"L17794",t:"P105",r:"art. 42, § único pede \"regulamento\": salta o decreto",bad:1},
+  {s:"L17794",t:"P51",r:"arts. 20 e 29 pedem \"regulamento\": salta o decreto",bad:1},
+  {s:"L16050",t:"D53889",r:"TCA (arts. 154-155); decreto de 2013 herdado do PDE de 2002"},
+  {s:"D53889",t:"P105",r:"art. 5º, §1º: portaria fixa os parâmetros de cálculo"},
+  {s:"L16402",t:"D57565",r:"regulamenta"},{s:"D57565",t:"P105",r:"permeabilidade e Quota Ambiental (art. 24)"},
+  {s:"L14141",t:"D51714",r:"regulamenta [verificar]"},{s:"D51714",t:"P105",r:"art. 56: forma do Comunique-se"},
+  {s:"L14141",t:"P105",r:"art. 36: recurso"},{s:"L16642",t:"P105",r:"art. 71: alvará de execução"},
+  {s:"D60621",t:"P105",r:"orçamento das Cartas de Obrigação"},{s:"D59671",t:"P105",r:"calçada verde"},
+  {s:"L10365",t:"P105",r:"art. 4º no Fator Multiplicador (restaurado pela ADIN)"},
+  {s:"LOM",t:"P105",r:"art. 183, §3º: suspensão da obra (art. 90)"},
+  {s:"L9605",t:"D6514",r:"regulamenta"},{s:"D6514",t:"P105",r:"proteção dos plantios"},
+  {s:"L12651",t:"P105",r:"conceito de APP"},{s:"L12651",t:"IBAMA",r:"art. 36: controle de origem florestal"},{s:"IBAMA",t:"P105",r:"SINAFLOR e DOF (art. 92)"},
+  {s:"L9985",t:"C428",r:"fundamento"},{s:"C428",t:"P105",r:"ciência ao conselho de UC"},
+  {s:"L6938",t:"C01",r:"base do CONAMA (não citada)",ghost:1},{s:"L6938",t:"C237",r:"base do CONAMA (não citada)",ghost:1},{s:"L6938",t:"C428",r:"base do CONAMA (não citada)",ghost:1},
+  {s:"C237",t:"P105",r:"competência de licenciamento (data citada errada: 1987)"},{s:"C01",t:"P105",r:"estágios sucessionais"},
+  {s:"LC140",t:"CONSEMA",r:"impacto local para licenciamento municipal"},{s:"LC140",t:"P105",r:"cooperação federativa (considerando)"},
+  {s:"CONSEMA",t:"P105",r:"repartição SVMA x CETESB"},
+  {s:"LEMAN",t:"P57",r:"áreas de mananciais"},{s:"P57",t:"P105",r:"exigências em mananciais (art. 94)"},
+  {s:"SMA36",t:"P105",r:"manejo de fauna in situ (art. 15)"},{s:"CET167",t:"P105",r:"laudo de fauna (art. 8º)"},
+  {s:"DE30443",t:"P105",r:"patrimônio ambiental: Fator Multiplicador 2"},
+  {s:"L6496",t:"P105",r:"ART"},{s:"CFB",t:"P105",r:"ART de biólogo"},{s:"L13726",t:"P105",r:"desburocratização (considerando)"},
+  {s:"P116",t:"P105",r:"altera"},{s:"P105",t:"P130",r:"revoga (art. 96, via Portaria 116)"},
+  {s:"P51",t:"P105",r:"padrão de muda"},{s:"P39",t:"P105",r:"entrega de mudas ao viveiro"},{s:"P154",t:"P105",r:"lista de exóticas invasoras"},
+  {s:"L17794",t:"L10365",r:"revoga arts. 1º-16 e 20-25 (parte declarada inconstitucional)"}
+];
+function grid(svgId, detailId, transposed) {
+  const svg = document.getElementById(svgId);
+  arrowDefs(svg, "mk-" + svgId + "-a", "var(--muted)"); arrowDefs(svg, "mk-" + svgId + "-b", "var(--bad)");
+  const W = 174, H = 30, GX = 124, CW = 380, PADY = 40, STEP = 44, TOP = 44, VW = GX + 3*CW + 6;
+  const rowsOf = n => Math.ceil(n / 2);
+  const bandKeys = transposed ? ENTES : TYPES.map(t => t[0]);
+  const colKeys = transposed ? TYPES.map(t => t[0]) : ENTES;
+  const cell = (b, c) => transposed ? CELLS[b][c] : CELLS[c][b];
+  const bandH = bandKeys.map(b => PADY + Math.max(...colKeys.map(c => rowsOf(cell(b, c).length))) * STEP + 8);
+  const bandY = []; let y = TOP; bandH.forEach(h => { bandY.push(y); y += h + 12; });
+  const total = y + 4;
+  svg.setAttribute("viewBox", `0 0 ${VW} ${total}`);
+  const bandLabel = b => transposed ? NAME[b] : TYPES.find(t => t[0] === b)[1];
+  const colLabel = c => transposed ? TYPES.find(t => t[0] === c)[1] : NAME[c];
+  bandKeys.forEach((b, i) => {
+    el("rect", { x: 10, y: bandY[i], width: VW - 20, height: bandH[i], fill: transposed ? `var(--${COL[b]}-bg)` : "var(--paper)", "fill-opacity": transposed ? 0.45 : 1, stroke: "var(--rule)", rx: 6 }, svg);
+    const t = el("text", { x: 22, y: bandY[i] + 22, "font-size": 11.5, fill: transposed ? `var(--${COL[b]})` : "var(--muted)", "font-family": "var(--f-body)", "font-weight": 600 }, svg);
+    t.textContent = bandLabel(b).toUpperCase();
+  });
+  colKeys.forEach((c, i) => {
+    const t = el("text", { x: GX + i*CW + CW/2 - 6, y: 30, "text-anchor": "middle", "font-size": 12, fill: transposed ? "var(--muted)" : `var(--${COL[c]})`, "font-family": "var(--f-body)", "font-weight": 600 }, svg);
+    t.textContent = colLabel(c).toUpperCase();
+    if (i) el("line", { x1: GX + i*CW - 6, y1: TOP, x2: GX + i*CW - 6, y2: total - 8, stroke: "var(--rule)", "stroke-dasharray": "3 5" }, svg);
+  });
+  const edgeLayer = el("g", {}, svg);
+  const pos = {}, where = {};
+  bandKeys.forEach((b, bi) => colKeys.forEach((c, ci) => cell(b, c).forEach((id, i) => {
+    pos[id] = drawNode(svg, id, GX + ci*CW + 8 + (i%2)*(W+12), bandY[bi] + PADY + Math.floor(i/2)*STEP, W, H);
+    where[id] = [bi, ci];
+  })));
+  E1.forEach(e => {
+    const a = pos[e.s], b = pos[e.t], [ab, ac] = where[e.s], [bb, bc] = where[e.t];
+    let d;
+    if (!transposed) {
+      if (ab === bb) { const yy = Math.min(a.top, b.top); d = `M${a.x},${a.top} C${a.x},${yy-28} ${b.x},${yy-28} ${b.x},${b.top}`; }
+      else if (ab < bb) { const my = (a.bot + b.top)/2; d = `M${a.x},${a.bot} C${a.x},${my} ${b.x},${my} ${b.x},${b.top}`; }
+      else { const my = (a.top + b.bot)/2; d = `M${a.x},${a.top} C${a.x},${my} ${b.x},${my} ${b.x},${b.bot}`; }
+    } else {
+      if (ac < bc) { const mx = (a.right + b.left)/2; d = `M${a.right},${a.y} C${mx},${a.y} ${mx},${b.y} ${b.left},${b.y}`; }
+      else if (ac > bc) { const mx = (a.left + b.right)/2; d = `M${a.left},${a.y} C${mx},${a.y} ${mx},${b.y} ${b.right},${b.y}`; }
+      else if (Math.abs(a.y - b.y) < 6) { d = a.x < b.x ? `M${a.right},${a.y} L${b.left},${b.y}` : `M${a.left},${a.y} L${b.right},${b.y}`; }
+      else if (a.y < b.y) { const my = (a.bot + b.top)/2; d = `M${a.x},${a.bot} C${a.x},${my} ${b.x},${my} ${b.x},${b.top}`; }
+      else { const my = (a.top + b.bot)/2; d = `M${a.x},${a.top} C${a.x},${my} ${b.x},${my} ${b.x},${b.bot}`; }
+    }
+    el("path", { d, class: "edge", "data-s": e.s, "data-t": e.t, fill: "none", stroke: e.bad ? "var(--bad)" : e.ghost ? "var(--ghost)" : "var(--muted)", "stroke-width": e.bad ? 2.2 : 1.2, "stroke-dasharray": e.ghost ? "5 4" : "none", "marker-end": `url(#mk-${svgId}-${e.bad ? "b" : "a"})`, opacity: 0.8 }, edgeLayer);
+  });
+  wire(svg, E1, document.getElementById(detailId), e => e.r);
+}
+grid("svg1", "d1", false);
+grid("svg1a", "d1a", true);
+
+// ============ Lente 2: grupos por função, em duas colunas ============
+(function h2(){
+  const svg = document.getElementById("svg2");
+  arrowDefs(svg, "mk-svg2", "var(--muted)");
+  const W = 178, H = 24, STEP = 30, VW = 1200, XL = 60, XR = VW - 60 - W, cx = VW/2;
+  const groups = {
+    "Fundamento": ["L16050","L17794","D53889","LC140","L13726"],
+    "Competência e território": ["C237","CONSEMA","L9985","C428","LEMAN","P57"],
+    "Parâmetro de cálculo": ["L10365","DE30443","C01","L12651","L16402","D57565","D59671","P51","P154"],
+    "Procedimento": ["D51714","L14141","L16642","D60621","P39","L6496","CFB","SMA36","CET167","IBAMA"],
+    "Proteção posterior": ["L9605","D6514","LOM"],
+    "Ciclo de vida": ["P116","P130","P26","P36","PUB5"]
+  };
+  const SIDES = { R: ["Fundamento","Competência e território","Parâmetro de cálculo"], L: ["Ciclo de vida","Proteção posterior","Procedimento"] };
+  document.getElementById("h2count").textContent = `Só ${groups["Fundamento"].length} citações sustentam a competência da SVMA para editar a norma. Outras ${groups["Parâmetro de cálculo"].length} importam critérios de cálculo e ${groups["Procedimento"].length} regulam o rito.`;
+  const edgeLayer = el("g", {}, svg);
+  const pos = {}, side = {}, E = [];
+  let maxY = 0;
+  for (const s of ["L","R"]) {
+    let y = 34;
+    SIDES[s].forEach(g => {
+      const x = s === "L" ? XL : XR;
+      const t = el("text", { x: s === "L" ? x : x + W, y: y, "text-anchor": s === "L" ? "start" : "end", "font-size": 12.5, "font-weight": 600, fill: "var(--ink)", "font-family": "var(--f-body)" }, svg);
+      t.textContent = `${g} (${groups[g].length})`;
+      y += 10;
+      groups[g].forEach(id => {
+        pos[id] = drawNode(svg, id, x, y, W, H); side[id] = s;
+        const rel = id === "P116" ? "altera a Portaria 105" : N[id].rev ? "revogada pelo art. 96" : g.toLowerCase();
+        E.push(id === "P116" ? { s: "P116", t: "P105", r: rel } : { s: "P105", t: id, r: rel });
+        y += STEP;
+      });
+      y += 30;
+    });
+    maxY = Math.max(maxY, y);
+  }
+  const total = maxY - 10, cy = total/2;
+  svg.setAttribute("viewBox", `0 0 ${VW} ${total}`);
+  pos.P105 = drawNode(svg, "P105", cx - 100, cy - 19, 200, 38);
+  E.forEach(e => {
+    const id = e.t === "P105" ? e.s : e.t, n = pos[id], L = side[id] === "L";
+    const x1 = L ? cx - 100 : cx + 100, x2 = L ? n.right : n.left, mx = (x1 + x2)/2;
+    const d = e.t === "P105" ? `M${x2},${n.y} C${mx},${n.y} ${mx},${cy} ${x1},${cy}` : `M${x1},${cy} C${mx},${cy} ${mx},${n.y} ${x2},${n.y}`;
+    el("path", { d, class: "edge", "data-s": e.s, "data-t": e.t, fill: "none", stroke: `var(--${COL[N[id].e]})`, "stroke-width": 1.2, "marker-end": "url(#mk-svg2)", opacity: 0.75 }, edgeLayer);
+  });
+  const inner = [
+    {s:"L9605",t:"D6514",r:"regulamentada por"},{s:"L16402",t:"D57565",r:"regulamentada por"},
+    {s:"L14141",t:"D51714",r:"regulamentada por [verificar]"},{s:"L9985",t:"C428",r:"fundamenta"},
+    {s:"L17794",t:"L10365",r:"revoga em parte (ADIN restaurou trechos)"},{s:"L16050",t:"D53889",r:"TCA regulamentado por"},
+    {s:"L17794",t:"P51",r:"pede regulamento (veio portaria)"},{s:"LEMAN",t:"P57",r:"áreas de mananciais"}
+  ];
+  inner.forEach(e => {
+    const a = pos[e.s], b = pos[e.t], L = side[e.s] === "L";
+    const xa = L ? a.left : a.right, xb = L ? b.left : b.right, k = L ? -1 : 1, bulge = 22 + Math.min(28, Math.abs(a.y - b.y) / 6);
+    el("path", { d: `M${xa},${a.y} C${xa + k*bulge},${a.y} ${xb + k*bulge},${b.y} ${xb},${b.y}`, class: "edge", "data-s": e.s, "data-t": e.t, fill: "none", stroke: "var(--ghost)", "stroke-width": 1.3, "stroke-dasharray": "4 4", opacity: 0.9 }, edgeLayer);
+  });
+  E.push(...inner);
+  wire(svg, E, document.getElementById("d2"), e => e.r);
+})();
+
+// ============ Lente 3: trilhas de rastreabilidade ============
+(function h3(){
+  const TESTS = [
+    ["hab","Habilitação","há lei que autoriza?"],
+    ["deg","Degrau","o ato é do tipo que a lei pediu?"],
+    ["vig","Vigência","as remissões estão em vigor e certas?"],
+    ["term","Termos","a palavra tem o mesmo sentido na cadeia?"],
+    ["temp","Atualidade","o critério foi revisto?"],
+    ["pub","Publicidade","dá para refazer a conta?"]
+  ];
+  const SYM = { ok: "✓", warn: "!", bad: "✕", na: "–" };
+  const LV = ["Constituição","Lei","Decreto","Portaria · resolução","Obrigação"];
+  // nó: [id, esfera, nível 0-4, rótulo, sub-rótulo, estilo]  estilo: "" | "gap" | "dash" | "rev" | "ob"
+  // elo: [origem, destino, rótulo, status]  status: ok | warn | bad | dash
+  const OB = [
+    { id:"compensar", o:"Dever de compensar o manejo", src:"art. 1º; Anexo VI",
+      n:[["cf","F",0,"CF art. 225, §3º","reparar o dano ambiental"],["l2","M",1,"Lei 16.050/2014 (PDE)","art. 154, I"],["l1","M",1,"Lei 17.794/2022","art. 42, § único"],["d","M",2,"Decreto 53.889/2013","anterior à lei de 2022"],["p","M",3,"Portaria 105/2024","art. 1º"],["ob","M",4,"Compensar cada árvore","cortada ou transplantada","ob"]],
+      e:[["cf","l1","","ok"],["cf","l2","","ok"],["l2","d","institui o TCA","ok"],["l1","p","pede \"regulamento\"","warn"],["d","p","delega","ok"],["p","ob","","ok"]],
+      t:{hab:"ok",deg:["warn","A lei de 2022 pediu regulamento; a resposta é uma portaria apoiada num decreto de 2013."],vig:["warn","O art. 1º, IX remete ao art. 143 do PDE; o assunto está nos arts. 122 a 133 e 154, IV."],term:["warn","\"Manejo\" e o limiar de DAP da Portaria diferem dos da lei."],temp:"ok",pub:"ok"} },
+    { id:"multiplicadores", o:"Multiplicadores de corte e transplante", src:"Tabelas V e VI: até 45 por 1",
+      n:[["cf","F",0,"CF art. 5º, II","legalidade"],["x","E",3,"Cálculo estadual","norma não nomeada","dash"],["l","M",1,"Lei 16.050/2014 (PDE)","art. 154: sem parâmetro"],["d","M",2,"Decreto 53.889/2013","art. 5º, §1º"],["p","M",3,"Portaria 105/2024","Tabelas V e VI"],["ob","M",4,"3 a 45 mudas por árvore","conforme o DAP","ob"]],
+      e:[["cf","l","","ok"],["l","d","sem critério","warn"],["d","p","repassa","bad"],["x","ob","o mais restritivo","dash"],["p","ob","","ok"]],
+      t:{hab:["warn","A lei institui o TCA, mas não dá nenhum parâmetro de quantidade."],deg:["bad","O decreto repassa a fixação dos parâmetros à portaria: delegação em cascata."],vig:["warn","O Anexo VI manda comparar com \"a legislação estadual\", sem dizer qual."],term:"ok",temp:"na",pub:["bad","Não há memória de cálculo publicada para as proporções."]} },
+    { id:"fm", o:"Fator Multiplicador por valor ecológico", src:"Anexo VIII: de 1 a 10",
+      n:[["f1","F",1,"Lei 12.651/2012","APP"],["f2","F",3,"CONAMA 01/1994","estágios de regeneração"],["e1","E",2,"Decreto Est. 30.443/1989","patrimônio ambiental"],["l2","M",1,"Lei 10.365/1987","art. 4º (restaurado)"],["l1","M",1,"Lei 17.794/2022","arts. 4º e 5º"],["d","M",2,"Decreto 53.889/2013","art. 5º, §2º"],["p","M",3,"Portaria 105/2024","Anexo VIII"],["ob","M",4,"Multiplicar por 1 a 10","","ob"]],
+      e:[["f1","p","APP: fator 10","ok"],["f2","p","fragmento: 3 ou 4","ok"],["e1","p","1989: fator 2","warn"],["l1","p","significativa","ok"],["l2","d","art. 4º","warn"],["d","p","tabela herdada","ok"],["p","ob","","ok"]],
+      t:{hab:["warn","Os critérios nascem no decreto, não na lei."],deg:"ok",vig:["warn","O art. 4º da Lei 10.365 foi revogado e restaurado por decisão ainda não definitiva; nenhuma norma anota isso."],term:["bad","\"Preservação permanente\" municipal e APP federal são coisas diferentes; \"imune de corte\" não existe na lei municipal vigente."],temp:["bad","A lista estadual é de 1989 e nunca foi revista."],pub:["warn","O enquadramento depende de laudo, sem método publicado."]} },
+    { id:"fator535", o:"Fator 5,35 na entrega de mudas ao viveiro", src:"art. 41",
+      n:[["g1","M",1,"nenhuma lei","","gap"],["g2","M",2,"nenhum decreto","","gap"],["o","M",3,"Portaria 130/2013","item 11.4","rev"],["p","M",3,"Portaria 105/2024","art. 41"],["ob","M",4,"Mudas excedentes × 5,35","","ob"]],
+      e:[["o","p","número herdado","bad"],["p","ob","","ok"]],
+      t:{hab:["bad","Nenhuma lei ou decreto localizado."],deg:["bad","O fator existe só em portaria."],vig:["warn","A origem é uma portaria revogada."],term:"ok",temp:["bad","O número não é revisto desde 2013."],pub:["bad","Sem justificativa publicada."]} },
+    { id:"vm", o:"Valor da muda para o depósito no FEMA", src:"Anexo VII; art. 44",
+      n:[["g1","M",1,"nenhuma lei","","gap"],["d1","M",2,"Decreto 53.889/2013","art. 4º: valores de 2013"],["d2","M",2,"Decreto 64.877/2025","Anexo: R$ 337 + R$ 229","dash"],["p","M",3,"Portaria 105/2024","Anexo VII e art. 44"],["ob","M",4,"Pagar CF × (Vm + Vt)","","ob"]],
+      e:[["d1","p","2013 + índice","warn"],["d2","p","não declarado","dash"],["p","ob","","ok"]],
+      t:{hab:["warn","Só o decreto trata do valor; a lei cala."],deg:["warn","O valor vigente não está em nenhum ato; é \"calculado pela SVMA\"."],vig:"ok",term:["warn","A muda é medida por DAP na portaria e por altura no decreto de preços."],temp:["warn","Atualização \"mensal\" prevista, sem publicação."],pub:["bad","\"Calculado pela SVMA\" e \"divulgado pela CLA\", sem fonte indicada."]} },
+    { id:"regime11", o:"Regime 1 por 1 para obra pública, HIS e HMP", src:"art. 38; Anexo VI, item 1",
+      n:[["f1","F",1,"Lei 12.651/2012","art. 3º, VIII e IX","dash"],["l","M",1,"Lei 16.050/2014 (PDE)","sem regime diferenciado"],["d","M",2,"Decreto 53.889/2013","art. 7º"],["p","M",3,"Portaria 105/2024","art. 38"],["ob","M",4,"1 muda por árvore","× Fator Multiplicador","ob"]],
+      e:[["f1","p","sem remissão","dash"],["l","d","não prevê","warn"],["d","p","","ok"],["p","ob","","ok"]],
+      t:{hab:["warn","O tratamento favorecido aparece no decreto; não foi localizado na lei."],deg:"ok",vig:"ok",term:["warn","\"Utilidade pública\" e \"interesse social\" são usados sem remeter à definição federal."],temp:["warn","Regra de 2013, sem reavaliação publicada."],pub:["warn","O custo ambiental do regime não é publicado."]} },
+    { id:"ctca", o:"Destino das mudas excedentes, decidido pela CTCA", src:"arts. 31 a 33",
+      n:[["g1","M",1,"nenhum critério em lei","","gap"],["d","M",2,"Decreto 53.889/2013","art. 8º, §3º"],["p","M",3,"Portaria 105/2024","arts. 31 a 33"],["ob","M",4,"Plantio externo, viveiro,","FEMA ou obras","ob"]],
+      e:[["d","p","acompanha","warn"],["p","ob","decisão livre","bad"]],
+      t:{hab:["bad","Nenhuma lei fixa critério para a escolha."],deg:["warn","O decreto dá à CTCA o acompanhamento; a portaria lhe dá o poder de decidir."],vig:"ok",term:["warn","No decreto a CTCA acompanha o TCA; na portaria quem acompanha é a CLA."],temp:"na",pub:["bad","Colegiado interno, sem pauta nem critério publicados."]} },
+    { id:"vistoria", o:"Vistorias e recebimento do TCA", src:"arts. 21, 59 e 60",
+      n:[["g1","M",1,"nenhuma lei","","gap"],["d","M",2,"Decreto 53.889/2013","art. 8º, §§5º a 8º"],["p","M",3,"Portaria 105/2024","arts. 21, 59 e 60"],["ob","M",4,"Informar o plantio","para ser vistoriado","ob"]],
+      e:[["d","p","omite hipótese","warn"],["p","ob","","ok"]],
+      t:{hab:["warn","O rito de verificação está só em decreto e portaria."],deg:"ok",vig:"ok",term:["bad","\"Termo\" e \"Certificado\" para o mesmo documento; \"parcial\" com quatro sentidos."],temp:"na",pub:["bad","Sem prazo para a SVMA vistoriar; o efeito de cada certificado não é declarado."]} },
+    { id:"gee", o:"TCA por emissão de gases de efeito estufa", src:"não tratado pela Portaria 105",
+      n:[["cf","F",0,"CF art. 225",""],["l","M",1,"Lei 16.050/2014 (PDE)","art. 154, III e §2º"],["g2","M",2,"\"Ato do Executivo\"","não localizado","gap"],["r","M",3,"Res. CADES 284/2024","+ Portaria SVMA 129/2024"],["ob","M",4,"nenhuma obrigação de TCA","","gap"]],
+      e:[["cf","l","","ok"],["l","g2","pede Ato","bad"],["r","ob","só mitigação","warn"]],
+      t:{hab:"ok",deg:["bad","A lei pede Ato do Executivo; existe só resolução de conselho e portaria."],vig:"ok",term:["warn","A lei fala em \"compensação\" das emissões; a resolução, em \"mitigação\"."],temp:["bad","Sem regulamento desde 2014."],pub:"na"} }
+  ];
+  const st = v => Array.isArray(v) ? v[0] : v;
+  // quadro
+  document.getElementById("score").innerHTML =
+    `<thead><tr><th>Obrigação</th>${TESTS.map(t => `<th>${t[1]}<small>${t[2]}</small></th>`).join("")}</tr></thead><tbody>` +
+    OB.map(o => `<tr><td><a href="#t-${o.id}">${o.o}</a></td>${TESTS.map(t => `<td><span class="dot ${st(o.t[t[0]])}" title="${Array.isArray(o.t[t[0]]) ? o.t[t[0]][1].replace(/"/g, "&quot;") : ""}">${SYM[st(o.t[t[0]])]}</span></td>`).join("")}</tr>`).join("") + "</tbody>";
+  // trilhas
+  const host = document.getElementById("trails");
+  OB.forEach(o => {
+    const sec = document.createElement("div"); sec.className = "trail"; sec.id = "t-" + o.id;
+    sec.innerHTML = `<h3>${o.o}<small>${o.src}</small></h3><div class="scroll"><svg class="dg" role="img" aria-label="Trilha de normas até a obrigação: ${o.o}"></svg></div>` +
+      `<ul>${TESTS.map(t => { const v = o.t[t[0]]; return `<li><span class="dot ${st(v)}">${SYM[st(v)]}</span><span><b>${t[1]}.</b> ${Array.isArray(v) ? v[1] : (v === "na" ? "Não avaliado." : "Sem ressalva.")}</span></li>`; }).join("")}</ul>`;
+    host.appendChild(sec);
+    const svg = sec.querySelector("svg");
+    const uid = "tr-" + o.id;
+    ["ok:var(--muted)","warn:var(--warn)","bad:var(--bad)","dash:var(--ghost)"].forEach(s => { const [k,c] = s.split(":"); arrowDefs(svg, "mk-" + uid + "-" + k, c); });
+    const GX = 80, CWd = 268, NW = 184, HEAD = 28;
+    // altura de cada raia
+    const count = {}; o.n.forEach(n => { const k = n[1] + n[2]; count[k] = (count[k] || 0) + 1; });
+    const laneH = ENTES.map(e => { const m = Math.max(0, ...[0,1,2,3,4].map(l => count[e + l] || 0)); return m ? m * 44 + 10 : 24; });
+    const laneY = []; let y = HEAD; laneH.forEach(h => { laneY.push(y); y += h + 4; });
+    svg.setAttribute("viewBox", `0 0 1344 ${y + 4}`); svg.classList.add("tr");
+    LV.forEach((l, i) => { const t = el("text", { x: GX + i*CWd + NW/2, y: 18, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)", "font-family": "var(--f-body)", "font-weight": 600 }, svg); t.textContent = l.toUpperCase(); });
+    ENTES.forEach((e, i) => {
+      el("rect", { x: 4, y: laneY[i], width: 1336, height: laneH[i], rx: 5, fill: `var(--${COL[e]}-bg)`, "fill-opacity": 0.5, stroke: "none" }, svg);
+      const t = el("text", { x: 12, y: laneY[i] + Math.min(laneH[i]/2 + 4, 20), "font-size": 10.5, fill: `var(--${COL[e]})`, "font-family": "var(--f-body)", "font-weight": 700 }, svg);
+      t.textContent = NAME[e].toUpperCase();
+    });
+    const edgeLayer = el("g", {}, svg);
+    const used = {}, P = {};
+    o.n.forEach(([id, e, lv, l1, l2, style]) => {
+      const k = e + lv; const i = used[k] || 0; used[k] = i + 1;
+      const x = GX + lv*CWd, yy = laneY[ENTES.indexOf(e)] + 6 + i*44, h = 38;
+      const gap = style === "gap", dash = style === "dash", rev = style === "rev", ob = style === "ob";
+      el("rect", { x, y: yy, width: NW, height: h, rx: 5,
+        fill: gap ? "var(--bad-bg)" : (dash || rev) ? "var(--panel)" : `var(--${COL[e]}-bg)`,
+        stroke: gap ? "var(--bad)" : (dash || rev) ? "var(--ghost)" : `var(--${COL[e]})`,
+        "stroke-width": ob ? 3 : 1.5, "stroke-dasharray": (gap || dash) ? "5 4" : "none" }, svg);
+      const t1 = el("text", { x: x + NW/2, y: yy + (l2 ? 16 : 23), "text-anchor": "middle", "font-size": 11.5, "font-weight": ob ? 600 : 500, fill: gap ? "var(--bad)" : rev ? "var(--muted)" : "var(--ink)", "text-decoration": rev ? "line-through" : "none" }, svg);
+      t1.textContent = l1;
+      if (l2) { const t2 = el("text", { x: x + NW/2, y: yy + 30, "text-anchor": "middle", "font-size": 10.5, fill: "var(--muted)" }, svg); t2.textContent = l2; }
+      P[id] = { l: x, r: x + NW, cx: x + NW/2, cy: yy + h/2, t: yy, b: yy + h };
+    });
+    o.e.forEach(([s, tg, lab, k]) => {
+      const a = P[s], b = P[tg]; let d, lx, ly;
+      if (b.l > a.r) {
+        if (b.l - a.r > CWd) d = `M${a.r},${a.cy} L${b.l - 64},${a.cy} C${b.l - 26},${a.cy} ${b.l - 38},${b.cy} ${b.l - 2},${b.cy}`;
+        else { const mx = (a.r + b.l)/2; d = `M${a.r},${a.cy} C${mx},${a.cy} ${mx},${b.cy} ${b.l - 2},${b.cy}`; }
+        lx = a.r + 7; ly = a.cy - 6;
+      } else {
+        const down = b.cy > a.cy, y1 = down ? a.b : a.t, y2 = down ? b.t - 2 : b.b + 2;
+        d = `M${a.cx},${y1} L${b.cx},${y2}`;
+        if (Math.abs(y2 - y1) < 16) { lx = a.r + 7; ly = (y1 + y2)/2 + 3; } else { lx = a.cx + 8; ly = (y1 + y2)/2 + 3; }
+      }
+      const col = k === "ok" ? "var(--muted)" : k === "warn" ? "var(--warn)" : k === "bad" ? "var(--bad)" : "var(--ghost)";
+      el("path", { d, fill: "none", stroke: col, "stroke-width": k === "ok" ? 1.3 : 1.9, "stroke-dasharray": k === "dash" ? "5 4" : "none", "marker-end": `url(#mk-${uid}-${k})` }, edgeLayer);
+      if (lab) { const t = el("text", { x: lx, y: ly, "text-anchor": "start", "font-size": 10.5, fill: col, "font-family": "var(--f-body)", "font-weight": 600, stroke: "var(--panel)", "stroke-width": 4, "paint-order": "stroke", "stroke-linejoin": "round" }, svg); t.textContent = lab; }
+    });
+  });
+})();
+
+// ============ Lente 4: matriz de conceitos ============
+(function h4(){
+  if (!CORE) return;
+  const tb = document.getElementById("cx"), det = document.getElementById("d4");
+  const S = CORE.normas.map(n => n.s);
+  // papel: O origem, D define, R redefine, C conflita
+  const ROLE = {
+    "vegetação de porte arbóreo": { L10365:"D", L17794:"R", P105:"C" },
+    "exemplar / espécime arbóreo": { P105:"C", Q1:"R" },
+    "vegetação significativa": { DE30443:"O", LPUOS:"C", L17794:"D", P51:"R" },
+    "imune de corte": { L12651:"D", DE30443:"D", DE39743:"R", L10365:"D", P105:"C" },
+    "patrimônio ambiental": { DE30443:"D", PDE:"C" },
+    "vegetação de preservação permanente": { L10365:"D", P105:"C" },
+    "área de preservação permanente (APP)": { L12651:"D" },
+    "área verde": { L12651:"D", L10365:"D", PDE:"D" },
+    "maciço arbóreo": { P51:"R", Q1:"D" },
+    "bosque": { L10365:"D", P51:"R" },
+    "manejo": { L17794:"D", P105:"C" },
+    "poda drástica": { P51:"D" },
+    "compensação ambiental": { D53889:"D" },
+    "TCA": { PDE:"D", LPUOS:"C" },
+    "TAC": { PDE:"D" },
+    "densidade arbórea": { P105:"D" },
+    "área permeável": { P105:"D", Q1:"D" },
+    "Quota Ambiental": { LPUOS:"D" },
+    "utilidade pública": { L12651:"D" },
+    "interesse social": { L12651:"D" }
+  };
+  const NOTE = {
+    "vegetação de porte arbóreo": "A Lei 10.365/1987 exigia espécime \"lenhoso\" com DAP superior a 5 cm. A Lei 17.794/2022 tirou \"lenhoso\" e manteve \"superior\". A Portaria 105/2024 escreve \"igual ou superior\" a 5 cm e diz seguir a lei: uma árvore com exatamente 5 cm conta para a portaria e não para a lei.",
+    "exemplar / espécime arbóreo": "É o termo de trabalho das portarias. A Portaria 105 o define com DAP \"igual ou superior\" a 5 cm. A proposta de Quadro 1 da LPUOS só classifica como \"indivíduo arbóreo existente\" a árvore com DAP acima de 20 cm.",
+    "vegetação significativa": "O termo nasce no título do anexo do decreto estadual de 1989. A Lei 17.794/2022 o define (arts. 4º e 5º). A Portaria 51/2024 acrescenta uma quinta hipótese (bosque ou maciço heterogêneo), copiada da Lei 10.365/1987, e restringe outra. A LPUOS fala em \"vegetação arbórea significativa a critério de SVMA\".",
+    "imune de corte": "A base federal continua na Lei 12.651/2012, art. 70, II. O decreto estadual de 1989 lista as árvores. A versão municipal (Lei 10.365, art. 16) foi revogada em 2022 e não foi restaurada. A Portaria 105 ainda usa a categoria, que a lei municipal vigente não tem.",
+    "patrimônio ambiental": "No decreto estadual de 1989 é uma lista fechada de árvores. No PDE é o conjunto do ambiente natural e urbano. O Decreto 53.889 e a Portaria 105 usam o sentido estadual para dar Fator Multiplicador 2.",
+    "vegetação de preservação permanente": "Categoria municipal da Lei 10.365/1987, art. 4º, restaurada pela ADIN: inclui bosques acima de 10.000 m² e faixa de 20 m de cursos d'água. Não é a APP federal, que tem faixa mínima de 30 m. A Portaria 105 usa as duas no mesmo cálculo.",
+    "área de preservação permanente (APP)": "Definida na Lei Federal 12.651/2012, art. 3º, II. As normas municipais usam o conceito federal sem redefinir. A Lei 17.794/2022 trata a vegetação em APP como significativa.",
+    "área verde": "Três definições parciais: \"área verde urbana\" na lei federal (art. 3º, XX); o Sistema de Áreas Protegidas, Áreas Verdes e Espaços Livres no PDE (art. 265); e \"região carente de áreas verdes\" na Lei 10.365 (menos de 15% num raio de 2 km). Nenhuma definição geral.",
+    "maciço arbóreo": "Quatro limiares: copas cobrindo 40% do solo (Lei 10.365 e Portaria 51), 500 m² e 15 árvores (proposta de Quadro 1), 1.000 m² (Decreto Estadual 39.743 e Portaria 105), 10.000 m² (Lei 10.365 e Portaria 51). Nenhuma definição única.",
+    "bosque": "Lei 10.365/1987, art. 4º, §3º: três ou mais gêneros de árvores, copas cobrindo mais de 40% do solo. A Portaria 51/2024 troca \"gêneros\" por \"espécies\".",
+    "fragmento florestal": "Usado no Decreto 53.889 e nas Portarias 130 e 105 para graduar o Fator Multiplicador. Sem definição em nenhuma norma do corpus.",
+    "Mata Atlântica": "Usada em oito normas e definida em nenhuma. A definição está na Lei Federal 11.428/2006, citada só pelo PDE (art. 287). A Portaria 105 exige o mapa do Plano Municipal da Mata Atlântica.",
+    "Cerrado": "Aparece só na lei federal, e apenas para a Reserva Legal na Amazônia Legal. Nenhuma norma estadual ou municipal do corpus menciona o bioma.",
+    "vegetação nativa": "Termo da lei federal. As normas municipais o usam ao lado de \"espécie nativa\", sem definição própria.",
+    "manejo": "A Lei 17.794/2022 e a Portaria 51/2024 definem manejo como o cuidado \"desde o plantio e durante todo o ciclo vital\". A Portaria 105/2024 o define como \"corte, transplante ou remoção\". Duas portarias do mesmo ano, sentidos opostos.",
+    "supressão": "Corte, supressão e remoção se alternam entre as normas. A Portaria 105 distingue \"corte, transplante ou remoção\" sem definir remoção.",
+    "poda drástica": "A Lei 17.794/2022, art. 29, remete a regulamento. A definição existe só na Portaria 51/2024: corte de um terço ou mais da copa, entre outros critérios.",
+    "compensação ambiental": "O Decreto 53.889/2013 dá a fórmula; a Portaria 105/2024 a detalha. A Lei 17.794/2022 fala em \"medidas compensatórias\".",
+    "TCA": "\"Termo de Compromisso Ambiental\" no PDE, no decreto e na Portaria 105. A LPUOS usa esse nome no art. 77 e \"Termo de Compensação Ambiental\" no art. 29-A.",
+    "TAC": "Termo de Ajustamento de Conduta Ambiental, do PDE, art. 156. Plantio feito por TAC não conta para o TCA nem para a Quota Ambiental.",
+    "densidade arbórea": "Definida só na Portaria 105/2024 (arts. 3º, XI e 34): árvores no lote e no passeio, antes e depois da intervenção.",
+    "área permeável": "A Portaria 105 define \"área permeável sobre solo natural\"; a proposta de Quadro 1 define \"área ajardinada sobre solo natural\". A LPUOS trata da taxa de permeabilidade.",
+    "Quota Ambiental": "Instituto da LPUOS (arts. 74 a 80). Árvore plantada por TCA conta pela metade.",
+    "utilidade pública": "Definida na Lei Federal 12.651/2012, art. 3º, VIII. A Portaria 105 usa o termo para o regime 1 por 1 sem remeter à definição.",
+    "interesse social": "Definido na Lei Federal 12.651/2012, art. 3º, IX. No PDE e na LPUOS o termo aparece sobretudo em \"habitação de interesse social\"."
+  };
+  const RN = { O: "origem do termo", D: "define", R: "redefine", C: "conflita" };
+  const head = `<thead><tr><th class="rowh"></th>${CORE.normas.map(n => `<th class="${n.e}" title="${n.l}">${n.s}</th>`).join("")}</tr></thead>`;
+  const body = CORE.conceitos.map((c, ri) => {
+    const role = ROLE[c.c] || {};
+    return `<tr data-i="${ri}"><th class="rowh" scope="row"><button type="button" id="cx-${ri}">${c.c}</button></th>` + c.n.map((v, i) => {
+      const n = CORE.normas[i], r = role[n.s] || "";
+      if (!v) return `<td class="z ${r}">·</td>`;
+      const p = Math.min(62, Math.round(10 + 13 * Math.log2(1 + v)));
+      return `<td class="${r}" style="background:color-mix(in srgb, var(--${COL[n.e]}) ${p}%, transparent)" title="${n.l}: ${v} ocorrência(s)${r ? " — " + RN[r] : ""}">${v}</td>`;
+    }).join("") + "</tr>";
+  }).join("");
+  tb.innerHTML = head + "<tbody>" + body + "</tbody>";
+  const show = ri => {
+    const c = CORE.conceitos[ri], role = ROLE[c.c] || {};
+    tb.querySelectorAll("tr.sel").forEach(r => r.classList.remove("sel"));
+    tb.querySelector(`tr[data-i="${ri}"]`).classList.add("sel");
+    const pres = c.n.map((v, i) => v ? CORE.normas[i] : null).filter(Boolean);
+    const roles = Object.entries(role).map(([s, r]) => `<li><span class="mono">${(CORE.normas.find(n => n.s === s) || {l:s}).l}</span>: ${RN[r]}</li>`).join("");
+    det.innerHTML = `<div class="t">${c.c} · presente em ${pres.length} de ${CORE.normas.length} normas</div><div>${NOTE[c.c] || ""}</div>${roles ? `<ul>${roles}</ul>` : ""}`;
+  };
+  tb.querySelectorAll("button").forEach(b => b.addEventListener("click", () => show(+b.id.slice(3))));
+  show(CORE.conceitos.findIndex(c => c.c === "vegetação significativa"));
+})();
+})();
+</script>

@@ -2,7 +2,7 @@
 
 **Resumo**: Lista do que falta confirmar na wiki — fontes ausentes, textos não ingeridos e dados a checar. Cada item tem um número estável; use esse número para indicar a fonte.
 
-**Última atualização**: 2026-09-10
+**Última atualização**: 2026-10-01
 
 ---
 
@@ -53,17 +53,17 @@ Formato: `<número>: <url ou arquivo>`. Vazio no momento — acrescente uma linh
 | # | Item | O que falta e por quê | Páginas afetadas |
 |---|---|---|---|
 | 1 | **Base de dados aberta de TCAs emitidos** | O CLAUDE.md pede o cruzamento com dados de emissão de TCA; nenhum dataset público foi localizado. Buscar no Portal de Dados Abertos da PMSP e no GeoSampa | [[termo-de-compromisso-ambiental-tca]], [[questionar-criterios-tca]] |
-| 2 | **Valor atual da muda e do tutor** | O Decreto 53.889/2013, art. 4º, prevê reajuste pelo Índice de Edificações em Geral a partir da base de 2013 (Vm=R$ 234,46; Vt=R$ 8,58); **o Decreto 64.877/2025 já foi checado e não é essa norma** (preços genéricos, sem menção a SVMA/arborização) | [[decreto-53889-2013]], [[compensacao-ambiental]] |
-| 3 | **Lei 16.402/2016 — Quota Ambiental (Quadro 3A) e art. 143** | O plantio compensatório conta para a Quota Ambiental (Portaria 105/2024, art. 17) e a transferência de potencial construtivo em ZEPAM (art. 143) é uma das 4 hipóteses de TCA da Lei 16.050/2014 | [[portaria-svma-105-2024]], [[calcada-verde]], [[termo-de-compromisso-ambiental-tca]] |
+| 2 | **Qual valor a SVMA usa como Vm (muda) e Vt (tutor)** | *Parcialmente resolvida.* O Anexo do Decreto 64.877/2025 fixa para 2026 muda com plantio R$ 337,00 e tutor com colocação R$ 229,00. Falta confirmar se a SVMA usa esses itens ou outro cálculo ("Vm calculado pela SVMA", Portaria 105/2024). Fonte ideal: memória de cálculo de um TCA real ou resposta da SVMA/CTCA | [[decreto-64877-2025]], [[compensacao-ambiental]], [[questionar-criterios-tca]] |
+| 3 | **Lei 16.402/2016 — Quadros 3A e 3B vigentes (anexos)** | *Texto da lei ingerido.* Faltam os anexos em PDF com os valores de FV para árvore plantada/existente e a pontuação mínima de QA por perímetro. Obs.: o "art. 143" vem da Portaria 105/2024, art. 1º, IX, que cita por engano o art. 143 do PDE (CEPAC); a hipótese de TCA em ZEPAM é o art. 154, IV do PDE | [[lei-16402-2016]], [[portaria-svma-105-2024]] |
 | 4 | **Lei 13.430/2002, art. 251 — texto integral** | Instituía o TCA no Plano Diretor de 2002; conteúdo hoje conhecido só indiretamente, via citação de outras normas | [[termo-de-compromisso-ambiental-tca]], [[portaria-svma-130-2013]] |
-| 5 | **Portaria SVMA 130/2013 — data exata** | O portal registra 26/08/2013 e 12/10/2013 para a mesma norma | [[portaria-svma-130-2013]], [[linha-tempo]] |
-| 6 | **"Ato do Executivo" da Lei 16.050/2014, art. 154, §2º** | Deveria disciplinar a compensação por licenciamento com significativa emissão de gases de efeito estufa (4ª hipótese de TCA); não localizado nem na Portaria 105/2024 nem no Decreto 53.889/2013 — pode ser lacuna de 12 anos | [[termo-de-compromisso-ambiental-tca]], [[questionar-criterios-tca]] |
+| 5 | **Portaria SVMA 130/2013 — data exata** | *Quase resolvida.* A Portaria 105/2024, art. 96, a identifica como "de 26 de agosto de 2013"; o endereço no portal usa 12/10/2013 (provável data de republicação). Falta confirmar no Diário Oficial | [[portaria-svma-130-2013]], [[linha-tempo]] |
+| 6 | **TCA de emissões de GEE (Lei 16.050/2014, art. 154, III e §2º)** | *Refinada.* A Resolução CADES 284/2024 e a Portaria SVMA 129/2024 exigem inventário e mitigação no licenciamento, mas não citam o art. 154 nem o TCA. Falta saber se algum TCA de emissões já foi firmado | [[termo-de-compromisso-ambiental-tca]], [[questionar-criterios-tca]] |
 
 ## Bloco 2 — Norma vigente de manejo
 
 | # | Item | O que falta e por quê | Páginas afetadas |
 |---|---|---|---|
-| 7 | **Lei Municipal 10.365/1987 — texto integral, sobretudo arts. 4º e 5º** | Prioridade elevada: a ADIN nº 2085569-32.2023.8.26.0000 restaurou trechos desses artigos e só o texto completo permite dizer com precisão o que está em vigor | [[lei-10365-1987]], [[decreto-53889-2013]], [[questionar-criterios-tca]] |
+| 7 | **Lei Municipal 10.365/1987 — conferência do texto restaurado** | *Texto integral obtido no portal em 2026-10-01*, com as marcas de revogação e de restabelecimento pela ADIN. Falta só conferir se o portal marcou todos os trechos conforme o acórdão (item 15) | [[lei-10365-1987]], [[decreto-53889-2013]], [[questionar-criterios-tca]] |
 | 8 | **Decretos 64.883/2025 e 64.986/2026** | Alteram o Decreto 61.859/2022 (arts. 2º-A e 2º-B); texto das alterações não ingerido | [[decreto-61859-2022]] |
 | 9 | **Regulamento próprio de poda de cada Subprefeitura** | A Portaria SVMA 51/2024, art. 37, remete a "regulamento próprio" das 32 Subprefeituras para poda em área privada — risco de critério não uniforme | [[poda]], [[portaria-svma-51-2024]] |
 | 10 | **Manual Técnico de Poda da PMSP — edição vigente** | Citado pela Lei 17.794/2022 e pelas Portarias SVMA 51/2024 e 105/2024 como referência técnica; edição atual não localizada como documento autônomo | [[poda]], [[manejo-arboreo]] |
@@ -90,7 +90,7 @@ Formato: `<número>: <url ou arquivo>`. Vazio no momento — acrescente uma linh
 
 | # | Item | O que falta e por quê | Páginas afetadas |
 |---|---|---|---|
-| 19 | **Decretos Estaduais 30.443/1989 e 39.743/1994** | Instituem "patrimônio ambiental / árvore imune ao corte" e transferem a competência ao Município; ainda usados no cálculo da compensação | [[vegetacao-significativa]], [[portaria-svma-105-2024]] |
+| 19 | **Documento "Vegetação Significativa do Município de São Paulo" (anexo do Decreto Estadual 30.443/1989)** | *Os dois decretos foram ingeridos.* Falta o documento-anexo, depositado na Secretaria (estadual) do Meio Ambiente e não publicado com o decreto; e a ficha da norma na ALESP (`/norma/{id}`) para confirmar que não houve revogação | [[decreto-estadual-30443-1989]], [[vegetacao-significativa]] |
 | 20 | **Consolidação das leis ambientais estaduais (ALESP)** | Estado atual do anteprojeto citado por Rosset (2009); e se há esforço equivalente na Câmara Municipal de SP | [[consolidacao-leis-ambientais-alesp]] |
 | 21 | **PLC 488/2017 (Senado)** | Obrigaria o Executivo federal a avaliar o impacto de norma que crie política pública; situação de tramitação | [[avaliacao-de-impacto-legislativo]] |
 | 22 | **Lei Federal 12.651/2012 (Código Florestal) — texto integral** | Base da "vegetação significativa" em APP; texto não ingerido | [[vegetacao-significativa]] |
@@ -101,6 +101,16 @@ Formato: `<número>: <url ou arquivo>`. Vazio no momento — acrescente uma linh
 |---|---|---|---|
 | 23 | Início da vigência da Lei 17.794/2022 | Data exata (vacatio de 90 dias a partir de 27/04/2022 — publicação no DOC) | [[lei-17794-2022]], [[linha-tempo]] |
 | 24 | Autoria da Lei 10.365/1987 | Nome do vereador ou do Executivo autor | [[lei-10365-1987]] |
+| 25 | Origem e status da "Proposta de alteração do Quadro 1" da LPUOS | Qual projeto de lei; se foi aprovada (e se é a que resultou na Lei 18.081/2024) | [[lei-16402-2016]] |
+| 26 | Lei 18.081/2024 — data e número do PL | Revisão da LPUOS; data exata não confirmada | [[lei-16402-2016]], [[linha-tempo]] |
+| 27 | Órgão estadual que hoje examina o corte em maciços ≥ 1.000 m² | Sucessor da "Secretaria do Meio Ambiente" do Decreto 39.743/1994 (SEMIL? CETESB?) | [[decreto-estadual-30443-1989]] |
+| 28 | Efeito de cada certificado de recebimento do TCA | O que o recebimento parcial, provisório e definitivo liberam (por exemplo, o Certificado de Conclusão da obra); procurar no Código de Obras e nas normas de licenciamento de edificações | [[ciclo-de-vida-do-tca]] |
+| 29 | Publicação dos recebimentos de TCA | Se os certificados de recebimento parcial, provisório e definitivo saem no Diário Oficial ou no GeoSampa | [[ciclo-de-vida-do-tca]] |
+| 30 | Norma estadual usada na comparação do Anexo VI da Portaria 105/2024 | O Anexo manda comparar com "a legislação estadual" sem nomear a norma | [[calculo-da-compensacao]] |
+| 31 | Procedimento de declaração de vegetação significativa | Ato normativo prometido pela Portaria SVMA 51/2024, art. 5º, §2º | [[vegetacao-significativa]] |
+| 32 | Camada "Vegetação Significativa 2023" do GeoSampa | Baixar e cruzar com as listas do Decreto Estadual 30.443/1989 e com a localização dos TCAs | [[mapa-de-conceitos]] |
+| 33 | Cerrado no Município | O bioma não aparece em nenhuma norma municipal ou estadual do corpus; verificar a Lei Estadual 13.550/2009 e a existência de remanescentes | [[mapa-de-conceitos]] |
+| 34 | Normas definidoras fora do corpus | Lei Federal 11.428/2006 (Mata Atlântica) e Resolução CONAMA 01/1994 (estágios de regeneração): ingerir o texto | [[mapa-de-conceitos]] |
 
 ---
 
@@ -123,6 +133,10 @@ Itens fechados nesta sessão, para referência — não exigem mais ação.
 | Lei Municipal 13.293/2002 | "Calçadas Verdes"; obriga só órgãos públicos, incentiva (não obriga) o particular | `legislacao.prefeitura.sp.gov.br/lei-13293-de-14-de-janeiro-de-2002` |
 | Lei Municipal 15.442/2011 | Lei-base de limpeza, fechamento de terrenos e passeios | `legislacao.prefeitura.sp.gov.br/lei-15442-de-09-de-setembro-de-2011` |
 | ADIN nº 2085569-32.2023.8.26.0000 | Comunicado oficial da Procuradoria da Câmara: julgamento procedente por maioria, declara trechos da Lei 17.794/2022 inconstitucionais e **restaura parte dos arts. 4º-5º da Lei 10.365/1987**; decisão ainda não transitada em julgado | `saopaulo.sp.leg.br/assessoria_juridica/adin-no-2085569-32-2023-8-26-0000` |
+| Decretos Estaduais 30.443/1989 e 39.743/1994 (item 19) | Lista de árvores imunes de corte; documento-anexo chamado "Vegetação Significativa do Município de São Paulo"; desde 1994 o Município decide o corte, salvo reservas e maciços ≥ 1.000 m²; sem registro de revogação | `raw/legislacao/Decreto Estadual 30.443-1989.pdf`; `al.sp.gov.br/repositorio/.../decreto-39743-23.12.1994.html` |
+| Lei 16.402/2016 — texto (item 3) | Quota Ambiental; TCA com fator redutor 0,50 (art. 77); TAC não conta (art. 78); 1 árvore/50 m² permeáveis (art. 81, §4º); "Termo de Compensação Ambiental" no art. 29-A | `raw/legislacao/Lei 16402-2016.pdf` |
+| Preço público da muda (item 2, parcial) | Anexo do Decreto 64.877/2025: muda com plantio R$ 337,00, tutor R$ 229,00 (2026). **Corrige** a afirmação anterior de que esse decreto não tratava de arborização | `raw/legislacao/doc. 151724539_Anexo_...pdf` |
+| Regulamentação de GEE no licenciamento (item 6, parcial) | Resolução CADES 284/2024 e Portaria SVMA 129/2024 — inventário e mitigação, sem TCA | `legislacao.prefeitura.sp.gov.br/leis/...` |
 
 ---
 

@@ -54,3 +54,28 @@
 - Bloco 3 (calçadas) resolvido: Decreto 59.671/2020, Lei 13.293/2002 e Lei 15.442/2011 ingeridos; `calcada-verde` reescrita.
 - **`wiki/verificacoes-pendentes.md` redesenhada** a pedido do usuário: tabelas sem URL embutida; nova seção "Fontes indicadas" no formato `número: fonte`; itens resolvidos movidos para uma seção "Resolvidas"; pendências renumeradas de 1 a 24 (de 35, refletindo o progresso).
 - `wiki/linha-tempo.md` reescrita com as datas exatas confirmadas nesta sessão.
+
+## 2026-09-23 — ingestão de 5 fontes novas em `raw/`
+
+- Fontes extraídas com `arboriki extract` (OCR onde necessário): `raw/legislacao/Decreto Estadual 30.443-1989.pdf`, `Lei 16402-2016.pdf`, `Quadro 1 – Conceitos e definições.pdf`, `doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.pdf` e `raw/legistica/ESTUDOS_EM_LEGISTICA.pdf`.
+- Rastreio complementar nos portais: Decreto Estadual 39.743/1994 (ALESP), Decreto 64.877/2025, Resolução CADES 284/2024 e Portaria SVMA 129/2024 (Prefeitura).
+- **Páginas novas**: `decreto-estadual-30443-1989` (lista de árvores imunes de corte; origem do termo "vegetação significativa"), `lei-16402-2016` (LPUOS: Quota Ambiental, TCA com redutor 0,50, proposta de Quadro 1 com "maciço arbóreo"), `decreto-64877-2025` (preços públicos 2026), `legisprudencia` (conceito, a partir de *Estudos em Legística*, 2019).
+- **Correção**: o registro de 2026-09-10 que descartou o Decreto 64.877/2025 estava errado — a leitura cobriu só o corpo do decreto; o **Anexo** traz muda com plantio R$ 337,00 e tutor R$ 229,00. Corrigidos `compensacao-ambiental`, `portaria-svma-105-2024`, `questionar-criterios-tca`, `linha-tempo`, `verificacoes-pendentes`.
+- **Correção**: `arborizacao-urbana` dizia que a Lei 17.794/2022 "substituiu" a categoria de árvore imune ao corte; lei municipal não revoga decreto estadual — o Decreto 30.443/1989 segue vigente e suas árvores se enquadram no art. 5º, III da lei municipal.
+- **Correção**: a pendência #3 associava o "art. 143" da Lei 16.402/2016 à ZEPAM; o art. 143 trata de interdição.
+- `questionar-criterios-tca`: novos achados 4-A (valor da muda sem fonte pública) e 4-B (TCA vale metade na Quota Ambiental); 6-A atualizado (Resolução CADES 284/2024 exige mitigação, mas sem TCA); propostas 10 (publicar Vm e Vt) e 11 (uniformizar o nome do TCA); diagrama e grafo interativo regerados.
+- Atualizados: `vegetacao-significativa`, `termo-de-compromisso-ambiental-tca`, `index`, `linha-tempo`, `verificacoes-pendentes` (itens 2, 3, 6, 19 revistos; 25-27 novos).
+- `lat.md/diagram-style.md`: nova classe `estadual` (laranja) para normas estaduais.
+- Skill `pesquisa-legislacao`: o portal da Prefeitura devolve HTTP 200 com corpo "404 - Página não encontrada" — checar o corpo, não só o código; padrão de URL do repositório da ALESP; ler sempre o Anexo.
+
+## 2026-10-01 — lentes de análise, mapa de conceitos e ciclo de vida do TCA
+
+- **Corpus ampliado**: texto vigente de 14 normas baixado dos portais oficiais para `.arboriki/extracted/portais/` (Leis 10.365/1987, 13.293/2002, 15.442/2011, 16.050/2014, 17.794/2022; Decretos 59.671/2020, 61.859/2022; Portarias SVMA 130/2013, 39/2024, 51/2024; Decreto Estadual 39.743/1994; Leis federais 12.651/2012, 9.605/1998; LC 140/2011).
+- **Páginas novas**: `mapa-de-conceitos` (48 conceitos em 19 normas; onde cada um é definido, redefinido ou conflita), `ciclo-de-vida-do-tca` (etapas, intervalo sem vistoria, ambiguidade do "recebimento parcial", dicionário de eventos e indicadores), `calculo-da-compensacao` (cálculo em seis passos, exceções, pontos sem resultado único).
+- **Infográficos**: `assets/infograficos/ciclo-de-vida-tca.svg` e `assets/infograficos/calculo-compensacao.svg`. **Dados**: `assets/dados/conceitos-por-norma.csv` e `assets/dados/normas-do-corpus.csv`.
+- **Achados**: (1) entre a publicação do TCA e o informe de plantio não há vistoria obrigatória da SVMA (Portaria 105/2024, arts. 21 e 57); (2) "recebimento parcial" tem quatro hipóteses no Decreto 53.889/2013 e três na Portaria 105; (3) a Portaria 105 define "manejo" ao contrário da Lei 17.794/2022 e muda o limiar de DAP de "superior" para "igual ou superior" a 5 cm; (4) a Portaria 51/2024 acrescenta uma hipótese à "vegetação significativa" da lei; (5) Cerrado não aparece em nenhuma norma estadual ou municipal do corpus.
+- **Erros de citação da Portaria 105/2024 registrados**: art. 143 do PDE (deveria ser arts. 122-133 e 154, IV); Resolução CONAMA 237 datada de 1987 (é de 1997); "CONAMA 01/1991"; Anexo VI remete ao Anexo VII em vez do VIII.
+- **Correção**: a lista de normas citadas pela Portaria 105 estava incompleta (faltavam 5 leis estaduais de mananciais, Lei Orgânica, IN IBAMA, Resolução SMA 36/2018, Decisão CETESB 167/2015, Portaria SVMA 57/2024); a nota sobre o "art. 143" em `lei-16402-2016` foi refeita.
+- **Pendências**: item 7 (texto da Lei 10.365/1987) quase resolvido; itens 28 a 34 novos.
+- Logo da Rede Ambiental Butantã na página inicial (`assets/imagens/LogoRAB2026.svg`, cópia de `raw/imagens/`).
+- Scripts de análise versionados em `scripts/analise/`; lentes documentadas em `lat.md/analysis-lenses.md`.

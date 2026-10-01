@@ -14,8 +14,12 @@
 - raw/legislacao/Portaria SVMA 116-2024.pdf
 - raw/legistica/AVALIAÇÃO DE IMPACTO LEGISLATIVO NO BRASIL_ALESP_2010.pdf
 - raw/legistica/NOCOES_ELEMENTARES_DE_LEGISTICA.pdf
+- raw/legislacao/doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.pdf (Anexo do Decreto 64.877/2025)
+- raw/legislacao/Lei 16402-2016.pdf
+- https://legislacao.prefeitura.sp.gov.br/leis/resolucao-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-cades-284-de-20-de-dezembro-de-2024
+- https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-129-de-30-de-dezembro-de-2024
 
-**Última atualização**: 2026-09-10
+**Última atualização**: 2026-10-01
 
 ---
 
@@ -30,7 +34,7 @@ O "critério de determinação do TCA" não está numa norma só. Ele resulta de
 | Decreto de competências (2022) | **Decreto 61.859/2022** | regulamenta só arts. 23-27; art. 11: "os demais dispositivos serão objeto de regulamentação própria" |
 | Decreto de base (2013, nunca substituído) | **Decreto 53.889/2013** | regulamenta o TCA da lei de 2002; contém, desde 2013, a fórmula `CF=(A+B+C+D+E+P+M)×Fr`, a tabela do Fator Multiplicador e o regime especial 1:1 (art. 7º) |
 | Portaria de critérios (2024) | **Portaria SVMA 105/2024** (alt. 116/2024) | tabelas de proporção por DAP, procedimentos, documentos, prazos — reaproveita a fórmula e a tabela de 2013 |
-| Tabela de preços | Decreto 53.889/2013, art. 4º, §3º-4º (valores de 2013, reajustados pelo Índice de Edificações em Geral) | valor monetário da muda e do tutor. `[verificar]` valor atual — **não é** o Decreto 64.877/2025 (preços genéricos de serviços da Prefeitura, sem menção a SVMA/arborização) |
+| Tabela de preços | Decreto 53.889/2013, art. 4º, §3º-4º (valores de 2013, reajustados pelo Índice de Edificações em Geral); **Anexo do Decreto 64.877/2025** (preços de 2026) | valor monetário da muda e do tutor. O Anexo de 2026 fixa muda com plantio R$ 337,00 e tutor com colocação R$ 229,00; a Portaria 105/2024 diz que Vm é "calculado pela SVMA". `[verificar]` qual valor é usado — ver achado 4-A e [[decreto-64877-2025]] |
 
 Cruzam ainda a **Lei 16.402/2016** (Quota Ambiental), a **Portaria SVMA 51/2024** (padrão de muda) e a competência estadual (**CETESB**, Deliberação CONSEMA 01/2024). Ver [[lei-17794-2022]], [[decreto-61859-2022]], [[decreto-53889-2013]], [[portaria-svma-105-2024]], [[termo-de-compromisso-ambiental-tca]].
 
@@ -64,6 +68,14 @@ O problema de legística aqui não é "citar norma revogada" — é que **nenhum
 
 As Tabelas V e VI da Portaria 105/2024 saltam de 3:1 (DAP 5–10 cm) para 45:1 (DAP acima de 150 cm) por corte, em degraus não lineares. Não há documento público que justifique por que 45 e não 30 ou 60, nem como os multiplicadores se relacionam com a biomassa, a copa ou os serviços ecossistêmicos perdidos. O **fator 5,35** (art. 41) vem **intacto da Portaria 130/2013** (item 11.4), replicado por mais de uma década sem revisão publicada. Falta a "identificação clara do problema" e a "comparação de alternativas" que a AIL exige (fonte: AVALIAÇÃO DE IMPACTO LEGISLATIVO NO BRASIL_ALESP_2010.pdf).
 
+### 4-A. Valor monetário da muda sem fonte pública declarada (princípio da acessibilidade)
+
+A conversão da compensação em dinheiro (FEMA) ou em obras usa `V = Vm + Vt`, com **Vm "calculado pela SVMA"** (Portaria 105/2024, Anexo IX). Nenhuma norma publica esse cálculo. Os valores-base de 2013 eram **Vm = R$ 234,46** e **Vt = R$ 8,58** (Decreto 53.889/2013, art. 4º). O Anexo do **Decreto 64.877/2025** fixa, para 2026, **R$ 337,00** para muda de até 2,50 m **com plantio** e **R$ 229,00** para tutor **com colocação** (itens 27.3.3-27.3.4) (fonte: doc. 151724539_Anexo_...pdf). A diferença no tutor é de 27 vezes. Sem saber qual dos dois é usado, o cidadão não consegue conferir a conta de um TCA nem o valor depositado no FEMA. Ver [[decreto-64877-2025]].
+
+### 4-B. A compensação por TCA vale metade na Quota Ambiental
+
+A Lei 16.402/2016, art. 77, aplica **fator redutor 0,50** às árvores plantadas como contrapartida de TCA no cálculo da Quota Ambiental do lote; o art. 78 exclui as plantadas por TAC (fonte: Lei 16402-2016.pdf). É uma regra **pró-proteção** — impede que o empreendedor cumpra duas obrigações com a mesma muda —, mas convive com a Portaria 105/2024, art. 17, que admite o plantio compensatório no lote. `[verificar]` se a SVMA e o licenciamento de edificações aplicam o redutor de forma coordenada. Ver [[lei-16402-2016]].
+
 ### 5. Cálculo sobre "10% dos maiores DAP" pode subestimar o impacto
 
 `Ic` e `It` são a **média aritmética dos 10% maiores DAP** dos exemplares a manejar, não o DAP de cada árvore. Num lote com poucas árvores grandes e muitas médias, a média dos 10% maiores pode ficar abaixo do impacto real do conjunto. É uma escolha metodológica de simplificação, sem justificativa documentada nem análise de sensibilidade.
@@ -74,7 +86,9 @@ Para obra de infraestrutura, utilidade/interesse público ou social, HIS, HMP, P
 
 ### 6-A. Hipótese de compensação por emissão de gases de efeito estufa sem regulamento localizado
 
-A Lei 16.050/2014, art. 154, III, institui o TCA para licenciamento ambiental com significativa emissão de gases de efeito estufa, condicionado a um plano de mitigação "com critérios estabelecidos por Ato do Executivo" (§2º). Nem o Decreto 53.889/2013 nem a Portaria SVMA 105/2024 tratam dessa hipótese — ambos cobrem apenas manejo arbóreo e intervenção em APP. `[verificar]` se o "Ato do Executivo" para compensação de emissões foi editado; se não, é uma lacuna de regulamentação de 12 anos (desde a Lei 16.050/2014).
+A Lei 16.050/2014, art. 154, III, institui o TCA para licenciamento ambiental com significativa emissão de gases de efeito estufa, condicionado a um plano de mitigação "com critérios estabelecidos por Ato do Executivo" (§2º). Nem o Decreto 53.889/2013 nem a Portaria SVMA 105/2024 tratam dessa hipótese.
+
+**Atualização (2026-09-23).** Existe regulamentação de **inventário e mitigação** de emissões no licenciamento: a **Resolução CADES nº 284/2024** exige estimativa ou inventário de GEE com estratégia de mitigação para os empreendimentos do seu Anexo Único sujeitos a EIA-RIMA e EVA, e a **Portaria SVMA nº 129/2024** fixa a metodologia (GHG Protocol ou ABNT ISO 14064) (fontes: legislacao.prefeitura.sp.gov.br/leis/resolucao-...-svma-cades-284-de-20-de-dezembro-de-2024 e .../portaria-...-svma-129-de-30-de-dezembro-de-2024). O preço público da análise é R$ 5.955,00 (Decreto 64.877/2025, Anexo, item 29.1.16.1). **Mas nenhuma das duas cita a Lei 16.050/2014, o art. 154 nem o TCA**: a mitigação é exigida como condição de licença, sem o instrumento de compensação que o PDE criou. A lacuna, portanto, se refina: há plano de mitigação por **resolução de conselho e portaria** (não por "Ato do Executivo" do Prefeito), e **não há TCA de emissões** regulamentado. `[verificar]` se algum TCA já foi firmado com base no art. 154, III.
 
 ### 7. Decisão discricionária sem critério nem participação externa
 
@@ -83,6 +97,14 @@ A **Câmara Técnica de Compensação Ambiental (CTCA)** — cinco cargos intern
 ### 8. Sem avaliação ex-post do programa (racionalidade social)
 
 A Portaria prevê vistorias e relatórios por processo, mas **nenhuma avaliação agregada** da política: quantas mudas plantadas por TCA, taxa de sobrevivência, balanço de cobertura arbórea por subprefeitura. O "levantamento arbóreo decenal" (Lei 17.794, art. 3º) tem periodicidade longa demais para monitorar a compensação. `[verificar]` a existência de base de dados aberta de TCAs emitidos.
+
+### 8-A. Intervalo sem vistoria entre o TCA e o plantio
+
+Depois de publicado o TCA, a primeira vistoria obrigatória da SVMA só acontece quando o próprio interessado informa que terminou o plantio (Portaria 105/2024, art. 21, II). O corte, o transplante e a obra são acompanhados só por documentos autodeclarados (art. 57). Não há prazo para a SVMA vistoriar, nem prazo máximo geral entre o corte e o plantio. O "recebimento parcial" tem quatro sentidos no decreto e três na portaria. Análise completa, com indicadores para medir o problema em bases de TCA, em [[ciclo-de-vida-do-tca]].
+
+### 8-B. Vocabulário instável
+
+Sete conceitos centrais têm definição conflitante ou redefinida por ato inferior: árvore (DAP "superior" × "igual ou superior" a 5 cm), vegetação significativa, imune de corte, preservação permanente, maciço, manejo e TCA. Em três deles a redefinição vem de portaria, contra o texto da lei. Ver [[mapa-de-conceitos]].
 
 ### 9. Instabilidade normativa (princípio da acessibilidade)
 
@@ -98,7 +120,9 @@ Portaria 130/2013: revogada em parte (2016), revogada (2018), revogação tornad
 6. **Instituir relatório anual público de compensação** por subprefeitura, com número de TCAs, mudas exigidas, plantadas e sobreviventes, e balanço de cobertura arbórea — dado aberto.
 7. **Consolidar** a legislação de arborização e compensação num diploma único, atacando a pilha de seis níveis (Decreto 53.889/2013 incluído). Ver [[consolidacao-leis-ambientais-alesp]].
 8. **Documentar o efeito da ADIN nº 2085569-32.2023.8.26.0000** em cada norma que cita a Lei 10.365/1987 (Decreto 53.889/2013, Portaria 105/2024), explicitando quais remissões seguem válidas e quais estão revogadas, e acompanhar o trânsito em julgado.
-9. **Editar o "Ato do Executivo"** previsto no art. 154, §2º, da Lei 16.050/2014 para a compensação por emissão de gases de efeito estufa, ou confirmar e documentar publicamente que essa hipótese de TCA está sem regulamentação.
+9. **Editar o "Ato do Executivo"** previsto no art. 154, §2º, da Lei 16.050/2014 para a compensação por emissão de gases de efeito estufa, ligando o plano de mitigação da Resolução CADES 284/2024 ao TCA, ou confirmar e documentar publicamente que essa hipótese de TCA está sem regulamentação.
+10. **Publicar Vm e Vt.** Incluir na Portaria SVMA 105/2024 (ou em decreto) a fonte e o valor vigente da muda e do tutor usados na conversão da compensação — por exemplo, remissão expressa aos itens 27.3.3 e 27.3.4 do decreto anual de preços públicos, com a data-base.
+11. **Uniformizar o nome do TCA.** Corrigir a Lei 16.402/2016, art. 29-A, §3º, de "Termo de Compensação Ambiental" para "Termo de Compromisso Ambiental", o nome usado pelo PDE e pelo resto da própria lei.
 
 ## Diagrama
 
@@ -130,7 +154,13 @@ flowchart TD
     P105 -->|45:1 e fator 5,35 sem justificativa| G3(Multiplicadores sem memoria de calculo):::lacuna
     P51 -->|lei pedia decreto, saiu portaria + NBR paga| G4(Criterio existe mas fora da hierarquia pedida):::lacuna
     D53889 -->|regime 1:1 obra publica e HIS/HMP desde 2013| G5(Subsidio ambiental implicito):::lacuna
+    D64877[Decreto 64.877/2025 - precos publicos 2026: muda R$ 337, tutor R$ 229]:::municipal
+    CADES[Resolucao CADES 284/2024 + Portaria SVMA 129/2024 - inventario GEE]:::municipal
     PDE -->|art. 154 III: emissao de GEE| G6(TCA de emissoes sem regulamento localizado):::lacuna
+    CADES -->|exige mitigacao, nao cita TCA nem art. 154| G6
+    D64877 -.->|referencia possivel, nao declarada| P105
+    P105 -->|Vm calculado pela SVMA, metodo nao publicado| G7(Valor da muda sem fonte publica):::lacuna
+    G7 --> P5[Proposta: publicar Vm e Vt com remissao ao decreto de precos]:::proposta
     G1 --> P1[Proposta: nucleo do criterio em decreto]:::proposta
     G3 --> P2[Proposta: publicar memoria de calculo + AIL ex-ante]:::proposta
     G4 --> P3[Proposta: decreto com criterios objetivos]:::proposta
@@ -155,3 +185,9 @@ flowchart TD
 - [[portaria-svma-130-2013]]
 - [[termo-de-compromisso-ambiental-tca]]
 - [[aplicar-ail-legislacao-arborizacao]]
+- [[decreto-64877-2025]]
+- [[lei-16402-2016]]
+- [[legisprudencia]]
+- [[ciclo-de-vida-do-tca]]
+- [[calculo-da-compensacao]]
+- [[mapa-de-conceitos]]

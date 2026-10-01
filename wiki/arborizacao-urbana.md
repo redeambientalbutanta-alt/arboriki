@@ -18,7 +18,7 @@ O Manual Técnico de Arborização Urbana da SVMA (3ª edição) apoia-se na **L
 | Tema | Manual / Lei 10.365/1987 | Lei 17.794/2022 |
 |---|---|---|
 | Norma de manejo | Lei 10.365/1987 | Lei 17.794/2022 (revoga arts. 1º-16 e 20-25 da 10.365) |
-| "Árvore imune ao corte" | categoria do Decreto Estadual 30.443/1989 | substituída por **[[vegetacao-significativa]]** (Cap. II, arts. 4º-6º) |
+| "Árvore imune ao corte" | categoria do Decreto Estadual 30.443/1989 | a lei municipal não usa a expressão e cria a **[[vegetacao-significativa]]** (Cap. II, arts. 4º-6º); o decreto estadual **segue vigente** (lei municipal não revoga decreto estadual) e suas árvores se enquadram no art. 5º, III — ver [[decreto-estadual-30443-1989]] |
 | Poda em área privada | autorização prévia | **comunicação prévia** + laudo + ART (art. 18) |
 | Poda em área pública municipal | autorização | **independe de autorização prévia** (art. 19) |
 | Poda drástica | sem definição técnica no Manual | definida objetivamente (corte ≥ 1/3 da copa etc.) pela **Portaria SVMA 51/2024**, art. 2º, X |

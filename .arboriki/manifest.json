@@ -4,10 +4,20 @@
     "extracted": ".arboriki/extracted/arborização/Arborização Manual Técnico de SVMA.txt",
     "sha256": "7e1e9a168ee9e05abaafb255119626e48fafe5486225ade6cf3cc387a89a6c9c"
   },
+  "raw/legislacao/Decreto Estadual 30.443-1989.pdf": {
+    "chars": 22466,
+    "extracted": ".arboriki/extracted/legislacao/Decreto Estadual 30.443-1989.txt",
+    "sha256": "1bbc58684c6cc7707c488f2175fbd6353f9374e22b2fa313478cf1c4be461798"
+  },
   "raw/legislacao/Decreto Municipail 53.889-2013.pdf": {
     "chars": 19548,
     "extracted": ".arboriki/extracted/legislacao/Decreto Municipail 53.889-2013.txt",
     "sha256": "7785bd56cfeb894a6baed01864d1f428fc91abbc9082973473745e7293fa4ab3"
+  },
+  "raw/legislacao/Lei 16402-2016.pdf": {
+    "chars": 265641,
+    "extracted": ".arboriki/extracted/legislacao/Lei 16402-2016.txt",
+    "sha256": "4b8945c4700df982092512d29e00999d920de028739fc048b509605aee35dddd"
   },
   "raw/legislacao/Portaria SVMA 105-2024_anexos completos.pdf": {
     "chars": 109803,
@@ -24,6 +34,16 @@
     "extracted": ".arboriki/extracted/legislacao/Portaria SVMA 116-2024_consolidado.txt",
     "sha256": "490810366baf0f1ce16b20ad329af43ca80be4d149c244e124acf5e2f9507cf3"
   },
+  "raw/legislacao/Quadro 1 – Conceitos e definições.pdf": {
+    "chars": 14331,
+    "extracted": ".arboriki/extracted/legislacao/Quadro 1 – Conceitos e definições.txt",
+    "sha256": "1f88f61f46d33e29b2dab672f2083a0f7fc9d81a84dfb812e20715e46b105aa5"
+  },
+  "raw/legislacao/doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.pdf": {
+    "chars": 244270,
+    "extracted": ".arboriki/extracted/legislacao/doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.txt",
+    "sha256": "7d59c773e1f49894e83234e60a626e276e9a206677dc10ff980a3c82be899c0c"
+  },
   "raw/legistica/A Legística como estratégia para a melhoria normativa_Edição_final.pdf": {
     "chars": 46388,
     "extracted": ".arboriki/extracted/legistica/A Legística como estratégia para a melhoria normativa_Edição_final.txt",
@@ -38,6 +58,11 @@
     "chars": 77671,
     "extracted": ".arboriki/extracted/legistica/Camara Deputados Diretrizes para elaboracao de AIL na CD_REVISADA_03_2014 -2.txt",
     "sha256": "e8305534d8768812707ee230d0fdae4811b7347c13c4d44840effdf986990642"
+  },
+  "raw/legistica/ESTUDOS_EM_LEGISTICA.pdf": {
+    "chars": 617309,
+    "extracted": ".arboriki/extracted/legistica/ESTUDOS_EM_LEGISTICA.txt",
+    "sha256": "30b5904008f0e9f24f2a500576cd52abc0fb2f526683d74d7b52496088a57615"
   },
   "raw/legistica/Legistica-Breve reflexões sobre.pdf": {
     "chars": 38295,

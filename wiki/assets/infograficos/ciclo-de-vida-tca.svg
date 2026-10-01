@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" width="1500" height="1060" font-family="'IBM Plex Sans','Segoe UI',Arial,Helvetica,sans-serif" role="img" aria-label="Ciclo de vida do Termo de Compromisso Ambiental em São Paulo, com as três vistorias obrigatórias e o intervalo sem vistoria entre a publicação do TCA e o informe de plantio">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#55635c"/></marker><marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker><pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#fbe6e3"/><line x1="0" y1="0" x2="0" y2="10" stroke="#eab3ab" stroke-width="3"/></pattern></defs>
+<rect width="1500" height="1060" fill="#f6f8f5"/>
+<text x="30" y="44" font-size="26" fill="#18211d" font-weight="700" text-anchor="start">Ciclo de vida do TCA</text>
+<text x="30" y="68" font-size="13" fill="#55635c" font-weight="400" text-anchor="start">Portaria SVMA 105/2024 (com a Portaria 116/2024) e Decreto 53.889/2013. Quem age em cada etapa, e quando a SVMA é obrigada a ir ao local.</text>
+<rect x="30" y="100" width="1440" height="210" rx="6" fill="#eef3ef" stroke="#cfd8d2" stroke-width="1.2"/>
+<rect x="30" y="330" width="1440" height="210" rx="6" fill="#eef1f6" stroke="#cfd8d2" stroke-width="1.2"/>
+<text x="42" y="120" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">INTERESSADO  ·  declara e executa</text>
+<text x="42" y="350" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">SVMA  ·  analisa, autoriza e verifica</text>
+<rect x="668" y="360" width="442" height="168" rx="6" fill="#fbe6e3" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="684" y="392" width="410" height="112" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="889.0" y="416" font-size="13.5" fill="#c0392b" font-weight="700" text-anchor="middle">INTERVALO SEM VISTORIA OBRIGATÓRIA</text>
+<text x="889.0" y="436" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="middle">Entre a publicação do TCA e o informe de plantio, nenhuma norma</text>
+<text x="889.0" y="452" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="middle">obriga a SVMA a ir ao local. O corte, o transplante e a obra inteira</text>
+<text x="889.0" y="468" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="middle">são acompanhados só por documentos que o interessado envia.</text>
+<text x="889.0" y="488" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="middle">art. 21 lista só três vistorias; art. 57 fala em “acompanhamento” sem vistoria</text>
+<rect x="40" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="50" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">1. Pedido</text>
+<text x="50" y="173" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Requerimento no Portal</text>
+<text x="50" y="189" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">156, plantas (situação</text>
+<text x="50" y="205" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">atual, pretendida e de</text>
+<text x="50" y="221" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">compensação) e preço</text>
+<text x="50" y="237" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">público.</text>
+<text x="50" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 4º e 8º</text>
+<rect x="520" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="530" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">5. Alvará</text>
+<text x="530" y="171" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">apostilado</text>
+<text x="530" y="190" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">O TCA só produz efeito</text>
+<text x="530" y="206" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">com o Alvará de</text>
+<text x="530" y="222" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Execução anotado com o</text>
+<text x="530" y="238" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">nº do TCA. Protocolar</text>
+<text x="530" y="254" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">na SVMA em 30 dias.</text>
+<text x="530" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 51</text>
+<rect x="680" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="690" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">6. Corte e</text>
+<text x="690" y="171" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">transplante</text>
+<text x="690" y="190" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Comunica o início (10</text>
+<text x="690" y="206" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">dias antes) e o fim</text>
+<text x="690" y="222" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">(até 20 dias depois),</text>
+<text x="690" y="238" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">com relatório</text>
+<text x="690" y="254" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">fotográfico e ART.</text>
+<text x="690" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 57, §§1º e 3º</text>
+<rect x="840" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="850" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">7. Obra e plantio</text>
+<text x="850" y="173" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Plantio</text>
+<text x="850" y="189" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">“preferencialmente no</text>
+<text x="850" y="205" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">período pós-obras”. O</text>
+<text x="850" y="221" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">prazo é o que cada TCA</text>
+<text x="850" y="237" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">fixar.</text>
+<text x="850" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 70, VI</text>
+<rect x="1000" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="1010" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">8. Informe de</text>
+<text x="1010" y="171" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">plantio</text>
+<text x="1010" y="190" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Avisa que plantou. O</text>
+<text x="1010" y="206" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">prazo de manutenção</text>
+<text x="1010" y="222" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">começa a contar deste</text>
+<text x="1010" y="238" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">protocolo.</text>
+<text x="1010" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 21, II e 74, §1º</text>
+<rect x="1160" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="1170" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">9. Manutenção</text>
+<text x="1170" y="173" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">12 meses (mudas DAP 3,</text>
+<text x="1170" y="189" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">5 ou 7 cm) ou 24 meses</text>
+<text x="1170" y="205" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">(reflorestamento).</text>
+<text x="1170" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 74</text>
+<rect x="1320" y="132" width="148" height="166" rx="6" fill="#ffffff" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="1330" y="154" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">10. Informe final</text>
+<text x="1330" y="173" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Avisa o fim do prazo</text>
+<text x="1330" y="189" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">de manutenção e pede o</text>
+<text x="1330" y="205" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">recebimento</text>
+<text x="1330" y="221" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">definitivo.</text>
+<text x="1330" y="289" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">art. 21, III</text>
+<rect x="200" y="362" width="148" height="166" rx="6" fill="#e4edf8" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="210" y="384" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">2. Vistoria 1</text>
+<text x="210" y="403" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Obrigatória. Técnico</text>
+<text x="210" y="419" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">vistoria o imóvel para</text>
+<text x="210" y="435" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">analisar o pedido e</text>
+<text x="210" y="451" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">emite relatório.</text>
+<text x="210" y="519" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 21, I e 22</text>
+<rect x="360" y="362" width="148" height="166" rx="6" fill="#ffffff" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="370" y="384" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">3. Parecer e CTCA</text>
+<text x="370" y="403" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Parecer conclusivo</text>
+<text x="370" y="419" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">(vale 18 meses). A</text>
+<text x="370" y="435" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">câmara interna decide</text>
+<text x="370" y="451" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">o destino das mudas</text>
+<text x="370" y="467" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">excedentes.</text>
+<text x="370" y="519" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 13, 16, 19 e 33</text>
+<rect x="520" y="362" width="148" height="166" rx="6" fill="#ffffff" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="530" y="384" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">4. TCA publicado</text>
+<text x="530" y="403" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Despacho do</text>
+<text x="530" y="419" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Secretário, TCA</text>
+<text x="530" y="435" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">lavrado, extrato no</text>
+<text x="530" y="451" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Diário Oficial e dados</text>
+<text x="530" y="467" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">no GeoSampa.</text>
+<text x="530" y="519" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 48 e 49</text>
+<rect x="1126" y="362" width="148" height="166" rx="6" fill="#e4edf8" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="1136" y="384" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Vistoria 2</text>
+<text x="1136" y="403" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Obrigatória, mas só</text>
+<text x="1136" y="419" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">depois do informe.</text>
+<text x="1136" y="435" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Gera o recebimento</text>
+<text x="1136" y="451" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">provisório.</text>
+<text x="1136" y="519" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 21, II e 59, §1º</text>
+<rect x="1290" y="362" width="148" height="166" rx="6" fill="#e4edf8" stroke="#2b62a8" stroke-width="1.4"/>
+<text x="1300" y="384" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Vistoria 3</text>
+<text x="1300" y="403" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Obrigatória, só depois</text>
+<text x="1300" y="419" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">do informe final. Gera</text>
+<text x="1300" y="435" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">o recebimento</text>
+<text x="1300" y="451" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">definitivo.</text>
+<text x="1300" y="519" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">arts. 21, III e 59, §3º</text>
+<path d="M188,215 C210,215 234.0,320 274.0,362" fill="none" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="274.0,362.0 264.9,358.2 270.7,352.7" fill="#55635c"/>
+<line x1="348" y1="445" x2="360" y2="445" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="360.0,445.0 351.0,449.0 351.0,441.0" fill="#55635c"/>
+<line x1="508" y1="445" x2="520" y2="445" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="520.0,445.0 511.0,449.0 511.0,441.0" fill="#55635c"/>
+<line x1="594.0" y1="362" x2="594.0" y2="298" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="594.0,298.0 598.0,307.0 590.0,307.0" fill="#55635c"/>
+<line x1="668" y1="215" x2="680" y2="215" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="680.0,215.0 671.0,219.0 671.0,211.0" fill="#55635c"/>
+<line x1="828" y1="215" x2="840" y2="215" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="840.0,215.0 831.0,219.0 831.0,211.0" fill="#55635c"/>
+<line x1="988" y1="215" x2="1000" y2="215" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="1000.0,215.0 991.0,219.0 991.0,211.0" fill="#55635c"/>
+<line x1="1148" y1="215" x2="1160" y2="215" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="1160.0,215.0 1151.0,219.0 1151.0,211.0" fill="#55635c"/>
+<line x1="1308" y1="215" x2="1320" y2="215" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="1320.0,215.0 1311.0,219.0 1311.0,211.0" fill="#55635c"/>
+<path d="M1094.0,298 C1100,324 1170,324 1200.0,362" fill="none" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="1200.0,362.0 1191.3,357.4 1197.6,352.5" fill="#55635c"/>
+<line x1="1414.0" y1="298" x2="1414.0" y2="362" stroke="#55635c" stroke-width="1.6"/>
+<polygon points="1414.0,362.0 1410.0,353.0 1418.0,353.0" fill="#55635c"/>
+<line x1="754.0" y1="298" x2="754.0" y2="360" stroke="#c0392b" stroke-width="1.3" stroke-dasharray="4 4"/>
+<polygon points="754.0,360.0 750.0,351.0 758.0,351.0" fill="#c0392b"/>
+<line x1="914.0" y1="298" x2="914.0" y2="360" stroke="#c0392b" stroke-width="1.3" stroke-dasharray="4 4"/>
+<polygon points="914.0,360.0 910.0,351.0 918.0,351.0" fill="#c0392b"/>
+<text x="760" y="322" font-size="10.5" fill="#c0392b" font-weight="600" text-anchor="start">só documentos</text>
+<text x="30" y="564" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">O QUE SAI DE CADA VISTORIA</text>
+<rect x="30" y="574" width="350" height="140" rx="6" fill="#e3f2e8" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="40" y="596" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Recebimento provisório</text>
+<text x="40" y="615" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Todos os plantios feitos; falta só a manutenção.</text>
+<text x="40" y="631" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Depende da vistoria 2.</text>
+<text x="40" y="705" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Decreto 53.889, art. 8º, §7º · Portaria 105, art. 59, §1º</text>
+<rect x="396" y="574" width="350" height="140" rx="6" fill="#e3f2e8" stroke="#2e8a4d" stroke-width="1.4"/>
+<text x="406" y="596" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Recebimento definitivo</text>
+<text x="406" y="615" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Cumprimento integral, incluída a manutenção.</text>
+<text x="406" y="631" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">Depende da vistoria 3. Encerra o TCA.</text>
+<text x="406" y="705" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Decreto 53.889, art. 8º, §6º · Portaria 105, art. 59, §3º</text>
+<rect x="762" y="574" width="708" height="140" rx="6" fill="#fdf0da" stroke="#a15c07" stroke-width="1.4"/>
+<text x="772" y="596" font-size="13" fill="#18211d" font-weight="600" text-anchor="start">Recebimento parcial: a mesma palavra, quatro sentidos</text>
+<text x="772" y="615" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">I. A compensação externa foi cumprida.</text>
+<text x="772" y="631" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">II. O plantio interno de uma parte da obra foi feito (pelo menos 1 edifício inteiro).</text>
+<text x="772" y="647" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">III. As obrigações NÃO foram cumpridas, por atraso da Administração.</text>
+<text x="772" y="663" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">IV. Por deliberação da CTCA (só no decreto; a portaria omite). O documento é chamado ora de “Termo”, ora de</text>
+<text x="772" y="679" font-size="11.5" fill="#18211d" font-weight="400" text-anchor="start">“Certificado”.</text>
+<text x="772" y="705" font-size="10.5" fill="#55635c" font-weight="500" text-anchor="start">Decreto 53.889, art. 8º, §8º (4 hipóteses) · Portaria 105, arts. 59, §2º e 60 (3 hipóteses)</text>
+<text x="30" y="748" font-size="11.5" fill="#55635c" font-weight="700" text-anchor="start">PRAZOS QUE A NORMA FIXA</text>
+<text x="762" y="748" font-size="11.5" fill="#c0392b" font-weight="700" text-anchor="start">PRAZOS QUE A NORMA NÃO FIXA</text>
+<rect x="30" y="758" width="716" height="270" rx="6" fill="#ffffff" stroke="#cfd8d2" stroke-width="1.2"/>
+<rect x="762" y="758" width="708" height="270" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="46" y="784" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">18 meses</text>
+<text x="170" y="784" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">validade do parecer conclusivo, renovável uma vez (art. 19)</text>
+<text x="46" y="814" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">30 dias</text>
+<text x="170" y="814" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">para protocolar na SVMA o Alvará de Execução apostilado (art. 51, §2º)</text>
+<text x="46" y="844" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">2 anos</text>
+<text x="170" y="844" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">sem cumprir o art. 51, ou sem iniciar a obra: o TCA é rescindido (art. 53, I e III)</text>
+<text x="46" y="874" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">1 ano</text>
+<text x="170" y="874" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">de obra paralisada: o TCA é rescindido (art. 53, IV)</text>
+<text x="46" y="904" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">10 e 20 dias</text>
+<text x="170" y="904" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">para comunicar o início e o fim de cada manejo (art. 57, §1º)</text>
+<text x="46" y="934" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">12 ou 24 meses</text>
+<text x="170" y="934" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">de manutenção, contados do protocolo do informe de plantio (art. 74)</text>
+<text x="46" y="964" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">6 meses</text>
+<text x="170" y="964" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">para repor as árvores se o TCA for rescindido depois do corte (art. 54, §2º)</text>
+<text x="46" y="994" font-size="12.5" fill="#18211d" font-weight="700" text-anchor="start">0,1% ao dia</text>
+<text x="170" y="994" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">de multa por atraso, até 25% do valor da obrigação (art. 83)</text>
+<text x="778" y="784" font-size="12.5" fill="#c0392b" font-weight="700" text-anchor="start">Vistoria do corte.</text>
+<text x="778" y="801" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">Nenhuma vistoria da SVMA é exigida durante o corte e o transplante.</text>
+<text x="778" y="830" font-size="12.5" fill="#c0392b" font-weight="700" text-anchor="start">Prazo para a vistoria 2.</text>
+<text x="778" y="847" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">A norma não diz em quantos dias a SVMA deve vistoriar depois do informe de plantio.</text>
+<text x="778" y="876" font-size="12.5" fill="#c0392b" font-weight="700" text-anchor="start">Intervalo entre o corte e o plantio.</text>
+<text x="778" y="893" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">Não há prazo máximo geral; fica a cargo de cada TCA. A obra pode durar anos.</text>
+<text x="778" y="922" font-size="12.5" fill="#c0392b" font-weight="700" text-anchor="start">Silêncio do interessado.</text>
+<text x="778" y="939" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">Se ele nunca informar o plantio, o prazo de manutenção não começa e a vistoria 2 não é disparada.</text>
+<text x="778" y="968" font-size="12.5" fill="#c0392b" font-weight="700" text-anchor="start">Efeito de cada certificado.</text>
+<text x="778" y="985" font-size="12" fill="#18211d" font-weight="400" text-anchor="start">A portaria não diz o que o recebimento parcial ou provisório libera (por exemplo, o Habite-se).</text>
+<text x="30" y="1050" font-size="10.5" fill="#55635c" font-weight="400" text-anchor="start">Fonte: Portaria SVMA 105/2024, arts. 4º a 96 e Anexos; Decreto Municipal 53.889/2013, art. 8º. Leitura do projeto Arboriki, outubro de 2026.</text>
+</svg>

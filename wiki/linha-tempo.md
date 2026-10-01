@@ -2,7 +2,7 @@
 
 **Resumo**: Cronologia de eventos legislativos e ambientais relevantes — votações, sanções, revogações, decisões judiciais e prazos de cumprimento.
 
-**Última atualização**: 2026-09-10
+**Última atualização**: 2026-09-23
 
 ---
 
@@ -12,7 +12,8 @@ Datas confirmadas nos portais oficiais salvo indicação `[verificar]`.
 |------|--------|---------------|
 | 1973 | Peter Noll publica *Gesetzgebungslehre*, obra fundadora da legística moderna | fonte: Legística-Inventário semântico.pdf |
 | 22/09/1987 | Lei Municipal 10.365 — normas de arborização urbana de SP; vegetação de porte arbóreo como bem de interesse comum | fonte: lei-17794-...-2022/consolidado |
-| 20/09/1989 | Decreto Estadual 30.443 — vegetação como patrimônio ambiental / imune ao corte | fonte: portaria-...-130-2013/consolidado |
+| 20/09/1989 | Decreto Estadual 30.443 — declara patrimônio ambiental os exemplares do documento "Vegetação Significativa do Município de São Paulo" e lista árvores imunes de corte (retificado em 21/09/1989) | fonte: raw/legislacao/Decreto Estadual 30.443-1989.pdf |
+| 23/12/1994 | Decreto Estadual 39.743 — nova redação do art. 18 do Decreto 30.443: corte excepcional passa a ser decidido pelo Município, salvo reservas ecológicas e maciços ≥ 1.000 m² | fonte: al.sp.gov.br/repositorio/.../decreto-39743-23.12.1994.html |
 | 1988 | Constituição Federal — art. 225 (meio ambiente) e art. 59, parágrafo único (consolidação das leis) | fonte: várias |
 | 14/01/2002 | Lei Municipal 13.293 — "Calçadas Verdes" (PL 801/98, vereadora Ana Martins); promulgada por Marta Suplicy | fonte: lei-13293-...-2002/consolidado |
 | 12/02/1998 | Lei Federal 9.605 — Lei de Crimes Ambientais | fonte: Arborização Manual Técnico de SVMA.pdf |
@@ -26,7 +27,10 @@ Datas confirmadas nos portais oficiais salvo indicação `[verificar]`.
 | 09/09/2011 | Lei Municipal 15.442 — limpeza, fechamento de terrenos e construção/manutenção de passeios | fonte: lei-15442-...-2011/consolidado |
 | 31/07/2014 | Lei Municipal 16.050 — Plano Diretor Estratégico vigente; **arts. 154-155 instituem o TCA** para 4 hipóteses (supressão, APP, emissão de GEE, transferência de potencial construtivo em ZEPAM) | fonte: lei-16050-...-2014/consolidado |
 | 08/02/2019 | Decreto Municipal 58.625 — cria a Divisão de Arborização Urbana (DAU), art. 21 | fonte: portaria-...-39-...-2024/consolidado |
-| 2016 | Lei Municipal 16.402 — LPUOS; institui a Quota Ambiental | fonte: portaria-...-105-...-2024/consolidado |
+| 22/03/2016 | Lei Municipal 16.402 — LPUOS (PL 272/15); institui a Quota Ambiental; TCA com fator redutor 0,50 (art. 77) | fonte: raw/legislacao/Lei 16402-2016.pdf |
+| 2024 | Lei Municipal 18.081 — revisão da LPUOS; inclui o art. 29-A ("Termo de Compensação Ambiental" em áreas de clube) e o art. 81, §4º (1 árvore a cada 50 m² permeáveis) `[verificar]` data exata | fonte: raw/legislacao/Lei 16402-2016.pdf (marcadores de alteração) |
+| 11/12/2024 | Resolução CADES 284 — competência municipal para licenciamento; exige inventário de GEE e mitigação (publicada em 20/12/2024) | fonte: legislacao.prefeitura.sp.gov.br/leis/resolucao-...-cades-284-de-20-de-dezembro-de-2024 |
+| 30/12/2024 | Portaria SVMA 129 — metodologia dos inventários de GEE no licenciamento (GHG Protocol / ISO 14064) | fonte: legislacao.prefeitura.sp.gov.br/leis/portaria-...-svma-129-de-30-de-dezembro-de-2024 |
 | 2016 | Portaria SVMA 69/2016 — revoga o item 21.5 da Portaria 130/2013 | fonte: .../revogado-por |
 | 2018 | Portaria SVMA 24/2018 revoga a Portaria 130/2013; Portaria SVMA 31/2018 torna a revogação insubsistente | fonte: .../revogado-por |
 | 09/05/2017 | Lei Municipal 16.642 — Código de Obras e Edificações (COE) | fonte: lei-17794-...-2022/consolidado |
@@ -47,6 +51,6 @@ Datas confirmadas nos portais oficiais salvo indicação `[verificar]`.
 | 10/12/2024 | **Portaria SVMA 116/2024** — altera a Portaria 105/2024; inclui o art. 96, que revoga expressamente as Portarias SVMA 130/2013, 26/2004 e 36/2008, e a Publicação SVMA 5/2018 | fonte: raw/legislacao/Portaria SVMA 116-2024.pdf |
 | 13/12/2024 | Portaria SVMA 122/2024 — regularização de empreendimentos em APP descaracterizada pela ocupação | fonte: portaria-...-122-...-2024/consolidado |
 | 27/12/2024 | Portaria SVMA 127/2024 (correlata à Lei 17.794/2022) | fonte: lei-17794-...-2022/consolidado `[verificar]` objeto |
-| 26/12/2025 | Decreto Municipal 64.877 — fixa preços de serviços genéricos da Prefeitura (**não é** a base de preços da compensação ambiental) | fonte: decreto-64877-...-2025/consolidado |
+| 26/12/2025 | Decreto Municipal 64.877 — preços públicos de 2026 (vigência 01/01/2026); o Anexo fixa muda com plantio R$ 337,00 e tutor R$ 229,00; revoga o Decreto 63.990/2024 | fonte: decreto-64877-...-2025 + raw/legislacao/doc. 151724539_Anexo_...pdf |
 | 2025 | Decreto Municipal 64.883 — inclui o art. 2º-A no Decreto 61.859/2022 | fonte: decreto-61859-...-2022/consolidado |
 | 2026 | Decreto Municipal 64.986 — altera o art. 2º-B do Decreto 61.859/2022 | fonte: decreto-61859-...-2022/consolidado |

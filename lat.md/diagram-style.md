@@ -8,6 +8,7 @@ Linguagem visual da malha regulatória: o diagrama Mermaid `flowchart TD` que fe
 Classes Mermaid que distinguem, à primeira vista, norma vigente, proposta e lacuna.
 
 - **Norma municipal vigente:** verde — `fill:#d4edda,stroke:#28a745`.
+- **Norma estadual:** laranja — `fill:#fff3cd,stroke:#fd7e14`, classe `estadual`.
 - **Proposta de aperfeiçoamento (Eixo 2):** azul tracejado — `fill:#cfe2ff,stroke:#0d6efd,stroke-dasharray: 5 5`.
 - **Lacuna, brecha ou alerta de fiscalização:** vermelho — `fill:#f8d7da,stroke:#dc3545`.
 - **Lei federal:** retângulo de borda grossa — `stroke-width:3px`.

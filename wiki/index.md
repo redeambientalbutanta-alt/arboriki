@@ -1,8 +1,10 @@
 # Índice — Wiki Arborização
 
-**Resumo**: Índice geral de todas as páginas da wiki de arborização urbana do Município de São Paulo.
+<img src="assets/imagens/LogoRAB2026.svg" alt="Logo da Rede Ambiental Butantã" width="180">
 
-**Última atualização**: 2026-09-10
+**Resumo**: Índice geral de todas as páginas da wiki de arborização urbana do Município de São Paulo, mantida pela Rede Ambiental Butantã.
+
+**Última atualização**: 2026-10-01
 
 ---
 
@@ -13,6 +15,9 @@
 - [[portaria-svma-51-2024]] — define poda drástica e os critérios de urgência (risco de queda); procedimentos de manejo
 - [[decreto-53889-2013]] — regulamento original do TCA; origem da fórmula de compensação e da tabela do Fator Multiplicador
 - [[portaria-svma-105-2024]] — critérios e fórmulas de compensação ambiental e do TCA (norma que determina "quanto se compensa")
+- [[lei-16402-2016]] — LPUOS (zoneamento): Quota Ambiental, TCA com fator redutor 0,50, 1 árvore a cada 50 m² permeáveis; proposta de novo Quadro 1 com definição de "maciço arbóreo"
+- [[decreto-64877-2025]] — preços públicos de 2026: muda com plantio R$ 337, tutor R$ 229, taxas de análise de manejo
+- [[decreto-estadual-30443-1989]] — **estadual**: árvores imunes de corte em São Paulo (lista de 1989); origem do termo "vegetação significativa"
 
 ## Legislação histórica / revogada
 
@@ -28,12 +33,15 @@
 ## Conceitos — Arborização e legislação de SP
 
 - [[arborizacao-urbana]] — floresta urbana, benefícios, tabela do que a Lei 17.794/2022 mudou, Chave Arborizar
-- [[vegetacao-significativa]] — categoria de proteção reforçada; substitui "árvore imune ao corte"
+- [[vegetacao-significativa]] — categoria de proteção reforçada da lei de 2022; convive com a lista estadual de árvores imunes de corte
 - [[manejo-arboreo]] — avaliação, irrigação, poda, transplante, supressão, remoção de vegetação
 - [[poda]] — regime de comunicação prévia (Lei 17.794/2022) e os sete tipos de poda
 - [[calcada-verde]] — faixa permeável no passeio; parâmetros de canteiro e acessibilidade
 - [[compensacao-ambiental]] — obrigação de compensar o manejo; resumo do cálculo da Portaria 105/2024
 - [[termo-de-compromisso-ambiental-tca]] — o contrato de compensação: o que é, quem institui, como se calcula
+- [[ciclo-de-vida-do-tca]] — **infográfico**: as dez etapas do TCA, o intervalo sem vistoria, o "recebimento parcial" e indicadores para bases de dados
+- [[calculo-da-compensacao]] — **infográfico**: o cálculo em seis passos, as exceções e os pontos em que o texto não permite recálculo único
+- [[mapa-de-conceitos]] — onde cada conceito é definido, redefinido ou entra em conflito, em 19 normas das três esferas
 
 ## Conceitos — Legística (método de análise)
 
@@ -43,6 +51,7 @@
 - [[avaliacao-de-impacto-legislativo]] — AIL ex-ante e ex-post; itens, custo-benefício, base normativa
 - [[principios-da-legistica]] — os sete princípios de Mandelkern / Livro Branco
 - [[checklist-legislativo]] — questionário do Decreto 4.176/2002, Anexo I
+- [[legisprudencia]] — teoria de Wintgens: coerência, alternatividade, temporalidade e densidade normativa aplicadas à malha de SP
 
 ## Páginas de apoio
 

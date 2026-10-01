@@ -7,8 +7,11 @@
 - https://prefeitura.sp.gov.br/web/meio_ambiente/w/menu/246510
 - https://legislacao.prefeitura.sp.gov.br/lei-16050-de-31-de-julho-de-2014/consolidado
 - raw/legislacao/Decreto Municipail 53.889-2013.pdf
+- raw/legislacao/Lei 16402-2016.pdf
+- raw/legislacao/doc. 151724539_Anexo_Decreto_de_Precos_Publicos_2026_com_linhas_ajustadas.pdf
+- https://legislacao.prefeitura.sp.gov.br/leis/resolucao-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-cades-284-de-20-de-dezembro-de-2024
 
-**Última atualização**: 2026-09-10
+**Última atualização**: 2026-09-23
 
 ---
 
@@ -36,7 +39,21 @@ A aprovação do Projeto de Compensação Ambiental é **requisito obrigatório*
 
 ## Lacuna — hipótese de emissões de GEE não coberta
 
-A Lei 16.050/2014, art. 154, III, institui TCA para licenciamento ambiental com significativa emissão de gases de efeito estufa, com critérios "por Ato do Executivo" (§2º). A Portaria SVMA 105/2024 trata do manejo arbóreo e da intervenção em APP, mas não localizamos, no seu texto, o "Ato do Executivo" que discipline a compensação de emissões. `[verificar]`.
+A Lei 16.050/2014, art. 154, III, institui TCA para licenciamento ambiental com significativa emissão de gases de efeito estufa, com critérios "por Ato do Executivo" (§2º). A Portaria SVMA 105/2024 trata do manejo arbóreo e da intervenção em APP, mas não dessa hipótese.
+
+O que existe desde dezembro de 2024: a **Resolução CADES nº 284/2024** exige inventário ou estimativa de emissões com **estratégia de mitigação** no licenciamento de empreendimentos do seu Anexo Único sujeitos a EIA-RIMA e EVA, e a **Portaria SVMA nº 129/2024** fixa a metodologia (GHG Protocol ou ABNT ISO 14064). Nenhuma das duas menciona o PDE, o art. 154 ou o TCA (fontes: legislacao.prefeitura.sp.gov.br/leis/resolucao-...-svma-cades-284-de-20-de-dezembro-de-2024; .../portaria-...-svma-129-de-30-de-dezembro-de-2024). Mitigação existe; **TCA de emissões, não**. `[verificar]` se algum TCA foi firmado com base no art. 154, III. Ver o achado 6-A em [[questionar-criterios-tca]].
+
+## Nome do instrumento — divergência na Lei 16.402/2016
+
+A Lei 16.402/2016 (LPUOS) chama o instrumento de "Termo de **Compromisso** Ambiental" no art. 77 e de "TCA — Termo de **Compensação** Ambiental" no art. 29-A, §3º (incluído pela Lei 18.081/2024). O PDE (art. 154) e a Portaria SVMA 105/2024 usam "Compromisso". A divergência não muda o instrumento, mas é um erro de técnica legislativa que pode ser explorado para contestar a exigência nas áreas de clube (art. 29-A). Ver [[lei-16402-2016]] e [[legisprudencia]].
+
+## TCA e Quota Ambiental
+
+- Árvores plantadas como contrapartida de TCA entram na Quota Ambiental do lote com **fator redutor 0,50** (Lei 16.402/2016, art. 77).
+- Árvores plantadas por **TAC** não contam para a Quota Ambiental (art. 78).
+- Nas áreas de clube que mudam de zona (art. 29-A, §3º), o TCA só pode ser cumprido por **plantio de mudas** — sem FEMA, viveiro ou obras.
+
+(fonte: Lei 16402-2016.pdf)
 
 ## Como a compensação é calculada
 
@@ -49,6 +66,7 @@ Resumo:
 - **Transplante:** de 2 a 20 mudas por árvore (Tabela V).
 - **Fator multiplicador:** de 1 (vegetação comum) a 10 (vegetação significativa em APP) (Anexo VIII).
 - **Cumprimento:** plantio no imóvel ou entorno; mudas ao viveiro municipal (excedente × fator 5,35); depósito no FEMA-SP; ou conversão em obras e serviços.
+- **Valor em dinheiro:** `V = Vm + Vt`, com Vm "calculado pela SVMA". Referência pública de 2026: muda com plantio R$ 337,00 e tutor com colocação R$ 229,00 (Anexo do Decreto 64.877/2025). `[verificar]` se são esses os valores usados. Ver [[decreto-64877-2025]].
 
 ## Bases de dados abertas
 
@@ -66,3 +84,8 @@ Ver a análise legística em [[questionar-criterios-tca]].
 - [[compensacao-ambiental]]
 - [[vegetacao-significativa]]
 - [[questionar-criterios-tca]]
+- [[lei-16402-2016]]
+- [[decreto-64877-2025]]
+- [[ciclo-de-vida-do-tca]]
+- [[calculo-da-compensacao]]
+- [[mapa-de-conceitos]]

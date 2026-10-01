@@ -35,6 +35,10 @@ O manejo em área não municipal depende de **autorização** (supressão e tran
 - **"Risco de queda"** é hipótese de supressão (Lei 17.794/2022, art. 14, IV) e de manejo de urgência (art. 20). O art. 20, §2º manda o Executivo definir os critérios "em regulamento": quem o fez foi a **Portaria SVMA 51/2024**, art. 42, remetendo à NBR ABNT 16.246-3:2019 (norma técnica paga) — não o decreto que a lei parece ter pedido. Ver [[portaria-svma-51-2024]] e [[questionar-criterios-tca]].
 - O Decreto 61.859/2022 **não** regulamenta laudos e relatórios de manejo em geral (só arts. 23-27). O conteúdo mínimo do laudo está na própria lei (art. 9º). Ver [[decreto-61859-2022]].
 
+## Duas definições de "manejo" em vigor
+
+A Lei 17.794/2022, art. 7º, e a Portaria SVMA 51/2024, art. 2º, V, definem manejo como o que ocorre "desde o plantio e durante todo o seu ciclo vital, visando à conservação e à sanidade". A Portaria SVMA 105/2024, art. 3º, V, define manejo como "aquele que ocorre por corte, transplante ou remoção". São duas portarias da mesma Secretaria, do mesmo ano, com sentidos opostos. Ao ler um TCA ou uma estatística de "manejo", confira qual sentido está em uso. Ver [[mapa-de-conceitos]].
+
 ## Páginas relacionadas
 
 - [[lei-17794-2022]]
@@ -46,3 +50,4 @@ O manejo em área não municipal depende de **autorização** (supressão e tran
 - [[calcada-verde]]
 - [[compensacao-ambiental]]
 - [[questionar-criterios-tca]]
+- [[mapa-de-conceitos]]

@@ -33,6 +33,7 @@ wiki/         páginas markdown mantidas pelo Claude
   legislacao/               análises de normas vigentes e projetos de lei
   projetos/                 propostas de leis e normas (Eixo 2)
   assets/grafos/            grafos interativos (HTML) embutidos nas páginas via iframe
+scripts/analise/ scripts que geram a matriz de conceitos, os infográficos e a página de comparação das lentes
 lat.md/       grafo de conhecimento do projeto (spec, invariantes, "porquês")
 ```
 
@@ -214,6 +215,8 @@ Malha inicial para a ingestão recursiva. Disponíveis em HTML estático nos por
 lat.md/ingestion-flow.md    spec do fluxo de ingestão de PDF e HTML estático
 lat.md/cypher-model.md       ontologia Neo4j (labels e arestas)
 lat.md/diagram-style.md      padrão visual do diagrama Mermaid e do grafo d3graph
+lat.md/analysis-lenses.md    lentes de análise, infográficos e dados para análise quantitativa
+scripts/analise/*.py         # @lat: [[analysis-lenses#Lentes de análise#Scripts]]
 src/arboriki/extract.py      # @lat: [[ingestion-flow#...#Ferramenta de extração — CLI arboriki]]
 src/arboriki/scraper.py      # @lat: [[ingestion-flow]]
 ```

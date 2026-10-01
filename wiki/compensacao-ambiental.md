@@ -20,7 +20,8 @@ A compensação ambiental mitiga o impacto negativo não evitável do manejo arb
 - **Base do instrumento (TCA):** arts. 154-155 da Lei 16.050/2014 (Plano Diretor Estratégico). Ver [[termo-de-compromisso-ambiental-tca]].
 - **Regulamento original, ainda em vigor:** **Decreto 53.889/2013** — traz a fórmula `CF=(A+B+C+D+E+P+M)×Fr`, a tabela do Fator Multiplicador e o regime especial 1:1 para obra pública/HIS/HMP, desde 2013. Ver [[decreto-53889-2013]].
 - **Critérios operacionais e tabelas atuais:** **Portaria SVMA 105/2024** (alterada pela **Portaria SVMA 116/2024**, de 10/12/2024, que também revogou formalmente a Portaria 130/2013, a Portaria SVMA 26/2004, a Portaria SVMA 36/2008 e a Publicação SVMA 5/2018). Ver [[portaria-svma-105-2024]].
-- **Base de cálculo da muda e conversão em obras:** Decreto 53.889/2013, art. 4º (valores-base de 2013: muda R$ 234,46, tutor R$ 8,58, reajustados pelo Índice de Edificações em Geral) `[verificar]` valor atualizado — **não é** o Decreto 64.877/2025 (esse decreto fixa preços de serviços genéricos da Prefeitura e não menciona SVMA, muda ou arborização).
+- **Base de cálculo da muda e conversão em obras:** Decreto 53.889/2013, art. 4º (valores-base de 2013: muda R$ 234,46, tutor R$ 8,58, reajustados pelo Índice de Edificações em Geral). A Portaria SVMA 105/2024 diz que o valor da muda (Vm) é "calculado pela SVMA", sem publicar o método. A referência pública mais próxima é o **Anexo do Decreto 64.877/2025** (preços de 2026): muda de até 2,50 m **com plantio R$ 337,00**; tutor **com colocação R$ 229,00** (itens 27.3.3-27.3.4). `[verificar]` se a SVMA usa esses valores como Vm e Vt. Ver [[decreto-64877-2025]].
+- **Quota Ambiental:** árvores plantadas por TCA contam com **fator redutor 0,50** na Quota Ambiental do lote; as plantadas por TAC não contam (Lei 16.402/2016, arts. 77-78). Ver [[lei-16402-2016]].
 - **Norma anterior:** Portaria SVMA 130/2013, revogada em 2024. Ver [[portaria-svma-130-2013]].
 
 O que o **Manual Técnico da SVMA** cita na seção 6.7 (Decreto 47.145/2006, Portaria 62/SVMA.G/2006, Portaria 130/2013) está **desatualizado**: o Decreto 47.145/2006 foi revogado pelo próprio Decreto 53.889/2013 (art. 10), nove anos antes da edição do Manual (fonte: Arborização Manual Técnico de SVMA.pdf; decreto-53889-de-08-de-maio-de-2013).
@@ -57,3 +58,7 @@ O exemplar suprimido em área pública é substituído pelo órgão municipal (L
 - [[manejo-arboreo]]
 - [[arborizacao-urbana]]
 - [[aplicar-ail-legislacao-arborizacao]]
+- [[decreto-64877-2025]]
+- [[lei-16402-2016]]
+- [[calculo-da-compensacao]]
+- [[ciclo-de-vida-do-tca]]

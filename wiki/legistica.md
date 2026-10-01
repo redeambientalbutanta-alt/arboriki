@@ -71,4 +71,5 @@ A legística é o método de análise das normas de arborização de São Paulo 
 - [[avaliacao-de-impacto-legislativo]]
 - [[principios-da-legistica]]
 - [[checklist-legislativo]]
+- [[legisprudencia]] — teoria de Wintgens: coerência, alternatividade, temporalidade, densidade normativa
 - [[aplicar-ail-legislacao-arborizacao]]
